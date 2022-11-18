@@ -6,11 +6,13 @@ public class PlayerInput : MonoBehaviour
 {
     public string keyUp = "w";
     public string keyDown = "s";
-    public string keyRight = "a";
-    public string keyLeft = "d";  
+    public string keyRight = "d";
+    public string keyLeft = "a";  
     
     public float Dup;
     public float Dright;
+    public float Dmag;
+    public Vector3 Dvec;
 
     public bool _InputEnable = true;
 
@@ -19,11 +21,6 @@ public class PlayerInput : MonoBehaviour
     private float velocityDup;
     private float velocityDright;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -39,5 +36,7 @@ public class PlayerInput : MonoBehaviour
 
         Dup = Mathf.SmoothDamp(Dup, targetDup, ref velocityDup, 0.1f);
         Dright = Mathf.SmoothDamp(Dright, targetDright, ref velocityDright, 0.1f);
+        Dmag = Mathf.Sqrt((Dup * Dup) + (Dright * Dright));
+        Dvec = Dup * transform.forward + Dright * transform.right;
     }
 }
