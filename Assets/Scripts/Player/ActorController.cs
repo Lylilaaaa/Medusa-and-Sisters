@@ -15,11 +15,11 @@ namespace Player
         private Vector3 planerVec; //important!!
         private bool planerLook ;
         private Vector3 thrustVec;
-        
+
         [Header(" ===== Controller Setting ===== ")]
         public float movingSpeed;
         private float runMultiplier = 2.5f;
-        
+        public float jumpVelocity;
         
         private void Awake()
         {
@@ -57,14 +57,24 @@ namespace Player
         public void OnJumpEnter()
         {
             pi._InputEnable = false;
-            Debug.Log("onjumpenter");
+            //Debug.Log("onjumpenter");
             planerLook = true;
-            thrustVec = new Vector3(0, 5f, 0);
+            thrustVec = new Vector3(0, jumpVelocity, 0);
         }
-        public void OnJumpExit()
+
+        public void IsGround()
+        {
+            anim.SetBool("isGround",true);
+        }
+        public void IsNotGround()
+        {
+            anim.SetBool("isGround",false);
+        }
+
+        public void OnGroundEnter()
         {
             pi._InputEnable = true;
-            Debug.Log("onjumpexit");
+            //Debug.Log("onjumpexit");
             planerLook = false;
         }
     }

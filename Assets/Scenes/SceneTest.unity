@@ -123,6 +123,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &84725706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 84725707}
+  - component: {fileID: 84725708}
+  m_Layer: 0
+  m_Name: groundSensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &84725707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84725706}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 877365735}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &84725708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84725706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493b59ca476d4a38ba607b9acc5745d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  capcol: {fileID: 877365732}
+  offset: 0.1
 --- !u!1001 &216710586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: 5a381a24bdd577b488da07a68787f65b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: 5a381a24bdd577b488da07a68787f65b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -271,7 +316,7 @@ GameObject:
   - component: {fileID: 426254374}
   - component: {fileID: 426254373}
   - component: {fileID: 426254372}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TestCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +331,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426254370}
   m_LocalRotation: {x: 0.54979104, y: -0, z: -0, w: 0.8353023}
-  m_LocalPosition: {x: -1.16, y: 1.23, z: 1.67}
+  m_LocalPosition: {x: -1.16, y: 1.31, z: -0.16}
   m_LocalScale: {x: 8.578191, y: 5.825546, z: 0.6551254}
   m_Children: []
   m_Father: {fileID: 1305671053}
@@ -464,7 +509,7 @@ GameObject:
   - component: {fileID: 743684221}
   - component: {fileID: 743684220}
   - component: {fileID: 743684219}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +588,7 @@ Transform:
   m_GameObject: {fileID: 743684218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.9467543, y: 0.4294417, z: -3.4285457}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 1305671053}
   m_RootOrder: 0
@@ -605,10 +650,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.16291392
-  m_Height: 1.795028
+  m_Radius: 0.2554909
+  m_Height: 1.8284615
   m_Direction: 1
-  m_Center: {x: 0, y: 0.9162303, z: -0.7402173}
+  m_Center: {x: -0.0029096603, y: 0.9205614, z: -0.7402173}
 --- !u!114 &877365733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,6 +669,7 @@ MonoBehaviour:
   model: {fileID: 727783910}
   planerVec: {x: 0, y: 0, z: 0}
   movingSpeed: 1.4
+  jumpVelocity: 7
 --- !u!54 &877365734
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -652,6 +698,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 319177626}
+  - {fileID: 84725707}
   - {fileID: 216710587}
   m_Father: {fileID: 0}
   m_RootOrder: 2

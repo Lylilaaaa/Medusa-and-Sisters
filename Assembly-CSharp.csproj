@@ -54,9 +54,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player\ActorController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\Player\FSMOnExit.cs" />
      <Compile Include="Assets\Scripts\Player\FSMClearSignals.cs" />
      <Compile Include="Assets\Scripts\Player\FSMOnEnter.cs" />
-     <Compile Include="Assets\Scripts\Player\FSMOnExit.cs" />
+     <Compile Include="Assets\Scripts\Player\OnGroundSensor.cs" />
  <Reference Include="UnityEngine">
  <HintPath>Z:/UnityEditor/2020.3.15f2c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
