@@ -584,10 +584,16 @@ MonoBehaviour:
   keyDown: s
   keyRight: d
   keyLeft: a
+  KeyA: left shift
+  KeyB: j
+  KeyC: 
+  KeyD: 
   Dup: 0
   Dright: 0
   Dmag: 0
   Dvec: {x: 0, y: 0, z: 0}
+  run: 0
+  jump: 0
   _InputEnable: 1
 --- !u!136 &877365732
 CapsuleCollider:
@@ -615,8 +621,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 456dc21265554540b8b15d75fa1395e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingSpeed: 1.4
   model: {fileID: 727783910}
+  planerVec: {x: 0, y: 0, z: 0}
+  movingSpeed: 1.4
 --- !u!54 &877365734
 Rigidbody:
   m_ObjectHideFlags: 0
