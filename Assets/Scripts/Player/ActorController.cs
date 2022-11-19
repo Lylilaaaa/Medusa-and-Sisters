@@ -20,6 +20,7 @@ namespace Player
         public float movingSpeed;
         private float runMultiplier = 2.5f;
         public float jumpVelocity;
+        public float rollVelocity;
         
         private void Awake()
         {
@@ -31,19 +32,26 @@ namespace Player
         private void Update()
         {
             anim.SetFloat("forward",pi.Dmag * Mathf.Lerp(anim.GetFloat("forward"),((pi.run) ? 2.0f : 1.0f),0.5f)); //Smooth the process walk to run
+            if (rigi.velocity.magnitude > 5f)
+            {
+                anim.SetTrigger("roll");
+            }
             if (pi.jump)
             {
                 anim.SetTrigger("jump");
+            }
+            if (pi.froll)
+            {
+                anim.SetTrigger("forceroll");
             }
             if (pi.Dmag > 0.1f)
             {
                 model.transform.forward = Vector3.Slerp(model.transform.forward, pi.Dvec, 0.05f); //Smooth truning around;
             }
-
             if (planerLook == false)
             {
-                planerVec = pi.Dmag * model.transform.forward * movingSpeed * ((pi.run) ? runMultiplier : 1.0f);
-            } //player input (both mag and direction)
+                planerVec = pi.Dmag * model.transform.forward * movingSpeed * ((pi.run) ? runMultiplier : 1.0f);//player input (both mag and direction)
+            } 
         }
 
         private void FixedUpdate()
@@ -56,9 +64,6 @@ namespace Player
         //Receive Massage
         public void OnJumpEnter()
         {
-            pi._InputEnable = false;
-            //Debug.Log("onjumpenter");
-            planerLook = true;
             thrustVec = new Vector3(0, jumpVelocity, 0);
         }
 
@@ -74,8 +79,28 @@ namespace Player
         public void OnGroundEnter()
         {
             pi._InputEnable = true;
-            //Debug.Log("onjumpexit");
             planerLook = false;
+        }
+        public void OnGroundExit()
+        {
+            pi._InputEnable = false;
+            planerLook = true;
+        }
+
+        public void OnRollEnter()
+        {
+            pi._InputEnable = false;
+            planerLook = true;
+            planerVec = 2f * model.transform.forward * movingSpeed * rollVelocity;
+        }
+        public void OnRollExit()
+        {
+            pi._InputEnable = true;
+            planerLook = false;
+        }
+        public void OnRollUpdate()
+        { 
+            anim.SetBool("isGround",true);
         }
     }
 }

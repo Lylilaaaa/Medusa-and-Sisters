@@ -330,13 +330,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426254370}
-  m_LocalRotation: {x: 0.54979104, y: -0, z: -0, w: 0.8353023}
+  m_LocalRotation: {x: 0.52346176, y: -0, z: -0, w: 0.85204923}
   m_LocalPosition: {x: -1.16, y: 1.31, z: -0.16}
   m_LocalScale: {x: 8.578191, y: 5.825546, z: 0.6551254}
   m_Children: []
   m_Father: {fileID: 1305671053}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 66.705, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 63.13, y: 0, z: 0}
 --- !u!65 &426254372
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -631,7 +631,7 @@ MonoBehaviour:
   keyLeft: a
   KeyA: left shift
   KeyB: j
-  KeyC: 
+  KeyC: k
   KeyD: 
   Dup: 0
   Dright: 0
@@ -639,6 +639,7 @@ MonoBehaviour:
   Dvec: {x: 0, y: 0, z: 0}
   run: 0
   jump: 0
+  froll: 0
   _InputEnable: 1
 --- !u!136 &877365732
 CapsuleCollider:
@@ -668,8 +669,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   model: {fileID: 727783910}
   planerVec: {x: 0, y: 0, z: 0}
-  movingSpeed: 1.4
-  jumpVelocity: 7
+  movingSpeed: 2
+  jumpVelocity: 4.5
+  rollVelocity: 2
 --- !u!54 &877365734
 Rigidbody:
   m_ObjectHideFlags: 0

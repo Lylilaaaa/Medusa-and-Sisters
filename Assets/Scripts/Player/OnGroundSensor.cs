@@ -6,7 +6,7 @@ namespace Player
     public class OnGroundSensor : MonoBehaviour
     {
         public CapsuleCollider capcol;
-        public float offset = 0.1f;
+        public float offset = 0.2f;
         
         private Vector3 point1;
         private Vector3 point2;

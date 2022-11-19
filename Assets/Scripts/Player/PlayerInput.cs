@@ -30,6 +30,9 @@ public class PlayerInput : MonoBehaviour
     //2. trigger signal
     public bool jump;
     private bool lastJump;
+
+    public bool froll;
+    private bool lastroll;
     
     //3. double trigger
 
@@ -64,7 +67,7 @@ public class PlayerInput : MonoBehaviour
         Dmag = Mathf.Sqrt((Dup2 * Dup2) + (Dright2 * Dright2));
         Dvec = Dup2 * transform.forward + Dright2 * transform.right;
         
-        //due with signal types
+        // ===== due with signal types ===== //
         run = Input.GetKey(KeyA);
 
         bool newJump = Input.GetKey(KeyB);
@@ -77,6 +80,17 @@ public class PlayerInput : MonoBehaviour
             jump = false;
         }
         lastJump = newJump;
+        
+        bool newRoll = Input.GetKey(KeyC);
+        if (newRoll != lastroll && newRoll == true)
+        {
+            froll = true;
+        }
+        else
+        {
+            froll = false;
+        }
+        lastroll = newRoll;
     }
 
     private Vector2 SqToCircle(Vector2 input)
