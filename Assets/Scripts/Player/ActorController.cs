@@ -8,7 +8,9 @@ namespace Player
         private PlayerInput pi;
         private Animator anim;
         private Rigidbody rigi;
-        
+        private Vector3 movingVec;
+
+        public float movingSpeed;
         public GameObject model;
 
         private void Awake()
@@ -25,11 +27,13 @@ namespace Player
             {
                 model.transform.forward = pi.Dvec;
             }
+
+            movingVec = pi.Dmag * model.transform.forward * movingSpeed;
         }
 
         private void FixedUpdate()
         {
-            rigi.position += new Vector3(0, 0, 1f) * Time.fixedDeltaTime;
+            rigi.position += movingVec * Time.fixedDeltaTime;
         }
     }
 }
