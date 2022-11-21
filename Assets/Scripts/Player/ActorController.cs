@@ -91,7 +91,7 @@ namespace Player
         {
             pi._InputEnable = false;
             planerLook = true;
-            planerVec = 2f * model.transform.forward * movingSpeed * rollVelocity;
+            planerVec = 2f * model.transform.forward* movingSpeed * rollVelocity;
         }
         public void OnRollExit()
         {
