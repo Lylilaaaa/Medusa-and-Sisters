@@ -10,7 +10,7 @@ reminder: the rotation of the plane should be bigger than 80 degree! //or the av
 
 
  11.20-11.22：主要人设以及美杜莎建模（未绑骨）
-![11.21a](Diary/11.21a.png)
-![11.21b](Diary/11.21b.png)
+![11.21a](Diary/11.21a.jpg)
+![11.21b](Diary/11.21b.jpg)
 ![11.22a](Diary/11.22a.png)
-![11.22b](Diary/11.22b.png)
+![11.22b](Diary/11.22b.jpg)
