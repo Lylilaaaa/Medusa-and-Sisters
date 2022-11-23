@@ -1,5 +1,5 @@
 # Medusa and Sisters
-reminder: the rotation of the plane should be bigger than 80 degree! //or the avatar will roll and fall!!
+reminder: the rotation of the plane should be bigger than 80 degree! //or the avatar will roll and fall!! （已修复，改变senser的offset高度就可以）
 
 开发日志：
  
@@ -15,3 +15,7 @@ reminder: the rotation of the plane should be bigger than 80 degree! //or the av
 ![11.21a](Diary/11.21a.jpg)
 ![11.21b](Diary/11.21b.jpg)
 ![11.22a](Diary/png11.22.png)
+
+11.24: 原地跳跃闪避（后撤功能）；相机转动与移动、lerp平滑移动；丝西娜（红色姐姐）人设
+![11.21a](Diary/png11.24.png)
+![11.21a](Diary/11.24a.jpg)
