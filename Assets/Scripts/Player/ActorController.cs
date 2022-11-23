@@ -15,12 +15,16 @@ namespace Player
         private Vector3 planerVec; //important!!
         private bool planerLook ;
         private Vector3 thrustVec;
+        [SerializeField]
+        private float velocityShown;
 
         [Header(" ===== Controller Setting ===== ")]
         public float movingSpeed;
         private float runMultiplier = 2.5f;
         public float jumpVelocity;
         public float rollVelocity;
+        public float jabVelocity;
+        public float jumpRollmax = 10f;
         
         private void Awake()
         {
@@ -31,8 +35,9 @@ namespace Player
 
         private void Update()
         {
+            velocityShown = Mathf.Round( rigi.velocity.magnitude);
             anim.SetFloat("forward",pi.Dmag * Mathf.Lerp(anim.GetFloat("forward"),((pi.run) ? 2.0f : 1.0f),0.5f)); //Smooth the process walk to run
-            if (rigi.velocity.magnitude > 5f)
+            if (rigi.velocity.magnitude > jumpRollmax)
             {
                 anim.SetTrigger("roll");
             }
@@ -101,6 +106,15 @@ namespace Player
         public void OnRollUpdate()
         { 
             anim.SetBool("isGround",true);
+        }
+
+        public void OnJabEnter()
+        {
+        }
+
+        public void OnJabUpdate()
+        {
+            thrustVec = model.transform.forward * -jabVelocity;
         }
     }
 }

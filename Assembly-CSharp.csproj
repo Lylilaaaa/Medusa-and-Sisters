@@ -54,11 +54,19 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player\ActorController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\EnemySpawnManager.cs" />
      <Compile Include="Assets\Scripts\Player\OnGroundSensor.cs" />
+     <Compile Include="Assets\Scripts\Monster\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\Environment\EnvironmentManager.cs" />
      <Compile Include="Assets\Scripts\Player\FSMOnExit.cs" />
      <Compile Include="Assets\Scripts\Player\FSMOnUpdate.cs" />
+     <Compile Include="Assets\Scripts\UI\LevelButtonController.cs" />
+     <Compile Include="Assets\Scripts\UI\GameStartButtonController.cs" />
+     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
      <Compile Include="Assets\Scripts\Player\FSMClearSignals.cs" />
      <Compile Include="Assets\Scripts\Player\FSMOnEnter.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
  <Reference Include="UnityEngine">
  <HintPath>Z:/UnityEditor/2020.3.15f2c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
