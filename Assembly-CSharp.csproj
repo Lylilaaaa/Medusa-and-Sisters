@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Player\ActorController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
      <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
      <Compile Include="Assets\Scripts\Manager\EnemySpawnManager.cs" />
      <Compile Include="Assets\Scripts\Player\OnGroundSensor.cs" />
      <Compile Include="Assets\Scripts\Monster\EnemyController.cs" />
@@ -66,7 +67,6 @@
      <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
      <Compile Include="Assets\Scripts\Player\FSMClearSignals.cs" />
      <Compile Include="Assets\Scripts\Player\FSMOnEnter.cs" />
-     <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
  <Reference Include="UnityEngine">
  <HintPath>Z:/UnityEditor/2020.3.15f2c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -666,6 +666,42 @@
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+ <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Searcher.Editor">
+ <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Editor">
+ <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics.Editor">
+ <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+ <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Editor">
+ <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+ <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics">
+ <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+ <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ShaderGraph.Editor">
+ <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+ <HintPath>Z:/CUHKSZ/FinalProj/Medusa and Sisters/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
