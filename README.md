@@ -19,3 +19,9 @@ reminder: the rotation of the plane should be bigger than 80 degree! //or the av
 11.24: 原地跳跃闪避（后撤功能）；相机转动与移动、lerp平滑移动；丝西娜（红色姐姐）人设
 ![11.21a](Diary/png11.24.png)
 ![11.21a](Diary/11.24a.jpg)
+
+11.25：更新URP，导入美杜莎人物模型、绘制texture、绑定骨骼、导入动画、复用animator controller、设置post processing
+![11.21a](Diary/png11.25a.png)
+![11.21a](Diary/png11.25b.jpg)
+![11.21a](Diary/png11.25c.png)
+![11.21a](Diary/png11.25d.jpg)
