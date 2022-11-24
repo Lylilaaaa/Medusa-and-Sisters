@@ -15,11 +15,11 @@ Z:/CUHKSZ/FinalProj/Medusa and Sisters
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60214
+61026
 Successfully changed project path to: Z:/CUHKSZ/FinalProj/Medusa and Sisters
 Z:/CUHKSZ/FinalProj/Medusa and Sisters
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 19.45 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.15f2c1 (b25d0e34ed8a)
 [Subsystems] Discovering subsystems at path Z:/UnityEditor/2020.3.15f2c1/Editor/Data/Resources/UnitySubsystems
@@ -31,93 +31,95 @@ Direct3D:
     Vendor:   
     VRAM:     3991 MB
     Driver:   31.0.15.1700
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'Z:/UnityEditor/2020.3.15f2c1/Editor/Data/Managed'
 Mono path[1] = 'Z:/UnityEditor/2020.3.15f2c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'Z:/UnityEditor/2020.3.15f2c1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: Z:/UnityEditor/2020.3.15f2c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000574 seconds.
+Registered in 0.000638 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 21.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.67 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.578 seconds
+- Completed reload, in  0.597 seconds
 Domain Reload Profiling:
-	ReloadAssembly (578ms)
-		BeginReloadAssembly (57ms)
+	ReloadAssembly (598ms)
+		BeginReloadAssembly (49ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (256ms)
-			LoadAssemblies (56ms)
+		EndReloadAssembly (274ms)
+			LoadAssemblies (48ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (88ms)
+			SetupTypeCache (93ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (100ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (114ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (22ms)
-				BeforeProcessingInitializeOnLoad (8ms)
-				ProcessInitializeOnLoadAttributes (50ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
+				RefreshPlugins (33ms)
+				BeforeProcessingInitializeOnLoad (7ms)
+				ProcessInitializeOnLoadAttributes (53ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001842 seconds.
+Registered in 0.002218 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 33.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.956 seconds
+- Completed reload, in  1.038 seconds
 Domain Reload Profiling:
-	ReloadAssembly (957ms)
+	ReloadAssembly (1038ms)
 		BeginReloadAssembly (102ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (819ms)
-			LoadAssemblies (69ms)
+		EndReloadAssembly (899ms)
+			LoadAssemblies (74ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (167ms)
+			SetupTypeCache (185ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (522ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (549ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (450ms)
+				RefreshPlugins (34ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (451ms)
 				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.23 ms, found 2 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 65.6 MB.
-System memory in use after: 65.7 MB.
+Unloading 2713 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 123.5 MB.
+System memory in use after: 123.7 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1847.
-Total: 2.061300 ms (FindLiveObjects: 0.093400 ms CreateObjectMapping: 0.027700 ms MarkObjects: 1.883500 ms  DeleteObjects: 0.055600 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3149.
+Total: 2.462800 ms (FindLiveObjects: 0.171100 ms CreateObjectMapping: 0.070700 ms MarkObjects: 2.140200 ms  DeleteObjects: 0.079200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,259 +134,217 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Resource/Models/Pro Sword and Shield Pack
-  artifactKey: Guid(d3e6800315d086a40b450112f925fa40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Pro Sword and Shield Pack using Guid(d3e6800315d086a40b450112f925fa40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c09370cdc35b2e6b62d4992e2e01dfa9') in 0.003199 seconds 
-  Import took 0.005252 seconds .
+  path: Assets/Avatars/Models/YBot/SwordAndShield/sword and shield idle (4).fbx
+  artifactKey: Guid(504d9d0fcc0cf8541a2bd1f5ba2d14c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/YBot/SwordAndShield/sword and shield idle (4).fbx using Guid(504d9d0fcc0cf8541a2bd1f5ba2d14c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c7095221c932ac6591af5d4fd731ff') in 0.091927 seconds 
+  Import took 0.095167 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.478070 seconds.
-  path: Assets/Resource/Models/Medusa
-  artifactKey: Guid(d3e6800315d086a40b450112f925fa40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa using Guid(d3e6800315d086a40b450112f925fa40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a493289820531d095fdab6cea4bc3c5a') in 0.001367 seconds 
-  Import took 0.003921 seconds .
+  Time since last request: 0.000327 seconds.
+  path: Assets/Avatars/Models/YBot/SwordAndShield/sword and shield walk.fbx
+  artifactKey: Guid(06ecddf80773d7047b67421c49f71b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/YBot/SwordAndShield/sword and shield walk.fbx using Guid(06ecddf80773d7047b67421c49f71b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b49c48f0ed59e833f8e17a1f79c08f6d') in 0.005596 seconds 
+  Import took 0.008755 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.743571 seconds.
-  path: Assets/Resource/Models/Medusa/draw sword 1.fbx
-  artifactKey: Guid(f90ab3b92624f5b4e9da2d9d114db6cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/draw sword 1.fbx using Guid(f90ab3b92624f5b4e9da2d9d114db6cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '859cb7b0dbaf3b31845c60c9e81f7ae9') in 0.092967 seconds 
-  Import took 0.095998 seconds .
+  Time since last request: 109.741411 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield idle (4).fbx
+  artifactKey: Guid(e33424ee6eedce940910832ec2f2d4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield idle (4).fbx using Guid(e33424ee6eedce940910832ec2f2d4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0cc38db6525c7e56ae9ae945d000d4e') in 0.005230 seconds 
+  Import took 0.009467 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 149.748273 seconds.
-  path: Assets/Resource/Models/Medusa_move
-  artifactKey: Guid(d3e6800315d086a40b450112f925fa40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa_move using Guid(d3e6800315d086a40b450112f925fa40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b4cff37dce153f9930a4fb4973de524') in 0.001819 seconds 
-  Import took 0.007042 seconds .
+  Time since last request: 0.003689 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield idle (4).fbx
+  artifactKey: Guid(e33424ee6eedce940910832ec2f2d4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield idle (4).fbx using Guid(e33424ee6eedce940910832ec2f2d4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0cc38db6525c7e56ae9ae945d000d4e') in 0.005241 seconds 
+  Import took 0.008527 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.891222 seconds.
-  path: Assets/Resource/Models/Medusa
-  artifactKey: Guid(b1b429d718e9238458ffb3c1be9349f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa using Guid(b1b429d718e9238458ffb3c1be9349f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25fbb0bdcbbe061e4f393e918a7bdc0d') in 0.002994 seconds 
-  Import took 0.005253 seconds .
+  Time since last request: 7.010023 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield idle (4).fbx
+  artifactKey: Guid(e33424ee6eedce940910832ec2f2d4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield idle (4).fbx using Guid(e33424ee6eedce940910832ec2f2d4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21d9dd0a95fcedff1e13bf3e507e8a1b') in 0.005515 seconds 
+  Import took 0.008954 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.982104 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj
-  artifactKey: Guid(cd185e9277301714da99d66391078646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj using Guid(cd185e9277301714da99d66391078646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d438679b64415bed8a85b709ae2671') in 0.001745 seconds 
-  Import took 0.003977 seconds .
+  Time since last request: 28.250481 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield idle (4).fbx
+  artifactKey: Guid(e33424ee6eedce940910832ec2f2d4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield idle (4).fbx using Guid(e33424ee6eedce940910832ec2f2d4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37bc518446c17df9d41924b47b8861ce') in 0.005484 seconds 
+  Import took 0.008530 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.787759 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj/__MACOSX
-  artifactKey: Guid(af74cf574e716db4a83b36ce431e3e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj/__MACOSX using Guid(af74cf574e716db4a83b36ce431e3e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4e9277df232c5338678d27ebc440354') in 0.002094 seconds 
-  Import took 0.004002 seconds .
+  Time since last request: 9.739052 seconds.
+  path: Assets/Avatars/Models/YBot/SwordAndShield/sword and shield walk (2).fbx
+  artifactKey: Guid(f20256b87f75e404da97ffb66d093a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/YBot/SwordAndShield/sword and shield walk (2).fbx using Guid(f20256b87f75e404da97ffb66d093a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f586bb3358cac4dddab7a136b1ca8a58') in 0.047481 seconds 
+  Import took 0.050667 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.962220 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj/__MACOSX/Medusa1_obj_obj
-  artifactKey: Guid(a0c20001b7c145c4396f2e522349feb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj/__MACOSX/Medusa1_obj_obj using Guid(a0c20001b7c145c4396f2e522349feb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdb39c8a3619f6f8ebfd2185066af20e') in 0.001085 seconds 
-  Import took 0.002829 seconds .
+  Time since last request: 12.666437 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield walk (2).fbx
+  artifactKey: Guid(5f01fa60bc5bca547a9fa41073fb2976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield walk (2).fbx using Guid(5f01fa60bc5bca547a9fa41073fb2976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c811376b966af4b78c777e55e394d78') in 0.004897 seconds 
+  Import took 0.008483 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.295885 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj
-  artifactKey: Guid(eecabd1f416963143b55cf39399f12c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj using Guid(eecabd1f416963143b55cf39399f12c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d2805bf0b98f746c11d1852ae9e70c') in 0.001180 seconds 
-  Import took 0.013605 seconds .
+  Time since last request: 6.357778 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield walk.fbx
+  artifactKey: Guid(8e444653e6dcdf14589708e204903b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield walk.fbx using Guid(8e444653e6dcdf14589708e204903b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408a1fc5be1423e0c2ca7cff9bda38f6') in 0.006270 seconds 
+  Import took 0.009666 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.624736 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj/Medusa1_obj_obj.obj
-  artifactKey: Guid(3649a60933368d242b9145c5cb60c208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj/Medusa1_obj_obj.obj using Guid(3649a60933368d242b9145c5cb60c208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca561e0eca4f5599dbc6ef14c6c554d3') in 0.263121 seconds 
-  Import took 0.267185 seconds .
+  Time since last request: 17.422361 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield walk.fbx
+  artifactKey: Guid(8e444653e6dcdf14589708e204903b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield walk.fbx using Guid(8e444653e6dcdf14589708e204903b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70bdac4252de7c930635b19bc5d29c85') in 0.006001 seconds 
+  Import took 0.009414 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.049205 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj/Medusa1_obj_obj.mtl
-  artifactKey: Guid(d96b77dbb96bf234fa40d1d347f11ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj/Medusa1_obj_obj.mtl using Guid(d96b77dbb96bf234fa40d1d347f11ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a75f9afe34f6adcd1f5d80ca0b1c598') in 0.014404 seconds 
-  Import took 0.058970 seconds .
+  Time since last request: 2.257363 seconds.
+  path: Assets/Avatars/Models/YBot/SwordAndShield/sword and shield run.fbx
+  artifactKey: Guid(ff39722c6e51da1449fe51444d6d38ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/YBot/SwordAndShield/sword and shield run.fbx using Guid(ff39722c6e51da1449fe51444d6d38ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db6033ba8ebc0f5fd7cd61163e8006a7') in 0.047801 seconds 
+  Import took 0.053345 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 30.404797 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj/Medusa1_obj_obj.obj
-  artifactKey: Guid(3649a60933368d242b9145c5cb60c208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj/Medusa1_obj_obj.obj using Guid(3649a60933368d242b9145c5cb60c208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '683e7079025c85890b2b4e91e45f7009') in 0.157404 seconds 
-  Import took 0.161584 seconds .
+  Time since last request: 26.796951 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield run.fbx
+  artifactKey: Guid(a58871a6ebb47c44d8adea5bf80ba2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield run.fbx using Guid(a58871a6ebb47c44d8adea5bf80ba2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c164d1e8eabbbb2ec4ce53ad9662543e') in 0.005561 seconds 
+  Import took 0.008736 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 50.939474 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj/Medusa1_obj_obj.obj
-  artifactKey: Guid(3649a60933368d242b9145c5cb60c208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj/Medusa1_obj_obj.obj using Guid(3649a60933368d242b9145c5cb60c208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0142181cab4e4374d4bd5f1ebaa955c') in 0.131374 seconds 
-  Import took 0.146048 seconds .
+  Time since last request: 17.322030 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield run.fbx
+  artifactKey: Guid(a58871a6ebb47c44d8adea5bf80ba2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield run.fbx using Guid(a58871a6ebb47c44d8adea5bf80ba2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea7af478e3e31783f5be9dba03471f7') in 0.005202 seconds 
+  Import took 0.009091 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 41.589686 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj/textures
-  artifactKey: Guid(c1fec539442b42f4d9b90797ba02e11e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj/textures using Guid(c1fec539442b42f4d9b90797ba02e11e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2672a4b635c6b5e8648cdcf1c94a603') in 0.001429 seconds 
-  Import took 0.003635 seconds .
+  Time since last request: 144.065210 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump.fbx
+  artifactKey: Guid(5733c3a26a189cb48a790ee0a15c02d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump.fbx using Guid(5733c3a26a189cb48a790ee0a15c02d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d1cdaec1630c18903db445eca01a454') in 0.006104 seconds 
+  Import took 0.010487 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.421738 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj.obj
-  artifactKey: Guid(87a96d4f07b4efa44956222f08e37aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj.obj using Guid(87a96d4f07b4efa44956222f08e37aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7abe81cd7b7bfc9f371764ac3264890a') in 0.154484 seconds 
-  Import took 0.158727 seconds .
+  Time since last request: 3.548355 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx
+  artifactKey: Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx using Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '759e29344047b36beb2a7f915ea02eaa') in 0.005770 seconds 
+  Import took 0.009178 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 44.481532 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj.obj
-  artifactKey: Guid(87a96d4f07b4efa44956222f08e37aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj.obj using Guid(87a96d4f07b4efa44956222f08e37aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd627d9238b5a0a76741674e99b8d7a74') in 0.081568 seconds 
-  Import took 0.085983 seconds .
+  Time since last request: 53.737756 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx
+  artifactKey: Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx using Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b657e97f79b10adf1f3f815bb354a14') in 0.006471 seconds 
+  Import took 0.010476 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.169365 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj/Materials
-  artifactKey: Guid(1c5b12ad60c04424bb01cc21d72ca55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj/Materials using Guid(1c5b12ad60c04424bb01cc21d72ca55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2fffdefcb6492b695c3558beddbb376') in 0.011952 seconds 
-  Import took 0.013811 seconds .
+  Time since last request: 9.517170 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx
+  artifactKey: Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx using Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046bd83c60a497558cd2ac7872b5e438') in 0.005894 seconds 
+  Import took 0.009216 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.320679 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj.mtl
-  artifactKey: Guid(320603df4a837c24c889c0641b09fc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj/Medusa1_obj_obj.mtl using Guid(320603df4a837c24c889c0641b09fc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481b1936d211eb2edec8505c931aac0e') in 0.001417 seconds 
-  Import took 0.003219 seconds .
+  Time since last request: 9.836942 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx
+  artifactKey: Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx using Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad0a2a6c9c78e74bc0762650b8bebf4') in 0.005176 seconds 
+  Import took 0.008956 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 64.370150 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj.fbx
-  artifactKey: Guid(e82dea04b13fa7d4096f0b97f9976924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj.fbx using Guid(e82dea04b13fa7d4096f0b97f9976924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8adb1a421e818b5b94aff6b583d2fd33') in 0.205333 seconds 
-  Import took 0.207730 seconds .
+  Time since last request: 50.296900 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx
+  artifactKey: Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx using Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7fe1927908f2afea1bcaaa7683a3599') in 0.006521 seconds 
+  Import took 0.010720 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.921497 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj.fbx
-  artifactKey: Guid(e82dea04b13fa7d4096f0b97f9976924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj.fbx using Guid(e82dea04b13fa7d4096f0b97f9976924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c950b56e4c16d431ba3448f7b017242') in 0.219982 seconds 
-  Import took 0.222373 seconds .
+  Time since last request: 53.634226 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/MedusaRoll.fbx
+  artifactKey: Guid(086b28868a4153148b727a2d02283f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/MedusaRoll.fbx using Guid(086b28868a4153148b727a2d02283f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e0992a96d3e2b7a887d8f69c52a4b5d') in 0.327549 seconds 
+  Import took 0.331629 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 111.586533 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj.fbx
-  artifactKey: Guid(e82dea04b13fa7d4096f0b97f9976924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj.fbx using Guid(e82dea04b13fa7d4096f0b97f9976924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37ff73c3c2fdbab591e9846f591175c') in 0.169385 seconds 
-  Import took 0.172430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.152348 seconds.
-  path: Assets/Resource/Models/Medusa/Medusa1_obj_obj.fbx
-  artifactKey: Guid(e82dea04b13fa7d4096f0b97f9976924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/Medusa1_obj_obj.fbx using Guid(e82dea04b13fa7d4096f0b97f9976924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'affd19deb24bca7848f4327eb42aaafd') in 0.203676 seconds 
-  Import took 0.217167 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.223864 seconds.
-  path: Assets/Resource/Models/Medusa/textures
-  artifactKey: Guid(c130bc8bb8ee2584ab96a15836cdba59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/textures using Guid(c130bc8bb8ee2584ab96a15836cdba59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd863b3a5ad499de0704a512ff80668be') in 0.001506 seconds 
-  Import took 0.014470 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 59.670680 seconds.
-  path: Assets/Resource/Models/Medusa/textures/snake-roughness_metalness.png_1
-  artifactKey: Guid(6fec0ed06e82e2941a78dbc41e7c6c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/textures/snake-roughness_metalness.png_1 using Guid(6fec0ed06e82e2941a78dbc41e7c6c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952469ee5d05cc05d2a07fd5b94bd8b3') in 0.006746 seconds 
-  Import took 0.008704 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000669 seconds.
-  path: Assets/Resource/Models/Medusa/textures/snake-roughness_metalness.png_1
-  artifactKey: Guid(6fec0ed06e82e2941a78dbc41e7c6c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resource/Models/Medusa/textures/snake-roughness_metalness.png_1 using Guid(6fec0ed06e82e2941a78dbc41e7c6c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952469ee5d05cc05d2a07fd5b94bd8b3') in 0.043878 seconds 
-  Import took 0.045719 seconds .
+  Time since last request: 175.217779 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/MedusaFalling.fbx
+  artifactKey: Guid(cebc65e21decb4a478138318260063b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/MedusaFalling.fbx using Guid(cebc65e21decb4a478138318260063b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dbb03ba06c05a5551a83e1f9f2cca9d') in 0.240057 seconds 
+  Import took 0.244306 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004005 seconds.
+Registered in 0.002256 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 30.08 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.612 seconds
+- Completed reload, in  1.017 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2614ms)
-		BeginReloadAssembly (1709ms)
+	ReloadAssembly (1017ms)
+		BeginReloadAssembly (118ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (35ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1541ms)
-		EndReloadAssembly (866ms)
-			LoadAssemblies (104ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (862ms)
+			LoadAssemblies (79ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (186ms)
+			SetupTypeCache (194ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (514ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (498ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (30ms)
-				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (428ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (425ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Nature/SpeedTree7': dependency 'BillboardShader' shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard' not found
-Shader 'Universal Render Pipeline/Baked Lit': fallback shader 'Universal Render Pipeline/Unlit' not found
-Shader 'Universal Render Pipeline/Simple Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
-Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2660 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.6 MB.
-System memory in use after: 129.4 MB.
+Unloading 2604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.7 MB.
+System memory in use after: 135.9 MB.
 
-Unloading 71 unused Assets to reduce memory usage. Loaded Objects now: 3092.
-Total: 5.165700 ms (FindLiveObjects: 0.266700 ms CreateObjectMapping: 0.073700 ms MarkObjects: 3.460800 ms  DeleteObjects: 1.363600 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3201.
+Total: 2.367700 ms (FindLiveObjects: 0.160300 ms CreateObjectMapping: 0.056700 ms MarkObjects: 2.127500 ms  DeleteObjects: 0.021800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -399,25 +359,124 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 288.646223 seconds.
-  path: Assets/URP
-  artifactKey: Guid(dd703168b16897f4a895461256617e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/URP using Guid(dd703168b16897f4a895461256617e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe5d17518a38301ff87f29f4d47c486') in 0.004809 seconds 
-  Import took 0.007903 seconds .
+  Time since last request: 77.449766 seconds.
+  path: Assets/Animator/Medusa.controller
+  artifactKey: Guid(65fd6eb109cf6ab4eaa4421584a6a251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animator/Medusa.controller using Guid(65fd6eb109cf6ab4eaa4421584a6a251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f333a34448ef5afaec9673946088df1') in 0.052952 seconds 
+  Import took 0.057031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 237.445051 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/MedusaJumping.fbx
+  artifactKey: Guid(8ec3c30be3c0d0248a9909527735b8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/MedusaJumping.fbx using Guid(8ec3c30be3c0d0248a9909527735b8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86269690ec8bf5471932f58a2bcd018e') in 0.251050 seconds 
+  Import took 0.255131 seconds .
 
 ========================================================================
 Received Prepare
-Switching render pipeline 00000000000000000000000000000000 -> 5e3728b083d64a741a5745496cf736db
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 4.57 ms, found 2 plugins.
+Registering precompiled user dll's ...
+Registered in 0.007338 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 116 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.1 MB.
-System memory in use after: 84.1 MB.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.089 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1090ms)
+		BeginReloadAssembly (134ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (915ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (187ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (548ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (469ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.4 MB.
+System memory in use after: 136.6 MB.
 
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 3160.
-Total: 5.272400 ms (FindLiveObjects: 0.230300 ms CreateObjectMapping: 0.085500 ms MarkObjects: 3.184100 ms  DeleteObjects: 1.770700 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3240.
+Total: 2.362700 ms (FindLiveObjects: 0.164900 ms CreateObjectMapping: 0.061800 ms MarkObjects: 2.116000 ms  DeleteObjects: 0.018700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002325 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.988 seconds
+Domain Reload Profiling:
+	ReloadAssembly (988ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (869ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (189ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (511ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (438ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.4 MB.
+System memory in use after: 136.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3243.
+Total: 2.476500 ms (FindLiveObjects: 0.164200 ms CreateObjectMapping: 0.058200 ms MarkObjects: 2.235600 ms  DeleteObjects: 0.017300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -432,698 +491,407 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 129.823067 seconds.
-  path: Assets/Art
-  artifactKey: Guid(02f359a9215f58a45ab2491de7865de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art using Guid(02f359a9215f58a45ab2491de7865de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d2bc860636e1853b3ac14f7b9a4ea1') in 0.001235 seconds 
-  Import took 0.004925 seconds .
+  Time since last request: 323.790783 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/MedusaRoll.fbx
+  artifactKey: Guid(086b28868a4153148b727a2d02283f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/MedusaRoll.fbx using Guid(086b28868a4153148b727a2d02283f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe5daa41f685a5a73c700ad624d9855') in 0.188042 seconds 
+  Import took 0.191758 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.623856 seconds.
-  path: Assets/Art/Materials
-  artifactKey: Guid(e626fd06ff216c94395b5a50f7ddba93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Materials using Guid(e626fd06ff216c94395b5a50f7ddba93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '329058aa78d907e79fed49598e53b14e') in 0.001105 seconds 
-  Import took 0.004763 seconds .
+  Time since last request: 35.371532 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield idle.fbx
+  artifactKey: Guid(3d9f17e51d68c87468a023474545ee0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield idle.fbx using Guid(3d9f17e51d68c87468a023474545ee0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46f52249ef47644195e8998127ec8e9e') in 0.005922 seconds 
+  Import took 0.010117 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 65.067466 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa1_obj_obj.fbx
-  artifactKey: Guid(e82dea04b13fa7d4096f0b97f9976924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa1_obj_obj.fbx using Guid(e82dea04b13fa7d4096f0b97f9976924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aa4ff4560d116d8a27c694e147adebd') in 0.266727 seconds 
-  Import took 0.271513 seconds .
+  Time since last request: 38.501278 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield run.fbx
+  artifactKey: Guid(a58871a6ebb47c44d8adea5bf80ba2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield run.fbx using Guid(a58871a6ebb47c44d8adea5bf80ba2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12508a3bf85aa51683704225286d426') in 0.005811 seconds 
+  Import took 0.009415 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005118 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.284 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2285ms)
+		BeginReloadAssembly (212ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (58ms)
+		EndReloadAssembly (1981ms)
+			LoadAssemblies (190ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (447ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (1100ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (154ms)
+				ProcessInitializeOnLoadAttributes (931ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.6 MB.
+System memory in use after: 136.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3282.
+Total: 3.543900 ms (FindLiveObjects: 0.252200 ms CreateObjectMapping: 0.113700 ms MarkObjects: 3.142200 ms  DeleteObjects: 0.034200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013241 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.389 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1390ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1152ms)
+			LoadAssemblies (151ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (345ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (499ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (424ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.7 MB.
+System memory in use after: 136.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3285.
+Total: 2.488000 ms (FindLiveObjects: 0.159100 ms CreateObjectMapping: 0.068300 ms MarkObjects: 2.239700 ms  DeleteObjects: 0.019500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 98.202351 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx
+  artifactKey: Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx using Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3861305250c2e5fdb4350a5a9112266f') in 0.029756 seconds 
+  Import took 0.033247 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.006122 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa1_obj_obj.mtl
-  artifactKey: Guid(8a0ed08fb32bdcf4f85f22bf6c3f87e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa1_obj_obj.mtl using Guid(8a0ed08fb32bdcf4f85f22bf6c3f87e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229ceb01726cba9b6d6f1a7ea6a96234') in 0.002520 seconds 
-  Import took 0.005586 seconds .
+  Time since last request: 13.195393 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx
+  artifactKey: Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx using Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a6116501870b24be75e0bd7763ddabf') in 0.005863 seconds 
+  Import took 0.009473 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005026 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Mono: successfully reloaded assembly
+- Completed reload, in  2.175 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2175ms)
+		BeginReloadAssembly (208ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (1903ms)
+			LoadAssemblies (192ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (406ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (1062ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (147ms)
+				ProcessInitializeOnLoadAttributes (899ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.5 MB.
+System memory in use after: 142.7 MB.
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 3381.
+Total: 4.758700 ms (FindLiveObjects: 0.258200 ms CreateObjectMapping: 0.099500 ms MarkObjects: 3.514800 ms  DeleteObjects: 0.884200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 144.081549 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c6a5a5469c59f238c25546ccb25d0ec') in 0.033890 seconds 
+  Import took 0.041120 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002321 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa1_obj_obj.mtl
-  artifactKey: Guid(8a0ed08fb32bdcf4f85f22bf6c3f87e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa1_obj_obj.mtl using Guid(8a0ed08fb32bdcf4f85f22bf6c3f87e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229ceb01726cba9b6d6f1a7ea6a96234') in 0.001349 seconds 
-  Import took 0.004287 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.615238 seconds.
-  path: Assets/Avatars/Models/Medusa/Materials
-  artifactKey: Guid(47b119ca907a845478c01714e27365c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Materials using Guid(47b119ca907a845478c01714e27365c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3074cff18553519f7098c7dece1a4b8') in 0.002268 seconds 
-  Import took 0.007257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000597 seconds.
-  path: Assets/Avatars/Models/Medusa/Materials
-  artifactKey: Guid(47b119ca907a845478c01714e27365c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Materials using Guid(47b119ca907a845478c01714e27365c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3074cff18553519f7098c7dece1a4b8') in 0.002895 seconds 
-  Import took 0.007587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.131127 seconds.
-  path: Assets/Avatars/Models/Medusa1_obj_obj.fbx
-  artifactKey: Guid(19e29078a0168f6479e8cb3758330e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa1_obj_obj.fbx using Guid(19e29078a0168f6479e8cb3758330e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '006cbf1be1f8d7f1d3172e07e430011d') in 0.186986 seconds 
-  Import took 0.190552 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 51.285393 seconds.
-  path: Assets/Avatars/Models/Medusa1_obj_obj.fbx
-  artifactKey: Guid(19e29078a0168f6479e8cb3758330e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa1_obj_obj.fbx using Guid(19e29078a0168f6479e8cb3758330e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e69fbec911e0f5f2f66851ac259d81') in 0.200338 seconds 
-  Import took 0.204132 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 67.150392 seconds.
-  path: Assets/Avatars/Models/Medusa/textures/Material.004-color.png
-  artifactKey: Guid(3bba50e4c0262314699540cfb472c3d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/textures/Material.004-color.png using Guid(3bba50e4c0262314699540cfb472c3d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57854503ee57e3d7f3e71414df802d17') in 0.031262 seconds 
-  Import took 0.034604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 218.159163 seconds.
-  path: Assets/Avatars/Models/Medusa/textures/snake_4-color.png
-  artifactKey: Guid(132ccc0f4c718ba478ca3d064ec51000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/textures/snake_4-color.png using Guid(132ccc0f4c718ba478ca3d064ec51000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2e938c5210420f9acbda1d27cc7e5a0') in 0.011338 seconds 
-  Import took 0.015312 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.012704 seconds.
-  path: Assets/Avatars/Models/Medusa/textures/snake_4-color.png
-  artifactKey: Guid(132ccc0f4c718ba478ca3d064ec51000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/textures/snake_4-color.png using Guid(132ccc0f4c718ba478ca3d064ec51000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2e938c5210420f9acbda1d27cc7e5a0') in 0.007856 seconds 
-  Import took 0.010970 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 122.173489 seconds.
-  path: Assets/Avatars/Models/Medusa/textures/Tube-color.png
-  artifactKey: Guid(c7151c86c7d21af42ad373b047038208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/textures/Tube-color.png using Guid(c7151c86c7d21af42ad373b047038208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c139399a4a6e68f22f55c0c8db3b452') in 0.007242 seconds 
-  Import took 0.010371 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.019301 seconds.
-  path: Assets/Avatars/Models/Medusa/textures/Tube-color.png
-  artifactKey: Guid(c7151c86c7d21af42ad373b047038208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/textures/Tube-color.png using Guid(c7151c86c7d21af42ad373b047038208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c139399a4a6e68f22f55c0c8db3b452') in 0.011741 seconds 
-  Import took 0.015296 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 179.797768 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa.prefab
-  artifactKey: Guid(393994d5a8c663641a32ffd5cd576b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa.prefab using Guid(393994d5a8c663641a32ffd5cd576b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd567f62b2b747981ee9bc42b1c159fb0') in 0.126784 seconds 
-  Import took 0.137187 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.161438 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_move/draw sword 1.fbx
-  artifactKey: Guid(f90ab3b92624f5b4e9da2d9d114db6cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_move/draw sword 1.fbx using Guid(f90ab3b92624f5b4e9da2d9d114db6cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e31de746f1e885cddb094600607f8d23') in 0.006650 seconds 
-  Import took 0.010239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015257 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_move/draw sword 1.fbx
-  artifactKey: Guid(f90ab3b92624f5b4e9da2d9d114db6cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_move/draw sword 1.fbx using Guid(f90ab3b92624f5b4e9da2d9d114db6cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e31de746f1e885cddb094600607f8d23') in 0.006471 seconds 
-  Import took 0.009960 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 43.099842 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_move/draw sword 2.fbx
-  artifactKey: Guid(4bdfa07708747d241af3fad832cf428c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_move/draw sword 2.fbx using Guid(4bdfa07708747d241af3fad832cf428c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '690ec951f94fc190830d6e5d15c816bb') in 0.005975 seconds 
-  Import took 0.009186 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 57.012338 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa1_obj_obj.fbx
-  artifactKey: Guid(19e29078a0168f6479e8cb3758330e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa1_obj_obj.fbx using Guid(19e29078a0168f6479e8cb3758330e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d42b6e263d0f8d2bcc626b19ea4130') in 0.207580 seconds 
-  Import took 0.211219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.031668 seconds.
-  path: Assets/Avatars/Models/Medusa/Origin_Medusa1_obj_obj.fbx
-  artifactKey: Guid(19e29078a0168f6479e8cb3758330e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Origin_Medusa1_obj_obj.fbx using Guid(19e29078a0168f6479e8cb3758330e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8b179b117a1152c7ee72852985bb40') in 0.188979 seconds 
-  Import took 0.192968 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.652984 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack
-  artifactKey: Guid(e76f1b35b65510b428f3bdcbc89dc585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack using Guid(e76f1b35b65510b428f3bdcbc89dc585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5d2cbbb0f0f74e81c20c66fbb592c1e') in 0.001165 seconds 
-  Import took 0.004218 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.484803 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 1.fbx
-  artifactKey: Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 1.fbx using Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '679ffad80191c06617cb309ad0b3f429') in 0.006939 seconds 
-  Import took 0.010215 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010977 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 1.fbx
-  artifactKey: Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 1.fbx using Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '679ffad80191c06617cb309ad0b3f429') in 0.006178 seconds 
-  Import took 0.009628 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.000777 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 2.fbx
-  artifactKey: Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 2.fbx using Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59fd45d58ea7b74d92bebc881d4016d0') in 0.005825 seconds 
-  Import took 0.009253 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.012063 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 2.fbx
-  artifactKey: Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 2.fbx using Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59fd45d58ea7b74d92bebc881d4016d0') in 0.006581 seconds 
-  Import took 0.010094 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 181.090533 seconds.
-  path: Assets/Animator/Actor.controller
-  artifactKey: Guid(559b235b409914c4f9a2892301afd36c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Actor.controller using Guid(559b235b409914c4f9a2892301afd36c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '870af3e7e826936bfd5e5231b2327c39') in 0.016518 seconds 
-  Import took 0.021888 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.917246 seconds.
+  Time since last request: 132.946030 seconds.
   path: Assets/Animator/Medusa.controller
   artifactKey: Guid(65fd6eb109cf6ab4eaa4421584a6a251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Medusa.controller using Guid(65fd6eb109cf6ab4eaa4421584a6a251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea92e943791668b84e9b3245f7118d5') in 0.001640 seconds 
-  Import took 0.005114 seconds .
+Start importing Assets/Animator/Medusa.controller using Guid(65fd6eb109cf6ab4eaa4421584a6a251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '838ddc594de677846d80f95f27c15381') in 0.018811 seconds 
+  Import took 0.028859 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 37.749759 seconds.
-  path: Assets/Avatars/Models/YBot/ybot.fbx
-  artifactKey: Guid(2f9d958fbcd96e44ca35a77a15e3187a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/YBot/ybot.fbx using Guid(2f9d958fbcd96e44ca35a77a15e3187a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46a0546aa7402d416080eb2fbb5eee9e') in 0.101031 seconds 
-  Import took 0.104437 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002466 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.014 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1014ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (883ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (177ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (518ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (442ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.6 MB.
+System memory in use after: 142.7 MB.
 
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3384.
+Total: 2.993800 ms (FindLiveObjects: 0.171100 ms CreateObjectMapping: 0.079800 ms MarkObjects: 2.234000 ms  DeleteObjects: 0.507700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 39.439284 seconds.
-  path: Assets/Avatars/Models/Medusa/Origin_Medusa1_obj_obj.fbx
-  artifactKey: Guid(19e29078a0168f6479e8cb3758330e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Origin_Medusa1_obj_obj.fbx using Guid(19e29078a0168f6479e8cb3758330e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a77e0571e5a9afe9957d5e9e194b9dbd') in 0.209836 seconds 
-  Import took 0.213640 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002835 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.977 seconds
+Domain Reload Profiling:
+	ReloadAssembly (977ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (839ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (180ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (491ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (415ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.6 MB.
+System memory in use after: 142.7 MB.
 
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 3387.
+Total: 2.975900 ms (FindLiveObjects: 0.214600 ms CreateObjectMapping: 0.095600 ms MarkObjects: 2.165600 ms  DeleteObjects: 0.499000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 358.906202 seconds.
-  path: Assets/Animator/Actor.controller
-  artifactKey: Guid(559b235b409914c4f9a2892301afd36c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Actor.controller using Guid(559b235b409914c4f9a2892301afd36c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b00a1a05db2a65e22c3c41b0fb29d8e5') in 0.006244 seconds 
-  Import took 0.010715 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005687 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.111 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2112ms)
+		BeginReloadAssembly (156ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (1884ms)
+			LoadAssemblies (146ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (364ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (1148ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (152ms)
+				ProcessInitializeOnLoadAttributes (977ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.6 MB.
+System memory in use after: 142.8 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 37.275751 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/Medusa1_obj_obj.fbx
-  artifactKey: Guid(dec8015793e3c404780cf8c91c6f5ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/Medusa1_obj_obj.fbx using Guid(dec8015793e3c404780cf8c91c6f5ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '641f36cd2eca4c5628135cd690680953') in 0.233354 seconds 
-  Import took 0.237596 seconds .
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 3390.
+Total: 4.546500 ms (FindLiveObjects: 0.250500 ms CreateObjectMapping: 0.099700 ms MarkObjects: 3.218500 ms  DeleteObjects: 0.976100 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 1.679681 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sheath sword 1.fbx
-  artifactKey: Guid(ce29ca9dd00a1324f93aa0f70074bdde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sheath sword 1.fbx using Guid(ce29ca9dd00a1324f93aa0f70074bdde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f65352cf2861e0869a6334e3e9e10c24') in 0.049035 seconds 
-  Import took 0.052566 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.688169 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sheath sword 2.fbx
-  artifactKey: Guid(9c302b7c93d18ee408061423b32ff25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sheath sword 2.fbx using Guid(9c302b7c93d18ee408061423b32ff25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30168f908be08b5ef7b9e42ad8165653') in 0.006006 seconds 
-  Import took 0.009595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011530 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sheath sword 2.fbx
-  artifactKey: Guid(9c302b7c93d18ee408061423b32ff25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sheath sword 2.fbx using Guid(9c302b7c93d18ee408061423b32ff25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30168f908be08b5ef7b9e42ad8165653') in 0.005661 seconds 
-  Import took 0.009102 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.284264 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sword and shield 180 turn (2).fbx
-  artifactKey: Guid(50ffaddec0462a349ba9e5074311cbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sword and shield 180 turn (2).fbx using Guid(50ffaddec0462a349ba9e5074311cbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902184981737ecf738c541ab2c25054f') in 0.016961 seconds 
-  Import took 0.020609 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004318 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sword and shield 180 turn (2).fbx
-  artifactKey: Guid(50ffaddec0462a349ba9e5074311cbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sword and shield 180 turn (2).fbx using Guid(50ffaddec0462a349ba9e5074311cbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902184981737ecf738c541ab2c25054f') in 0.005829 seconds 
-  Import took 0.009289 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.234358 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 1.fbx
-  artifactKey: Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 1.fbx using Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7af8b9975b815119a55eacae61dc78') in 0.006342 seconds 
-  Import took 0.010387 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010263 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 1.fbx
-  artifactKey: Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 1.fbx using Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7af8b9975b815119a55eacae61dc78') in 0.005568 seconds 
-  Import took 0.008843 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.977398 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 2.fbx
-  artifactKey: Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 2.fbx using Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c11afbc0928d6d83db6a5e6aafba146') in 0.006220 seconds 
-  Import took 0.009987 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003936 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 2.fbx
-  artifactKey: Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 2.fbx using Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c11afbc0928d6d83db6a5e6aafba146') in 0.006244 seconds 
-  Import took 0.010352 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.480110 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sheath sword 1.fbx
-  artifactKey: Guid(ce29ca9dd00a1324f93aa0f70074bdde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sheath sword 1.fbx using Guid(ce29ca9dd00a1324f93aa0f70074bdde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1b06d44b080dfdd1d9151e808656c5') in 0.007755 seconds 
-  Import took 0.012130 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010785 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sheath sword 1.fbx
-  artifactKey: Guid(ce29ca9dd00a1324f93aa0f70074bdde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sheath sword 1.fbx using Guid(ce29ca9dd00a1324f93aa0f70074bdde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1b06d44b080dfdd1d9151e808656c5') in 0.009126 seconds 
-  Import took 0.012848 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.435039 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sword and shield 180 turn.fbx
-  artifactKey: Guid(c51b44590f85ae04b84af37fe6ac466d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sword and shield 180 turn.fbx using Guid(c51b44590f85ae04b84af37fe6ac466d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25b939ac1441846ca0a0e11dba95300') in 0.018529 seconds 
-  Import took 0.021997 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.563263 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sword and shield attack (3).fbx
-  artifactKey: Guid(c088854a993dc0446bd97ac3dfc90ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sword and shield attack (3).fbx using Guid(c088854a993dc0446bd97ac3dfc90ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efad93472171ccadcce7071868d65d8e') in 0.017062 seconds 
-  Import took 0.020442 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000826 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sword and shield attack (3).fbx
-  artifactKey: Guid(c088854a993dc0446bd97ac3dfc90ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/sword and shield attack (3).fbx using Guid(c088854a993dc0446bd97ac3dfc90ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efad93472171ccadcce7071868d65d8e') in 0.006566 seconds 
-  Import took 0.009966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.437373 seconds.
-  path: Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 1.fbx
-  artifactKey: Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Pro Sword and Shield Pack/draw sword 1.fbx using Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a42b924cacc5ac427b07c1e447d16d') in 0.006582 seconds 
-  Import took 0.010139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 63.778815 seconds.
-  path: Assets/Animator/Medusa.controller
-  artifactKey: Guid(65fd6eb109cf6ab4eaa4421584a6a251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animator/Medusa.controller using Guid(65fd6eb109cf6ab4eaa4421584a6a251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ee2e59087baf9a97d30438b2bbfe24') in 0.001909 seconds 
-  Import took 0.005800 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.861073 seconds.
-  path: Assets/Avatars
-  artifactKey: Guid(92927a4e8b20c494e86183df1a47c817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars using Guid(92927a4e8b20c494e86183df1a47c817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88305ca4c6ea9e5d4683d9bda066bc19') in 0.001270 seconds 
-  Import took 0.004428 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 56.573811 seconds.
-  path: Assets/Avatars/Models/YBot/Extra/ybot@Falling Idle.fbx
-  artifactKey: Guid(940d0386ef4a1ff4cb04aae7e422eccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/YBot/Extra/ybot@Falling Idle.fbx using Guid(940d0386ef4a1ff4cb04aae7e422eccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47167c2637626e0b3a0e49bd219920bc') in 0.007311 seconds 
-  Import took 0.010792 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.430622 seconds.
-  path: Assets/Avatars/Models/YBot/Extra/ybot@Falling Idle.fbx
-  artifactKey: Guid(940d0386ef4a1ff4cb04aae7e422eccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/YBot/Extra/ybot@Falling Idle.fbx using Guid(940d0386ef4a1ff4cb04aae7e422eccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19903a1252019c678707a79b4f0eed87') in 0.006174 seconds 
-  Import took 0.009643 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.341782 seconds.
-  path: Assets/Avatars/Models/YBot/Extra/ybot@Falling Idle.fbx
-  artifactKey: Guid(940d0386ef4a1ff4cb04aae7e422eccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/YBot/Extra/ybot@Falling Idle.fbx using Guid(940d0386ef4a1ff4cb04aae7e422eccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd93c20dc686f5a000fd622eb7accb6bf') in 0.005611 seconds 
-  Import took 0.008917 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.416534 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move
-  artifactKey: Guid(e76f1b35b65510b428f3bdcbc89dc585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move using Guid(e76f1b35b65510b428f3bdcbc89dc585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e943829b6dbae88cab5540fd44f4d0f0') in 0.001189 seconds 
-  Import took 0.004358 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.662935 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/draw sword 1.fbx
-  artifactKey: Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/draw sword 1.fbx using Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e171c6c58e847a21e3930c566c0bca') in 0.010317 seconds 
-  Import took 0.014486 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 33.563058 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/Medusa1_obj_obj.fbx
-  artifactKey: Guid(dec8015793e3c404780cf8c91c6f5ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/Medusa1_obj_obj.fbx using Guid(dec8015793e3c404780cf8c91c6f5ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407655c1f949da53577c1b2f22ceee39') in 0.153278 seconds 
-  Import took 0.156997 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.257179 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sheath sword 2.fbx
-  artifactKey: Guid(9c302b7c93d18ee408061423b32ff25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sheath sword 2.fbx using Guid(9c302b7c93d18ee408061423b32ff25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9477af912c71d118cdec024bcfd1fbe') in 0.006594 seconds 
-  Import took 0.010136 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010034 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sheath sword 2.fbx
-  artifactKey: Guid(9c302b7c93d18ee408061423b32ff25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sheath sword 2.fbx using Guid(9c302b7c93d18ee408061423b32ff25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9477af912c71d118cdec024bcfd1fbe') in 0.005880 seconds 
-  Import took 0.009246 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.408930 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield 180 turn (2).fbx
-  artifactKey: Guid(50ffaddec0462a349ba9e5074311cbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield 180 turn (2).fbx using Guid(50ffaddec0462a349ba9e5074311cbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58aa70ef6dffe8b683fc00cf4ddbe52') in 0.005991 seconds 
-  Import took 0.009297 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.089091 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield impact (2).fbx
-  artifactKey: Guid(38953e0b8676ad74681c88b45a08c796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield impact (2).fbx using Guid(38953e0b8676ad74681c88b45a08c796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f9da184b90a0870f22d2a4b83d4970') in 0.048709 seconds 
-  Import took 0.052347 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.573613 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield impact (2).fbx
-  artifactKey: Guid(38953e0b8676ad74681c88b45a08c796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield impact (2).fbx using Guid(38953e0b8676ad74681c88b45a08c796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f35c7c82ddbda9f733a5202c8d17a386') in 0.007341 seconds 
-  Import took 0.010762 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.081946 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield impact (2).fbx
-  artifactKey: Guid(38953e0b8676ad74681c88b45a08c796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield impact (2).fbx using Guid(38953e0b8676ad74681c88b45a08c796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f35c7c82ddbda9f733a5202c8d17a386') in 0.006013 seconds 
-  Import took 0.009354 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.574702 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield slash (4).fbx
-  artifactKey: Guid(011f8199e2ba5ae4c899061b5ba86b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield slash (4).fbx using Guid(011f8199e2ba5ae4c899061b5ba86b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46453443585838e7e503e73863ac2199') in 0.017353 seconds 
-  Import took 0.020922 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.009864 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield slash (4).fbx
-  artifactKey: Guid(011f8199e2ba5ae4c899061b5ba86b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield slash (4).fbx using Guid(011f8199e2ba5ae4c899061b5ba86b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46453443585838e7e503e73863ac2199') in 0.006515 seconds 
-  Import took 0.010588 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.945775 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield slash.fbx
-  artifactKey: Guid(beb5d56105652f740a02f2b9fd0ed3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield slash.fbx using Guid(beb5d56105652f740a02f2b9fd0ed3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c3f16a3b6b249b665b785fdd6feb8f5') in 0.006609 seconds 
-  Import took 0.010158 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.009912 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield slash.fbx
-  artifactKey: Guid(beb5d56105652f740a02f2b9fd0ed3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield slash.fbx using Guid(beb5d56105652f740a02f2b9fd0ed3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c3f16a3b6b249b665b785fdd6feb8f5') in 0.006343 seconds 
-  Import took 0.010100 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.922740 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/draw sword 2.fbx
-  artifactKey: Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/draw sword 2.fbx using Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6757b373cb6e70514109146778a20172') in 0.006058 seconds 
-  Import took 0.009795 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015530 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/draw sword 2.fbx
-  artifactKey: Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/draw sword 2.fbx using Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6757b373cb6e70514109146778a20172') in 0.005654 seconds 
-  Import took 0.008944 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.161703 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sheath sword 1.fbx
-  artifactKey: Guid(ce29ca9dd00a1324f93aa0f70074bdde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sheath sword 1.fbx using Guid(ce29ca9dd00a1324f93aa0f70074bdde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf75be8309c0796448adb906d980de1') in 0.006699 seconds 
-  Import took 0.010073 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 45.373889 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/draw sword 1.fbx
-  artifactKey: Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/draw sword 1.fbx using Guid(013ed44597fd0ba4fabbfa1c002d4a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6f41798cd8129bb6309c66c4d0eaaa7') in 0.006110 seconds 
-  Import took 0.010262 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.922320 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/draw sword 2.fbx
-  artifactKey: Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/draw sword 2.fbx using Guid(8ff3187bd6b742640aea0997df0d756f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f361e6bfa6410262a9683da21c79e542') in 0.006176 seconds 
-  Import took 0.010474 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.958172 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/Medusa1_obj_obj.fbx
-  artifactKey: Guid(dec8015793e3c404780cf8c91c6f5ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/Medusa1_obj_obj.fbx using Guid(dec8015793e3c404780cf8c91c6f5ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1d933cbcd70ac784eb3bb24b77c0bd') in 0.106925 seconds 
-  Import took 0.110702 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.791784 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sheath sword 2.fbx
-  artifactKey: Guid(9c302b7c93d18ee408061423b32ff25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sheath sword 2.fbx using Guid(9c302b7c93d18ee408061423b32ff25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad4da81846b6fd88d5637bd0b0cf9e52') in 0.007141 seconds 
-  Import took 0.010463 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.592792 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield 180 turn (2).fbx
-  artifactKey: Guid(50ffaddec0462a349ba9e5074311cbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield 180 turn (2).fbx using Guid(50ffaddec0462a349ba9e5074311cbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e908854b80f223aa81592aadb87e875') in 0.009394 seconds 
-  Import took 0.014826 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.284837 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield attack (2).fbx
-  artifactKey: Guid(568418652f4ccbd4ca783de89a9274f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield attack (2).fbx using Guid(568418652f4ccbd4ca783de89a9274f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dcb3b606a4e31700fd86fd84445dd10') in 0.018762 seconds 
-  Import took 0.022235 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001012 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield attack (2).fbx
-  artifactKey: Guid(568418652f4ccbd4ca783de89a9274f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield attack (2).fbx using Guid(568418652f4ccbd4ca783de89a9274f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dcb3b606a4e31700fd86fd84445dd10') in 0.006285 seconds 
-  Import took 0.009604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.639291 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield attack (2).fbx
-  artifactKey: Guid(568418652f4ccbd4ca783de89a9274f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield attack (2).fbx using Guid(568418652f4ccbd4ca783de89a9274f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b2e35300e79bda62eb0320c1c94d47') in 0.006171 seconds 
-  Import took 0.009750 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.774662 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield run (2).fbx
-  artifactKey: Guid(abd895006465b7c4d969175d9a82c364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield run (2).fbx using Guid(abd895006465b7c4d969175d9a82c364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb1c25a68d0d57d7afbef5c170e812b') in 0.017038 seconds 
-  Import took 0.020364 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.019685 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield run (2).fbx
-  artifactKey: Guid(abd895006465b7c4d969175d9a82c364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield run (2).fbx using Guid(abd895006465b7c4d969175d9a82c364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb1c25a68d0d57d7afbef5c170e812b') in 0.006081 seconds 
-  Import took 0.009597 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.458839 seconds.
-  path: Assets/Avatars/Models/YBot/Extra/ybot@Jump.fbx
-  artifactKey: Guid(1cc9796b6b1175249913d46932d63e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/YBot/Extra/ybot@Jump.fbx using Guid(1cc9796b6b1175249913d46932d63e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e566b57e67e5699e726177443012e7f') in 0.005780 seconds 
-  Import took 0.009196 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.713588 seconds.
-  path: Assets/Avatars/Models/YBot/Extra/ybot@Sprinting Forward Roll.fbx
-  artifactKey: Guid(45c08939dd8d0db43ac4897f4ee4a8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/YBot/Extra/ybot@Sprinting Forward Roll.fbx using Guid(45c08939dd8d0db43ac4897f4ee4a8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a46113a0a6ddfb98c35a61e251bfe4d9') in 0.007190 seconds 
-  Import took 0.010583 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 465.872694 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/MedusaRoll.fbx
-  artifactKey: Guid(086b28868a4153148b727a2d02283f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/MedusaRoll.fbx using Guid(086b28868a4153148b727a2d02283f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80f0de0a7b1cff6d18df7ff66a8cff0') in 0.234699 seconds 
-  Import took 0.239517 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.498225 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/MedusaFalling.fbx
-  artifactKey: Guid(cebc65e21decb4a478138318260063b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/MedusaFalling.fbx using Guid(cebc65e21decb4a478138318260063b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e3a7099ff19f6ab395f746afc1d60a2') in 0.096264 seconds 
-  Import took 0.100464 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.505934 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/MedusaFalling.fbx
-  artifactKey: Guid(cebc65e21decb4a478138318260063b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/MedusaFalling.fbx using Guid(cebc65e21decb4a478138318260063b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a08b7566058f53df3a227c3e4047c20') in 0.185440 seconds 
-  Import took 0.189584 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.987529 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/MedusaRoll.fbx
-  artifactKey: Guid(086b28868a4153148b727a2d02283f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/MedusaRoll.fbx using Guid(086b28868a4153148b727a2d02283f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e52c2426c83b343a193578b58950f70') in 0.221032 seconds 
-  Import took 0.224860 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.688961 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/MedusaRoll.fbx
-  artifactKey: Guid(086b28868a4153148b727a2d02283f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/MedusaRoll.fbx using Guid(086b28868a4153148b727a2d02283f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3909c9b66277b8116d6d0f947c0d922e') in 0.210805 seconds 
-  Import took 0.214685 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.596810 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/MedusaJumping.fbx
-  artifactKey: Guid(8ec3c30be3c0d0248a9909527735b8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/MedusaJumping.fbx using Guid(8ec3c30be3c0d0248a9909527735b8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73bcb7e66f7188a0f4f96b6c0fd373b6') in 0.098690 seconds 
-  Import took 0.102871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.891120 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/MedusaJumping.fbx
-  artifactKey: Guid(8ec3c30be3c0d0248a9909527735b8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/MedusaJumping.fbx using Guid(8ec3c30be3c0d0248a9909527735b8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a65e9e60a746c2adb7bf04c952b65a') in 0.197521 seconds 
-  Import took 0.201374 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.096404 seconds.
-  path: Assets/Avatars/Models/Medusa/Medusa_Move/MedusaFalling.fbx
-  artifactKey: Guid(cebc65e21decb4a478138318260063b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Avatars/Models/Medusa/Medusa_Move/MedusaFalling.fbx using Guid(cebc65e21decb4a478138318260063b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e869e1b5f0c762fd565d88560a605260') in 0.224393 seconds 
-  Import took 0.228356 seconds .
-
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
