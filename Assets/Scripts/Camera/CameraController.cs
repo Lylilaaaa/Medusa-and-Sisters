@@ -32,8 +32,8 @@ namespace Camera
         {
             //分别旋转x轴与y轴
             Vector3 tempModelEuler = model.transform.eulerAngles;
-            playerHandler.transform.Rotate(Vector3.up,pi.Jright*horizontalSpeed*Time.deltaTime);
-            tempEulerX -= pi.Jup * verticalSpeed * Time.deltaTime;
+            playerHandler.transform.Rotate(Vector3.up,pi.Jright*horizontalSpeed*Time.fixedDeltaTime);
+            tempEulerX -= pi.Jup * verticalSpeed * Time.fixedDeltaTime;
             tempEulerX = Mathf.Clamp(tempEulerX, -40, 30);
             cameraHandler.transform.localEulerAngles = new Vector3(tempEulerX, 0, 0);
             
@@ -43,6 +43,11 @@ namespace Camera
             //摄像机追踪来达到lerp的效果
             camera.transform.position = Vector3.Lerp(camera.transform.position, transform.position, 0.15f);
             camera.transform.eulerAngles = transform.eulerAngles;
+            // if (pi.Jright == 0 && pi.Jup == 0)
+            // {
+            //     transform.eulerAngles = new Vector3(transform.eulerAngles.x, tempModelEuler.y, transform.eulerAngles.z);
+            //     camera.transform.eulerAngles =  Vector3.Lerp(camera.transform.eulerAngles, transform.eulerAngles, 0.0000000001f);
+            // }
         }
     }
 }

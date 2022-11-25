@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
@@ -37,6 +34,9 @@ public class PlayerInput : MonoBehaviour
     //2. trigger signal
     public bool jump;
     private bool lastJump;
+    
+    public bool attack;
+    private bool lastAttack;
 
     public bool froll;
     private bool lastroll;
@@ -89,6 +89,17 @@ public class PlayerInput : MonoBehaviour
             jump = false;
         }
         lastJump = newJump;
+        
+        bool newAttack = Input.GetKey(KeyD);
+        if (newAttack != lastAttack && newAttack == true)
+        {
+            attack = true;
+        }
+        else
+        {
+            attack = false;
+        }
+        lastAttack = newAttack;
         
         bool newRoll = Input.GetKey(KeyC);
         if (newRoll != lastroll && newRoll == true)
