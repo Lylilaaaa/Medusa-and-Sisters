@@ -6,7 +6,7 @@ namespace Player
     public class ActorController : MonoBehaviour
     {
 
-        private PlayerInput pi;
+        public IUserInput pi;
         private Animator anim;
         private Rigidbody rigi;
         public GameObject model;
@@ -37,7 +37,15 @@ namespace Player
 
         private void Awake()
         {
-            pi = GetComponent<PlayerInput>();
+            IUserInput[]inputs = GetComponents<IUserInput>();
+            foreach (var input in inputs)
+            {
+                if (input.enabled == true)
+                {
+                    pi = input;
+                    break;
+                }
+            }
             anim = model.GetComponent<Animator>();
             rigi = GetComponent<Rigidbody>();
             col = GetComponent<CapsuleCollider>();
@@ -148,10 +156,7 @@ namespace Player
         { 
             anim.SetBool("isGround",true);
         }
-
-        public void OnJabEnter()
-        {
-        }
+        
 
         public void OnJabUpdate()
         {

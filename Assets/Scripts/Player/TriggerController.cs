@@ -12,7 +12,8 @@ namespace Player
         public void ResetTrigger(string triggerName)
         {
             anim.ResetTrigger(triggerName);
-            print("reset!");
+            //print("reset!");
         }
+
     }
 }

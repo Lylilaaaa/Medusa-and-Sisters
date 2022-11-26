@@ -8,7 +8,7 @@ namespace Camera
 {
     public class CameraController : MonoBehaviour
     {
-        public PlayerInput pi;
+        private IUserInput pi;
         public float horizontalSpeed = 100f;
         public float verticalSpeed = 80.0f;
 
@@ -18,12 +18,14 @@ namespace Camera
         private GameObject model;
         private GameObject camera;
 
-        private void Awake()
+        private void Start()
         {
             cameraHandler = transform.parent.gameObject;
             playerHandler = cameraHandler.transform.parent.gameObject;
             tempEulerX = 20;
-            model = playerHandler.GetComponent<ActorController>().model;
+            ActorController ac = playerHandler.GetComponent<ActorController>();
+            model = ac.model;
+            pi = ac.pi;
             //获取main camera！！
             camera = UnityEngine.Camera.main.gameObject;
         }
@@ -43,11 +45,8 @@ namespace Camera
             //摄像机追踪来达到lerp的效果
             camera.transform.position = Vector3.Lerp(camera.transform.position, transform.position, 0.15f);
             camera.transform.eulerAngles = transform.eulerAngles;
-            // if (pi.Jright == 0 && pi.Jup == 0)
-            // {
-            //     transform.eulerAngles = new Vector3(transform.eulerAngles.x, tempModelEuler.y, transform.eulerAngles.z);
-            //     camera.transform.eulerAngles =  Vector3.Lerp(camera.transform.eulerAngles, transform.eulerAngles, 0.0000000001f);
-            // }
+            //防止眩晕抖动
+            camera.transform.LookAt(cameraHandler.transform);
         }
     }
 }
