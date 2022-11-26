@@ -22,7 +22,7 @@ reminder: the rotation of the plane should be bigger than 80 degree! //or the av
 
 最基础：能够攻击一下，走路，跳跃，jab（原地跳跃），移动视角
 
-canRun → （学会连招）canComboA1 → canComboA2 → （翻滚无敌）canRoll → （学会躲避）canRollDistance → （跳跃和翻滚中间可以加攻击）canFreeAttack
+jab能够闪避 → canRun → （学会连招）canComboA1 → canComboA2 → （翻滚无敌）canRoll → （学会躲避）canRollDistance → （跳跃和翻滚中间可以加攻击）canFreeAttack
 
 =============== 开发日志 ==================
 
