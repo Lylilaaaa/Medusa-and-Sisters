@@ -16,8 +16,23 @@ namespace Player
         
         public string axisJright = "axis4";
         public string axisJup = "axis5";
+
+        private MyButton BottonRun = new MyButton();
+        private MyButton BottonJump = new MyButton();
+        private MyButton BottonRoll = new MyButton();
+        private MyButton BottonAttack = new MyButton();
+        
         private void Update()
         {
+            BottonRun.Tick(Input.GetButton(Run));
+            BottonJump.Tick(Input.GetButton(Jump));
+            BottonRoll.Tick(Input.GetButton(Roll));
+            BottonAttack.Tick(Input.GetButton(Attack));
+            
+            //print("bottonRun: "+BottonRun.IsPressing);
+            //print("run.onpressed: "+ BottonRun.OnPressed);
+            print("run.isExtending: "+BottonRun.IsExtending );
+            
             Jup = -Input.GetAxis(axisJup);
             Jright = Input.GetAxis(axisJright);
             
@@ -40,40 +55,26 @@ namespace Player
             Dmag = Mathf.Sqrt((Dup2 * Dup2) + (Dright2 * Dright2));
             Dvec = Dup2 * transform.forward + Dright2 * transform.right;
             
-            run = Input.GetButton(Run);
+            //原始的输入系统：
+            //run = Input.GetButton(Run);
             
-            bool newJump = Input.GetButton(Jump);
-            if (newJump != lastJump && newJump == true)
-            {
-                jump = true;
-            }
-            else
-            {
-                jump = false;
-            }
-            lastJump = newJump;
-        
-            bool newAttack = Input.GetButton(Attack);
-            if (newAttack != lastAttack && newAttack == true)
-            {
-                attack = true;
-            }
-            else
-            {
-                attack = false;
-            }
-            lastAttack = newAttack;
-        
-            bool newRoll = Input.GetButton(Roll);
-            if (newRoll != lastroll && newRoll == true)
-            {
-                froll = true;
-            }
-            else
-            {
-                froll = false;
-            }
-            lastroll = newRoll;
+            // bool newJump = Input.GetButton(Jump);
+            // if (newJump != lastJump && newJump == true)
+            // {
+            //     jump = true;
+            // }
+            // else
+            // {
+            //     jump = false;
+            // }
+            // lastJump = newJump;
+    
+            //加入了Botton的抽象类之后按键输入系统：
+            run = BottonRun.IsPressing;
+
+            attack = BottonAttack.OnPressed;
+            froll = BottonRoll.OnPressed;
+            jump = BottonJump.OnPressed;
         }
 
     }

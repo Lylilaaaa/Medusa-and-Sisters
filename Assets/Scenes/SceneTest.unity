@@ -177,7 +177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 101614253}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: weaponHandle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -949,7 +949,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877365730}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bd4f971bfabcd447b76950dae21dff3, type: 3}
   m_Name: 
@@ -970,13 +970,19 @@ MonoBehaviour:
   keyRight: d
   keyLeft: a
   KeyA: left shift
-  KeyB: k
-  KeyC: l
-  KeyD: j
+  KeyJump: k
+  KeyRoll: l
+  KeyAttack: j
   KeyJUp: up
   KeyJDown: down
   KeyJRight: right
   KeyJLeft: left
+  mouseEnable: 1
+  mouseSensitivityX: 1
+  mouseSensitivityY: 1
+  mouseJump: f
+  mouseRoll: mouse 1
+  mouseAttack: mouse 0
 --- !u!136 &877365732
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1324,9 +1330,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101614253}
     m_Modifications:
+    - target: {fileID: 100000, guid: 6534b97b1aadefc4b8596de0f7002bed, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 6534b97b1aadefc4b8596de0f7002bed, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 6534b97b1aadefc4b8596de0f7002bed, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 6534b97b1aadefc4b8596de0f7002bed, type: 3}
       propertyPath: m_Name
       value: Medusa_Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 6534b97b1aadefc4b8596de0f7002bed, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6534b97b1aadefc4b8596de0f7002bed, type: 3}
       propertyPath: m_LocalScale.x
@@ -1490,6 +1512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medusa_Shield
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fd1b88e1e9c82dc47a571a9e2b8fb1b8, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fd1b88e1e9c82dc47a571a9e2b8fb1b8, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1562,7 +1588,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1887905190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShieldHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}

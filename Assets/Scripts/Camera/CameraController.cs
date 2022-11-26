@@ -28,6 +28,8 @@ namespace Camera
             pi = ac.pi;
             //获取main camera！！
             camera = UnityEngine.Camera.main.gameObject;
+
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         private void FixedUpdate()

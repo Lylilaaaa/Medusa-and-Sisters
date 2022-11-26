@@ -12,20 +12,54 @@ namespace Player
         public string keyLeft = "a";
     
         public string KeyA;
-        public string KeyB;
-        public string KeyC;
-        public string KeyD;
-    
+        public string KeyJump = "k";
+        public string KeyRoll = "l";
+        public string KeyAttack = "j";
+        
         public string KeyJUp;
         public string KeyJDown;
         public string KeyJRight;
         public string KeyJLeft;
-    
+
+        [Header("===== Mouse Settings =====")]
+        public bool mouseEnable = true;
+        public float mouseSensitivityX = 1.0f;
+        public float mouseSensitivityY = 1.0f;
+
+        public string mouseJump = "f";
+        public string mouseRoll = "mouse 1";
+        public string mouseAttack = "mouse 0";
+        
+        private MyButton BottonKeyA = new MyButton();
+        private MyButton BottonKeyJump = new MyButton();
+        private MyButton BottonKeyRoll = new MyButton();
+        private MyButton BottonKeyAttack = new MyButton();
+        
+        private MyButton BottonMouseJump = new MyButton();
+        private MyButton BottonMouseRoll = new MyButton();
+        private MyButton BottonMouseAttack = new MyButton();
+
         void Update()
         {
-            Jup = (Input.GetKey(KeyJUp) ? 1.0f : 0f) - (Input.GetKey(KeyJDown) ? 1.0f : 0f);
-            Jright = (Input.GetKey(KeyJRight) ? 1.0f : 0f) - (Input.GetKey(KeyJLeft) ? 1.0f : 0f);
-            
+            BottonKeyA.Tick(Input.GetKey(KeyA));
+            BottonKeyJump.Tick(Input.GetKey(KeyJump));
+            BottonKeyRoll.Tick(Input.GetKey(KeyRoll));
+            BottonKeyAttack.Tick(Input.GetKey(KeyAttack));
+            BottonMouseJump.Tick(Input.GetKey(mouseJump));
+            BottonMouseRoll.Tick(Input.GetKey(mouseRoll));
+            BottonMouseAttack.Tick(Input.GetKey(mouseAttack));
+
+            if (mouseEnable)
+            {
+                Jup = Input.GetAxis("Mouse Y") * 2.5f * mouseSensitivityY;
+                Jright = Input.GetAxis("Mouse X") * 3.0f * mouseSensitivityX;
+            }
+            else
+            {
+                Jup = (Input.GetKey(KeyJUp) ? 1.0f : 0f) - (Input.GetKey(KeyJDown) ? 1.0f : 0f);
+                Jright = (Input.GetKey(KeyJRight) ? 1.0f : 0f) - (Input.GetKey(KeyJLeft) ? 1.0f : 0f);
+            }
+
             //移动处理
             targetDup = ((Input.GetKey(keyUp) ? 1.0f : 0) - (Input.GetKey(keyDown) ? 1.0f : 0));
             targetDright = ((Input.GetKey(keyRight) ? 1.0f : 0) - (Input.GetKey(keyLeft) ? 1.0f : 0));
@@ -50,41 +84,23 @@ namespace Player
             // ===== due with signal types ===== //
             
             //buttom按住相关信号：跑步
-            run = Input.GetKey(KeyA);
+            run = BottonKeyA.IsPressing;
 
+            jump = BottonMouseJump.OnPressed || BottonKeyJump.OnPressed;
+            attack = BottonMouseAttack.OnPressed || BottonKeyAttack.OnPressed;
+            froll = BottonMouseRoll.OnPressed || BottonKeyRoll.OnPressed;
+            
             //trigger相关信号：跳跃/翻滚/攻击
-            bool newJump = Input.GetKey(KeyB);
-            if (newJump != lastJump && newJump == true)
-            {
-                jump = true;
-            }
-            else
-            {
-                jump = false;
-            }
-            lastJump = newJump;
-        
-            bool newAttack = Input.GetKey(KeyD);
-            if (newAttack != lastAttack && newAttack == true)
-            {
-                attack = true;
-            }
-            else
-            {
-                attack = false;
-            }
-            lastAttack = newAttack;
-        
-            bool newRoll = Input.GetKey(KeyC);
-            if (newRoll != lastroll && newRoll == true)
-            {
-                froll = true;
-            }
-            else
-            {
-                froll = false;
-            }
-            lastroll = newRoll;
+            // bool newJump = Input.GetKey(KeyJump[0]) || Input.GetKey(KeyJump[1]);
+            // if (newJump != lastJump && newJump == true)
+            // {
+            //     jump = true;
+            // }
+            // else
+            // {
+            //     jump = false;
+            // }
+            // lastJump = newJump;
         }
 
 
