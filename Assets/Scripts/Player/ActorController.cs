@@ -5,30 +5,34 @@ namespace Player
 {
     public class ActorController : MonoBehaviour
     {
-
         public IUserInput pi;
         private Animator anim;
         private Rigidbody rigi;
         public GameObject model;
         private CapsuleCollider col;
         
-        [SerializeField]
         private Vector3 planerVec; //important!!
         private bool planerLook ;
         private Vector3 thrustVec;
         private float lerpTarget;
         private Vector3 deltaPos;
-        [SerializeField]
-        private float velocityShown;
 
+        [Header(" ===== Ability Setting ===== ")]
+        public bool canRun;
+        public bool canComboA1;
+        public bool canComboA2;
+        public bool canRoll;
+        public bool canRollDistance;
+        public bool canFreeAttack;
+        
         private bool canAttack;
+        
 
-        [Header(" ===== Controller Setting ===== ")]
+        [Header(" ===== Controller Speed Setting ===== ")]
         public float movingSpeed;
-        private float runMultiplier = 2.5f;
+        public float runMultiplier = 2.5f;
         public float jumpVelocity;
         public float rollVelocity;
-        public float jumpRollmax = 10f;
 
         [Space(10)]
         [Header(" ===== Friction Setting ===== ")]
@@ -53,12 +57,19 @@ namespace Player
 
         private void Update()
         {
-            velocityShown = Mathf.Round( rigi.velocity.magnitude);
-            anim.SetFloat("forward",pi.Dmag * Mathf.Lerp(anim.GetFloat("forward"),((pi.run) ? 2.0f : 1.0f),0.5f)); //Smooth the process walk to run
-            if (rigi.velocity.magnitude > jumpRollmax)
+
+            if (canRun)
             {
-                anim.SetTrigger("roll");
+                anim.SetFloat("forward",
+                    pi.Dmag * Mathf.Lerp(anim.GetFloat("forward"), ((pi.run) ? 2.0f : 1.0f),
+                        0.5f)); //Smooth the process walk to run
+                print("enter canRun");
             }
+            else
+            {
+                anim.SetFloat("forward", pi.Dmag);
+            }
+            
             
             //trigger signal
             if (pi.jump)
@@ -66,15 +77,39 @@ namespace Player
                 anim.SetTrigger("jump");
                 canAttack = false;
             }
-            if (pi.froll)
+            if (pi.froll && canRoll)
             {
                 anim.SetTrigger("forceroll");
                 canAttack = false;
             }
             //只有在地面上才能攻击
-            else if (pi.attack && CheckState("ground") && canAttack)
+            if (pi.attack && CheckState("ground") && canAttack)
             {
                 anim.SetTrigger("attack");
+            }
+
+            else if (canFreeAttack && pi.attack)
+            {
+                anim.SetTrigger("attack");
+            }
+            
+            //combo ability
+            if (canComboA1 == true)
+            {
+                anim.SetBool("canComboA1",true);
+            }
+            else
+            {
+                anim.SetBool("canComboA1",false);
+            }
+            
+            if (canComboA2 == true)
+            {
+                anim.SetBool("canComboA2",true);
+            }
+            else
+            {
+                anim.SetBool("canComboA2",false);
             }
             
             
@@ -85,7 +120,15 @@ namespace Player
             }
             if (planerLook == false)
             {
-                planerVec = pi.Dmag * model.transform.forward * movingSpeed * ((pi.run) ? runMultiplier : 1.0f);//player input (both mag and direction)
+                if (canRun)
+                {
+                    planerVec = pi.Dmag * model.transform.forward * movingSpeed *
+                                ((pi.run) ? runMultiplier : 1.0f); //player input (both mag and direction)
+                }
+                else
+                {
+                    planerVec = pi.Dmag * model.transform.forward * movingSpeed;
+                }
             } 
         }
         
@@ -102,8 +145,8 @@ namespace Player
         {
             rigi.position += deltaPos;
             //rigi.position += planerVec * Time.fixedDeltaTime; //consider gravity, costly
-            rigi.velocity = new Vector3(planerVec.x, rigi.velocity.y, planerVec.z)+thrustVec;
-            thrustVec = Vector3.zero;
+            rigi.velocity = new Vector3(planerVec.x, rigi.velocity.y, planerVec.z)+thrustVec; //y轴不能旋转
+            thrustVec = Vector3.zero; //某些动画会带有推力，比如jump
             deltaPos = Vector3.zero;
         }
         
@@ -111,6 +154,14 @@ namespace Player
         public void OnJumpEnter()
         {
             thrustVec = new Vector3(0, jumpVelocity, 0);
+        }
+        public void OnJumpUpdate()
+        {
+            thrustVec = model.transform.up * -anim.GetFloat("jumpVelocity");
+        }
+
+        public void OnJumpExit()
+        {
         }
 
         public void IsGround()
@@ -125,14 +176,14 @@ namespace Player
 
         public void OnGroundEnter()
         {
-            pi._InputEnable = true;
-            planerLook = false;
+            //pi._InputEnable = true;
+            //planerLook = false;
             col.material = frictionOne;
         }
         public void OnGroundExit()
         {
-            pi._InputEnable = false;
-            planerLook = true;
+            //pi._InputEnable = false;
+            //planerLook = true;
             col.material = frictionZero;
         }
 
@@ -143,20 +194,30 @@ namespace Player
 
         public void OnRollEnter()
         {
-            pi._InputEnable = false;
-            planerLook = true;
-            planerVec = 2f * model.transform.forward* movingSpeed * rollVelocity;
+            if(!canRollDistance)
+            {
+                pi._InputEnable = false;
+                planerLook = true;
+                planerVec = Vector3.zero;
+            }
+            thrustVec = 2f * model.transform.forward* movingSpeed * rollVelocity;
         }
         public void OnRollExit()
         {
-            pi._InputEnable = true;
-            planerLook = false;
+            if (!canRollDistance)
+            {
+                pi._InputEnable = true;
+                planerLook = false;
+            }
         }
         public void OnRollUpdate()
         { 
             anim.SetBool("isGround",true);
+            if (canRollDistance)
+            {
+                rigi.velocity = new Vector3(planerVec.x, rigi.velocity.y, planerVec.z)+thrustVec;
+            }
         }
-        
 
         public void OnJabUpdate()
         {

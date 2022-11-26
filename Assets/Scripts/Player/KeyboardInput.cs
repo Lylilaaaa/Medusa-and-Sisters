@@ -10,6 +10,8 @@ namespace Player
         public string keyDown = "s";
         public string keyRight = "d";
         public string keyLeft = "a";
+        private bool runTrigger;
+        private MyButton BottonWalkRun = new MyButton();
     
         public string KeyA;
         public string KeyJump = "k";
@@ -30,7 +32,6 @@ namespace Player
         public string mouseRoll = "mouse 1";
         public string mouseAttack = "mouse 0";
         
-        private MyButton BottonKeyA = new MyButton();
         private MyButton BottonKeyJump = new MyButton();
         private MyButton BottonKeyRoll = new MyButton();
         private MyButton BottonKeyAttack = new MyButton();
@@ -41,7 +42,8 @@ namespace Player
 
         void Update()
         {
-            BottonKeyA.Tick(Input.GetKey(KeyA));
+            BottonWalkRun.Tick(runTrigger);
+
             BottonKeyJump.Tick(Input.GetKey(KeyJump));
             BottonKeyRoll.Tick(Input.GetKey(KeyRoll));
             BottonKeyAttack.Tick(Input.GetKey(KeyAttack));
@@ -80,11 +82,16 @@ namespace Player
             Dmag = Mathf.Sqrt((Dup2 * Dup2) + (Dright2 * Dright2));
             Dvec = Dup2 * transform.forward + Dright2 * transform.right;
             
+            runTrigger = false;
+            if (Dmag >= 0.5)
+            {
+                runTrigger = true;
+            }
             
             // ===== due with signal types ===== //
             
             //buttom按住相关信号：跑步
-            run = BottonKeyA.IsPressing;
+            run = BottonWalkRun.IsPressing && !BottonWalkRun.IsDelaying;
 
             jump = BottonMouseJump.OnPressed || BottonKeyJump.OnPressed;
             attack = BottonMouseAttack.OnPressed || BottonKeyAttack.OnPressed;
