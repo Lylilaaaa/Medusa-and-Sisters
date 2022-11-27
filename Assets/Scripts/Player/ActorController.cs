@@ -1,4 +1,4 @@
-using System;
+using Camera;
 using UnityEngine;
 
 namespace Player
@@ -6,6 +6,7 @@ namespace Player
     public class ActorController : MonoBehaviour
     {
         public IUserInput pi;
+        public CameraController cameracCon;
         private Animator anim;
         private Rigidbody rigi;
         public GameObject model;
@@ -33,6 +34,7 @@ namespace Player
         public float runMultiplier = 2.5f;
         public float jumpVelocity;
         public float rollVelocity;
+        public float lockRadius = 10f;
 
         [Space(10)]
         [Header(" ===== Friction Setting ===== ")]
@@ -93,6 +95,20 @@ namespace Player
                 anim.SetTrigger("attack");
             }
             
+            // 呼叫camera脚本切换lock和unlock模式
+            if (pi.Onlocked == true)
+            {
+                cameracCon.LockOnEnemy();
+            }
+            if(pi.Unlocked == true)
+            {
+                cameracCon.UnLockOnEnemy();
+            }
+            if (pi.Onlocking == true)
+            {
+                cameracCon.LockingOnEnemy();
+            }
+
             //combo ability
             if (canComboA1 == true)
             {

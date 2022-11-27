@@ -13,15 +13,15 @@ namespace Player
         private bool runTrigger;
         private MyButton BottonWalkRun = new MyButton();
     
-        public string KeyA;
+        public string KeyLock ="left shift";
         public string KeyJump = "k";
         public string KeyRoll = "l";
         public string KeyAttack = "j";
         
-        public string KeyJUp;
-        public string KeyJDown;
-        public string KeyJRight;
-        public string KeyJLeft;
+        public string KeyJUp = "up";
+        public string KeyJDown = "down";
+        public string KeyJRight = "right";
+        public string KeyJLeft = "left";
 
         [Header("===== Mouse Settings =====")]
         public bool mouseEnable = true;
@@ -35,6 +35,7 @@ namespace Player
         private MyButton BottonKeyJump = new MyButton();
         private MyButton BottonKeyRoll = new MyButton();
         private MyButton BottonKeyAttack = new MyButton();
+        private MyButton BottonKeyLock = new MyButton();
         
         private MyButton BottonMouseJump = new MyButton();
         private MyButton BottonMouseRoll = new MyButton();
@@ -44,6 +45,7 @@ namespace Player
         {
             BottonWalkRun.Tick(runTrigger);
 
+            BottonKeyLock.Tick(Input.GetKey(KeyLock));
             BottonKeyJump.Tick(Input.GetKey(KeyJump));
             BottonKeyRoll.Tick(Input.GetKey(KeyRoll));
             BottonKeyAttack.Tick(Input.GetKey(KeyAttack));
@@ -92,6 +94,10 @@ namespace Player
             
             //buttom按住相关信号：跑步
             run = BottonWalkRun.IsPressing && !BottonWalkRun.IsDelaying;
+            
+            Onlocked = BottonKeyLock.OnPressed;
+            Onlocking = BottonKeyLock.IsPressing;
+            Unlocked = BottonKeyLock.OnReleased;
 
             jump = BottonMouseJump.OnPressed || BottonKeyJump.OnPressed;
             attack = BottonMouseAttack.OnPressed || BottonKeyAttack.OnPressed;

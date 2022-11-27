@@ -17,14 +17,15 @@ namespace Player
     
         //2. trigger signal
         public bool jump;
-        protected bool lastJump;
-    
+
         public bool attack;
-        protected bool lastAttack;
 
         public bool froll;
-        protected bool lastroll;
-    
+        
+        public bool Onlocked;
+        public bool Unlocked;
+        public bool Onlocking;
+
         //3. double trigger
 
         [Header("===== Others =====")]
