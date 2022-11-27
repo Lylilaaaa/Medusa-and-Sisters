@@ -40,9 +40,10 @@ jab能够闪避 → canRun → （学会连招）canComboA1 → canComboA2 → �
  
  IsDelaying：记录按键后的2s，可用于蓄力攻击
  
- 放入了一个可以获得跑步能力的箱子，能够依次解锁cambo、翻滚、距离翻滚、自用攻击等不同的ability
+ 放入了一个可以获得跑步能力的箱子，能够依次解锁cambo、翻滚、距离翻滚、自用攻击等不同的ability；锁定敌人功能
   ![11.21a](Diary/png11.27a.png)
   ![11.21a](Diary/png11.27b.png)
+  ![11.21a](Diary/png11.27c.png)
  
  
  11.26: 
