@@ -65,7 +65,7 @@ namespace Player
                 anim.SetFloat("forward",
                     pi.Dmag * Mathf.Lerp(anim.GetFloat("forward"), ((pi.run) ? 2.0f : 1.0f),
                         0.5f)); //Smooth the process walk to run
-                print("enter canRun");
+                //print("enter canRun");
             }
             else
             {

@@ -1,0 +1,260 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &903785987451802251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6876281493329690677}
+  m_Layer: 0
+  m_Name: COMP_PROP_waterwheel_dungeon_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &6876281493329690677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903785987451802251}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8780730075805847933}
+  - {fileID: 5519929438707407027}
+  - {fileID: 644208339535821797}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2199766275036344375
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6876281493329690677}
+    m_Modifications:
+    - target: {fileID: 5838654572079682393, guid: a1d017fa1d20e45419ed3677a60ccec9,
+        type: 3}
+      propertyPath: m_Name
+      value: P_PROP_waterwheel_dungeon_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447907868815384906, guid: a1d017fa1d20e45419ed3677a60ccec9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447907868815384906, guid: a1d017fa1d20e45419ed3677a60ccec9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447907868815384906, guid: a1d017fa1d20e45419ed3677a60ccec9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447907868815384906, guid: a1d017fa1d20e45419ed3677a60ccec9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447907868815384906, guid: a1d017fa1d20e45419ed3677a60ccec9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447907868815384906, guid: a1d017fa1d20e45419ed3677a60ccec9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447907868815384906, guid: a1d017fa1d20e45419ed3677a60ccec9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447907868815384906, guid: a1d017fa1d20e45419ed3677a60ccec9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447907868815384906, guid: a1d017fa1d20e45419ed3677a60ccec9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447907868815384906, guid: a1d017fa1d20e45419ed3677a60ccec9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447907868815384906, guid: a1d017fa1d20e45419ed3677a60ccec9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1d017fa1d20e45419ed3677a60ccec9, type: 3}
+--- !u!4 &8780730075805847933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7447907868815384906, guid: a1d017fa1d20e45419ed3677a60ccec9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2199766275036344375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4321623621438525385
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6876281493329690677}
+    m_Modifications:
+    - target: {fileID: 383531662378616383, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_Name
+      value: P_PROP_waterwheel_construct_dungeon_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.000000044703484
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.99998
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f78562fdd1104e0409db885f51383683, type: 3}
+--- !u!4 &644208339535821797 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+    type: 3}
+  m_PrefabInstance: {fileID: 4321623621438525385}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9192822446062300319
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6876281493329690677}
+    m_Modifications:
+    - target: {fileID: 383531662378616383, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_Name
+      value: P_PROP_waterwheel_construct_dungeon_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f78562fdd1104e0409db885f51383683, type: 3}
+--- !u!4 &5519929438707407027 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3677696912274207788, guid: f78562fdd1104e0409db885f51383683,
+    type: 3}
+  m_PrefabInstance: {fileID: 9192822446062300319}
+  m_PrefabAsset: {fileID: 0}

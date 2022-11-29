@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2322635123587933005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2322635123587933002}
+  m_Layer: 0
+  m_Name: COMP_PROP_gravestone_dungeon_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &2322635123587933002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2322635123587933005}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5644966470403415739}
+  - {fileID: 3944831294782488332}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2322635124154300439
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2322635123587933002}
+    m_Modifications:
+    - target: {fileID: 2368377352834233608, guid: 332ad18a47925874a91137ff3fd93452,
+        type: 3}
+      propertyPath: m_Name
+      value: P_PROP_gravestone_dungeon_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622830232557143835, guid: 332ad18a47925874a91137ff3fd93452,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622830232557143835, guid: 332ad18a47925874a91137ff3fd93452,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622830232557143835, guid: 332ad18a47925874a91137ff3fd93452,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622830232557143835, guid: 332ad18a47925874a91137ff3fd93452,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622830232557143835, guid: 332ad18a47925874a91137ff3fd93452,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.383
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 332ad18a47925874a91137ff3fd93452, type: 3}
+--- !u!4 &3944831294782488332 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1622830232557143835, guid: 332ad18a47925874a91137ff3fd93452,
+    type: 3}
+  m_PrefabInstance: {fileID: 2322635124154300439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3220529686566269074
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2322635123587933002}
+    m_Modifications:
+    - target: {fileID: 6105812848545750074, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_Name
+      value: P_PROP_gravestone_base_dungeon_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7072673
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7069463
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0872403
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fae949f9ca34ffa4e99b5478e3823cde, type: 3}
+--- !u!4 &5644966470403415739 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7126785569711140393, guid: fae949f9ca34ffa4e99b5478e3823cde,
+    type: 3}
+  m_PrefabInstance: {fileID: 3220529686566269074}
+  m_PrefabAsset: {fileID: 0}

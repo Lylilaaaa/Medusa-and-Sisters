@@ -90,18 +90,24 @@ namespace Camera
 
         public void LockingOnEnemy()
         {
-            lockState = true;
-            lockDot.rectTransform.position = UnityEngine.Camera.main.WorldToScreenPoint(lockTarget.gameObject.transform.position);
-            Vector3 tempForward = lockTarget.transform.position - model.transform.position;
-            tempForward.y = 0;
-            playerHandler.transform.forward = tempForward;
+            if (lockState = true)
+            {
+                lockDot.rectTransform.position =
+                    UnityEngine.Camera.main.WorldToScreenPoint(lockTarget.gameObject.transform.position);
+                Vector3 tempForward = lockTarget.transform.position - model.transform.position;
+                tempForward.y = 0;
+                playerHandler.transform.forward = tempForward;
+            }
         }
 
         public void UnLockOnEnemy()
         {
-            lockState = false;
-            lockDot.enabled = false;
-            lockTarget = null;
+            if (lockState == true)
+            {
+                lockState = false;
+                lockDot.enabled = false;
+                lockTarget = null;
+            }
         }
     }
 }
