@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class EnvironmentManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static EnvironmentManager instance;
+
+    private void Awake()
     {
-        
+        instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
     public float LockDistance;
     public float attackDamage; 
     private GameObject PlayerInstance;
+
     
     //whether this enemy is chasing player
     private bool isActive;
@@ -27,7 +28,7 @@ public class EnemyController : MonoBehaviour
     private void Init()
     {
         // set the init health
-        health = 1;
+
         maxhealth = health;
     }
 
@@ -40,7 +41,6 @@ public class EnemyController : MonoBehaviour
             EnemyAction();
         }
     }
-
 
 
     private void EnemyAction()
@@ -71,7 +71,11 @@ public class EnemyController : MonoBehaviour
     {
         if (health <= 0)
         {
-            
+            // dead animation
+
+            // remove from object pool
+
+            //
             
         }
     }

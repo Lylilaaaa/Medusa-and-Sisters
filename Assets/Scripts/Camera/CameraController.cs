@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Numerics;
 using Player;
 using UnityEngine;
@@ -34,7 +36,7 @@ namespace Camera
             ac = playerHandler.GetComponent<ActorController>();
             model = ac.model;
             pi = ac.pi;
-            //获取main camera！！
+            //获取main camera!!
             _camera = UnityEngine.Camera.main.gameObject;
 
             Cursor.lockState = CursorLockMode.Locked;
@@ -67,8 +69,9 @@ namespace Camera
         public void LockOnEnemy()
         {
             Collider[] cols = Physics.OverlapSphere(model.transform.position,ac.lockRadius , LayerMask.GetMask("Enemy"));
-            if (cols == null)
+            if (cols.Length == 0)
             {
+                lockState = false;
                 return;
             }
             //确定了会有被锁定的敌人
@@ -90,7 +93,7 @@ namespace Camera
 
         public void LockingOnEnemy()
         {
-            if (lockState = true)
+            if (lockState == true)
             {
                 lockDot.rectTransform.position =
                     UnityEngine.Camera.main.WorldToScreenPoint(lockTarget.gameObject.transform.position);
@@ -109,5 +112,26 @@ namespace Camera
                 lockTarget = null;
             }
         }
+
+        private IEnumerator Shake(float duration, float magnitude)
+        {
+
+            Vector3 originalPosition = transform.position;
+            float currTime = 0f;
+            while (currTime < duration)
+            {
+
+                float x = UnityEngine.Random.Range(-0.5f, 0.5f) * magnitude;
+                float y = UnityEngine.Random.Range(-0.5f, 0.5f) * magnitude;
+
+                transform.localPosition = originalPosition + new Vector3(x, y, 0);
+
+                currTime += Time.deltaTime;
+                yield return null;
+            }
+
+            transform.localPosition = originalPosition;
+        }
+
     }
 }
