@@ -7,13 +7,15 @@ namespace Player
     public class ActorController : MonoBehaviour
     {
         public static ActorController instance;
-        public IUserInput pi;
+        
+        [Header(" ===== Default Setting ===== ")]
         public CameraController cameracCon;
         private Animator anim;
         private Rigidbody rigi;
         public GameObject model;
         private CapsuleCollider col;
         
+        public IUserInput pi;
         private Vector3 planerVec; //important!!
         private bool planerLook ;
         private Vector3 thrustVec;
@@ -42,6 +44,9 @@ namespace Player
         [Header(" ===== Friction Setting ===== ")]
         public PhysicMaterial frictionOne;
         public PhysicMaterial frictionZero;
+
+        [Header("===== Weapon Collider ======")]
+        public WeaponController[] weapon_Colliders;
 
         private void Awake()
         {
@@ -314,11 +319,68 @@ namespace Player
         {
             //TODO
             //Debug.Log("haha caibi");
+            Debug.Log("sister get damage:" + damage);
             anim.SetTrigger("impact");
             //trigger animation
             
             //update health
         }
+        
+        #region Ting's change
+        // animation events
+        /// <summary>
+        /// 整个技能开始
+        /// </summary>
+        private void StartAttack() {
+            //Animator.ResetTrigger("AttackOver");
+            canAttack = false;
+        }
+
+        /// <summary>
+        /// 技能结束
+        /// </summary>
+        private void EndAttack()
+        {
+            //为了防止switch后上一段的endAttack依旧被触发，需要记录开始时的动画和现在的动画
+            //如果相同则触发endAttack，如果不同就忽略endAttack
+
+            //走到endattack意味着没有连续攻击，返回走路状态
+            //canAttack = true;
+            
+            //animator.SetTrigger("AttackOver");
+            //playerState = PlayerState.normal;
+        }
+
+        /// <summary>
+        /// 有效攻击帧开始
+        /// </summary>
+        private void StartHit(int weaponNum)
+        {
+            //音效
+            //AudioSource.PlayOneShot(Resources.Load<AudioClip>("Audio/爪"));
+            //激活武器
+            weapon_Colliders[weaponNum].gameObject.SetActive(true);
+        }
+
+        /// <summary>
+        /// 攻击帧结束
+        /// </summary>
+        private void StopHit(int weaponNum)
+        {
+            weapon_Colliders[weaponNum].gameObject.SetActive(false);
+        }
+
+        /// <summary>
+        /// 后摇开始
+        /// </summary>
+        private void CanSwitch()
+        {
+            canAttack = true;
+        }
+        
+        
+        
+        #endregion
         
     }
 }

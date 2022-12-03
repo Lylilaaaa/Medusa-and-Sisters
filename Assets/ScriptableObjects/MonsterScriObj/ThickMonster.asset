@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10dcc8cf3da9487c9d81f1a1f26b9051, type: 3}
+  m_Name: ThickMonster
+  m_EditorClassIdentifier: 
+  monName: HIghHealthMonster
+  damage: 5
+  maxHealth: 150
+  curHealth: 150
+  movingSpeed: 0.8
+  lockDistance: 50
+  monsterPrefab: {fileID: 2135707826142254328, guid: b43d6a8cdf04c9045aabf13a511fdafe, type: 3}
+  isChasing: 0
+  isDead: 0

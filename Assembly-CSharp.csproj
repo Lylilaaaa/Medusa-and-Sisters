@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\Player\OnGroundSensor.cs" />
      <Compile Include="Assets\Scripts\Player\IUserInput.cs" />
      <Compile Include="Assets\Scripts\Monster\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\Weapon\WeaponController.cs" />
      <Compile Include="Assets\Scripts\Environment\TrapController.cs" />
      <Compile Include="Assets\Scripts\Environment\EnvironmentManager.cs" />
      <Compile Include="Assets\Scripts\Player\MyButton.cs" />
@@ -78,12 +79,14 @@
      <Compile Include="Assets\Scripts\Manager\FxController.cs" />
      <Compile Include="Assets\Scripts\Player\JoystickInput.cs" />
      <Compile Include="Assets\Scripts\Player\FSMOnEnter.cs" />
-     <None Include="Assets\Art\Red_clue\Slash_effects\Documentaion\How to use.txt" />
-     <None Include="Assets\Art\VFX_Klaus\Shaders\Fx_Hit&amp;Slash_add.shader" />
-     <None Include="Assets\Art\VFX_Klaus\Shaders\VFX_lab.shader" />
-     <None Include="Assets\Art\VFX_Klaus\ReadMe_Stylized Hit &amp; Slash.txt" />
-     <None Include="Assets\Art\VFX_Klaus\Shaders\Fx_Hit&amp;Slash_apb.shader" />
-     <None Include="Assets\Art\SkySeries Freebie\Hdri setup.txt" />
+     <Compile Include="Assets\Scripts\ScriptableObjectGen\Monsters.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObjectGen\SubLevels.cs" />
+     <None Include="Assets\Art\Fx_Red_clue\Slash_effects\Documentaion\How to use.txt" />
+     <None Include="Assets\Art\Fx_VFX_Klaus\Shaders\Fx_Hit&amp;Slash_add.shader" />
+     <None Include="Assets\Art\Fx_VFX_Klaus\Shaders\VFX_lab.shader" />
+     <None Include="Assets\Art\Fx_VFX_Klaus\ReadMe_Stylized Hit &amp; Slash.txt" />
+     <None Include="Assets\Art\Fx_VFX_Klaus\Shaders\Fx_Hit&amp;Slash_apb.shader" />
+     <None Include="Assets\Art\SkyBox_SkySeries Freebie\Hdri setup.txt" />
  <Reference Include="UnityEngine">
  <HintPath>Z:/UnityEditor/2020.3.15f2c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
