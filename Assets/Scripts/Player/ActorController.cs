@@ -260,11 +260,39 @@ namespace Player
             currentWeight = Mathf.Lerp(currentWeight, lerpTarget, 0.1f);
             anim.SetLayerWeight(anim.GetLayerIndex("attack"),currentWeight);
         }
+        
 
         public void OnAttack1hAExit()
         {
             FxController.instance.QuitFx(0);
         }
+        
+        public void OnAttack1hBEnter()
+        {
+            FxController.instance.SpawnFx(1);
+        }
+        public void OnAttack1hBExit()
+        {
+            FxController.instance.QuitFx(1);
+        }
+        public void OnAttack1hCEnter()
+        {
+            FxController.instance.SpawnFx(2);
+        }
+        public void OnAttack1hCExit()
+        {
+            FxController.instance.QuitFx(2);
+        }
+        public void OnAttack1hDEnter()
+        {
+            FxController.instance.SpawnFx(3);
+        }
+        public void OnAttack1hDExit()
+        {
+            FxController.instance.QuitFx(3);
+        }
+        
+        
         public void  OnAttackIdleEnter()
         {
             pi._InputEnable = true;
