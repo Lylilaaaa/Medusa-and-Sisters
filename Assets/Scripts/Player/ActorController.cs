@@ -1,4 +1,5 @@
 using Camera;
+using Manager;
 using UnityEngine;
 
 namespace Player
@@ -250,6 +251,7 @@ namespace Player
             pi._InputEnable = false;
             //anim.SetLayerWeight( 1,1.0f);
             lerpTarget = 1.0f;
+            FxController.instance.SpawnFx(0);
         }
         public void  OnAttack1hAUpdate()
         {
@@ -257,6 +259,11 @@ namespace Player
             float currentWeight = anim.GetLayerWeight(anim.GetLayerIndex("attack"));
             currentWeight = Mathf.Lerp(currentWeight, lerpTarget, 0.1f);
             anim.SetLayerWeight(anim.GetLayerIndex("attack"),currentWeight);
+        }
+
+        public void OnAttack1hAExit()
+        {
+            FxController.instance.QuitFx(0);
         }
         public void  OnAttackIdleEnter()
         {
@@ -284,5 +291,6 @@ namespace Player
             
             //update health
         }
+        
     }
 }
