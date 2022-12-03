@@ -5,6 +5,7 @@ namespace Player
 {
     public class ActorController : MonoBehaviour
     {
+        public static ActorController instance;
         public IUserInput pi;
         public CameraController cameracCon;
         private Animator anim;
@@ -43,6 +44,10 @@ namespace Player
 
         private void Awake()
         {
+            //update instance
+            instance = this;
+            
+            //依次获取最上层的输入方式
             IUserInput[]inputs = GetComponents<IUserInput>();
             foreach (var input in inputs)
             {
@@ -268,6 +273,15 @@ namespace Player
         public void OnUpdateRM(object _deltaPos)
         {if(CheckState("attack1hC","attack")||CheckState("attack1hD","attack"))
             deltaPos += (Vector3)_deltaPos;
+        }
+
+        public void getHurt(float damage)
+        {
+            //TODO
+            Debug.Log("haha caibi");
+            //trigger animation
+            
+            //update health
         }
     }
 }

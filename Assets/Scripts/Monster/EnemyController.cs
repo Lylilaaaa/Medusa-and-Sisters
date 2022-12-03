@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public float LockDistance;
+    public float ChargeDistance;
     public float attackDamage; 
     private GameObject PlayerInstance;
 
@@ -19,6 +20,8 @@ public class EnemyController : MonoBehaviour
     //basic states
     private float health;
     private float maxhealth;
+    private float chargeCount;
+    public float chargeLimit;
 
     private void Awake()
     {
@@ -30,6 +33,7 @@ public class EnemyController : MonoBehaviour
         // set the init health
 
         maxhealth = health;
+        chargeCount = 0;
     }
 
     private void Update()
@@ -47,8 +51,22 @@ public class EnemyController : MonoBehaviour
     {
         //move toward player 
         
-        //detect whether the player stand still
         
+        //detect whether the player stand still
+        if ((PlayerInstance.transform.position - this.transform.position).magnitude <= ChargeDistance)
+        {
+            chargeCount += Time.deltaTime;
+            if (chargeCount >= chargeLimit)
+            {
+                chargeCount = 0;
+
+                //active attack animation
+
+                //player get hurt
+
+            }
+        }
+
         //attack
         
         

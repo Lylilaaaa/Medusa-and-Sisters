@@ -47,7 +47,6 @@ namespace Camera
             if (!lockState)
             {
                 //分别旋转x轴与y轴
-                
                 playerHandler.transform.Rotate(Vector3.up, pi.Jright * horizontalSpeed * Time.fixedDeltaTime);
                 tempEulerX -= pi.Jup * verticalSpeed * Time.fixedDeltaTime;
                 tempEulerX = Mathf.Clamp(tempEulerX, -40, 30);
