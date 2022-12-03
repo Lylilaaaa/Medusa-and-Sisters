@@ -24,8 +24,28 @@ reminder: the rotation of the plane should be bigger than 80 degree! //or the av
 
 jab能够闪避 → canRun → （学会连招）canComboA1 → canComboA2 → （翻滚无敌）canRoll → （学会躲避）canRollDistance → （跳跃和翻滚中间可以加攻击）canFreeAttack
 
+===== 怪物设置 =====
+
+美杜莎关四种怪物外形的怪，生成逻辑：Create random time seed, e.g. there are 4 spawn points, normalMonster is (4, 5, 6, 2), which means there are 4 monsters at the 1st spawning point etc. They will appear one by one at time 'level time/4, level time/4*2, level time/4*3, level time/4*4'.
+
+姐姐们是神话生物的怪。（素材包太强了，买了不用真可惜）
+
 =============== 开发日志 ==================
 
+ 12.4：怪物模型、怪物与关卡的ScriptableObj、单个敌人控制、敌人随机生成脚本们
+ ![11.21a](Diary/png12.4a.png)
+ 
+ 姐姐的建模在建了
+  ![11.21a](Diary/jpg12.4.jpg)
+  踩雷git同步，下次一定用plasticSCM！
+
+ 12.3：挥舞的刀光特效；受击动画；场景机关受伤
+ ![11.21a](Diary/png12.3a.png)
+ ![11.21a](Diary/png12.3b.png)
+
+ 11.30/12.1：加入天空盒与场景资源，调整核心玩法：一阶段trigger距离触发；二阶段时间同步触发；三阶段复现行动
+ ![11.21a](Diary/png12.1.png)
+ 
  11.27：
  
  ===== 【MyBotton & MyTimer】 =====
