@@ -279,6 +279,7 @@ namespace Player
         {
             //TODO
             Debug.Log("haha caibi");
+            anim.SetTrigger("impact");
             //trigger animation
             
             //update health
