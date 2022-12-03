@@ -34,6 +34,10 @@ jab能够闪避 → canRun → （学会连招）canComboA1 → canComboA2 → �
 
  12.4：怪物模型、怪物与关卡的ScriptableObj、单个敌人控制、敌人随机生成脚本们
  ![11.21a](Diary/png12.4a.png)
+ 
+ 姐姐的建模在建了
+  ![11.21a](Diary/jpg12.4.jpg)
+  踩雷git同步，下次一定用plasticSCM！
 
  12.3：挥舞的刀光特效；受击动画；场景机关受伤
  ![11.21a](Diary/png12.3a.png)
