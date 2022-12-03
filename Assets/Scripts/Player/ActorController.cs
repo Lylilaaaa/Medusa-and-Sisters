@@ -313,7 +313,7 @@ namespace Player
         public void getHurt(float damage)
         {
             //TODO
-            Debug.Log("haha caibi");
+            //Debug.Log("haha caibi");
             anim.SetTrigger("impact");
             //trigger animation
             
