@@ -5,8 +5,14 @@ namespace Player
 {
     public class OnGroundSensor : MonoBehaviour
     {
+        public static OnGroundSensor instance;
         public CapsuleCollider capcol;
         public float offset;
+        public LayerMask ground;
+        public bool isStep;
+        public GameObject Avatarmodel;
+        public float forwardDis;
+        public float upwardDis;
         
         private Vector3 point1;
         private Vector3 point2;
@@ -15,6 +21,7 @@ namespace Player
         private void Awake()
         {
             radius = capcol.radius - 0.05f;
+            instance = this;
         }
         
         private void FixedUpdate()
@@ -37,6 +44,13 @@ namespace Player
                 SendMessageUpwards("IsNotGround");
                 //print("mons has not grounded");
             }
+
+            forWardSensor();
+        }
+
+        public void forWardSensor()
+        {
+            isStep = Physics.Raycast(transform.position + Vector3.up * upwardDis, Avatarmodel.transform.forward, forwardDis, ground);
         }
     }
 }

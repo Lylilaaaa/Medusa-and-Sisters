@@ -51,6 +51,7 @@ namespace Camera
         {
             if (!hitting)
             {
+                
                 if (!lockState)
                 {
                     //分别旋转x轴与y轴
@@ -58,6 +59,7 @@ namespace Camera
                     tempEulerX -= pi.Jup * verticalSpeed * Time.fixedDeltaTime;
                     tempEulerX = Mathf.Clamp(tempEulerX, -40, 30);
                     cameraHandler.transform.localEulerAngles = new Vector3(tempEulerX, 0, 0);
+                    
                 }
 
                 //控制模型不转动
@@ -138,7 +140,6 @@ namespace Camera
                 currTime += Time.deltaTime;
                 yield return null;
             }
-
             hitting = false;
             transform.position = originalPosition;
         }

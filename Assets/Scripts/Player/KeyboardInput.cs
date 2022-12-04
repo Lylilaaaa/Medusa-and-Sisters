@@ -52,7 +52,8 @@ namespace Player
             BottonMouseJump.Tick(Input.GetKey(mouseJump));
             BottonMouseRoll.Tick(Input.GetKey(mouseRoll));
             BottonMouseAttack.Tick(Input.GetKey(mouseAttack));
-
+            
+            
             if (mouseEnable)
             {
                 Jup = Input.GetAxis("Mouse Y") * 2.5f * mouseSensitivityY;

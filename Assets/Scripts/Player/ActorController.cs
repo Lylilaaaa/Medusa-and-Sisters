@@ -27,10 +27,7 @@ namespace Player
         private Vector3 deltaPos;
         private bool isGrounded;
         private float getHurtTimer;
-
-        public float stepCheckRange;
-        public float stepCheckHeight;
-        public float maxStepHeight;
+        
 
         [Header(" ===== Ability Setting ===== ")]
         public bool canRun;
@@ -49,6 +46,8 @@ namespace Player
         public float jumpVelocity;
         public float rollVelocity;
         public float lockRadius = 10f;
+        public float stepVelocity;
+        public float backWardVelocity;
 
         [Space(10)]
         [Header(" ===== Friction Setting ===== ")]
@@ -83,9 +82,10 @@ namespace Player
         private void Update()
         {
             // detect is on step
-            if (IsStep())
+
+            if (OnGroundSensor.instance.isStep == true)
             {
-                thrustVec = model.transform.up * 0.5f;
+                thrustVec = new Vector3(0, stepVelocity, 0) - model.transform.forward*backWardVelocity;
             }
 
             if (canRun)
@@ -425,31 +425,6 @@ namespace Player
         //
         #endregion
         
-        #region test
-        private bool IsStep()
-        {
-            Ray ray = new Ray(transform.position + model.transform.forward.normalized * stepCheckRange + Vector3.up * stepCheckHeight, Vector3.down);
-            RaycastHit hit;
-            //point = Vector3.zero;
-
-            if (!isGrounded)
-                return false;
-
-            if (Physics.Raycast(ray, out hit, stepCheckHeight * 3, LayerMask.GetMask("Ground")))
-            {
-                float height = hit.point.y - rigi.position.y;
-                if (height < 0.06f)
-                    return false;
-
-                if (height <= maxStepHeight)
-                {
-                    //point = hit.point;
-                    return true;
-                }
-            }
-            return false;
-        }
-        #endregion
         
     }
 }

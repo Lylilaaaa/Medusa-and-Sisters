@@ -116,10 +116,10 @@ public class EnemyController : MonoBehaviour
             // remove from object pool
             EnemySpawnManager.instance.RemoveFromPool(this.gameObject.name);
             anim.SetTrigger("dead");
-            
+            model.GetComponent<EnemyDie>().startDieAnim = true;
             //destroy this game Object
             //TODO
-            
+
         }
     }
     
@@ -165,7 +165,6 @@ public class EnemyController : MonoBehaviour
     }
     public void MonsOnAttackExit()
     {
-        print("attackOver");
         TriggerAttack.SetActive(false);
     }
     public void OnDeadExit()

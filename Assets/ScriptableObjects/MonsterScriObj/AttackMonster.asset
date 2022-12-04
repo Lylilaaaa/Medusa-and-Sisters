@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monName: HighAttackMonster
   maxHealth: 80
-  curHealth: -6
+  curHealth: 80
   damage: 10
   movingSpeed: 1
   lockDistance: 50
   attackInterval: 6
-  attackDistance: 3.5
-  leastDistance: 3
+  attackDistance: 2.5
+  leastDistance: 2
   monsterPrefab: {fileID: 506299117855541377, guid: 200fbbc1df5fd8645b399215cd47b73f, type: 3}
   isChasing: 0
   isDead: 0
