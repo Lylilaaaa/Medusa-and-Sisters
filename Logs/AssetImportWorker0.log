@@ -15,11 +15,11 @@ Z:/CUHKSZ/FinalProj/Medusa and Sisters
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60654
+50668
 Successfully changed project path to: Z:/CUHKSZ/FinalProj/Medusa and Sisters
 Z:/CUHKSZ/FinalProj/Medusa and Sisters
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 59.22 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.82 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.15f2c1 (b25d0e34ed8a)
 [Subsystems] Discovering subsystems at path Z:/UnityEditor/2020.3.15f2c1/Editor/Data/Resources/UnitySubsystems
@@ -36,73 +36,73 @@ Initialize mono
 Mono path[0] = 'Z:/UnityEditor/2020.3.15f2c1/Editor/Data/Managed'
 Mono path[1] = 'Z:/UnityEditor/2020.3.15f2c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'Z:/UnityEditor/2020.3.15f2c1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56964
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: Z:/UnityEditor/2020.3.15f2c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000679 seconds.
+Registered in 0.000690 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 57.11 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 55.27 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.730 seconds
+- Completed reload, in  0.628 seconds
 Domain Reload Profiling:
-	ReloadAssembly (730ms)
-		BeginReloadAssembly (48ms)
+	ReloadAssembly (628ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (324ms)
-			LoadAssemblies (47ms)
+		EndReloadAssembly (295ms)
+			LoadAssemblies (55ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (98ms)
+			SetupTypeCache (92ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (154ms)
+			SetupLoadedEditorAssemblies (136ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (57ms)
+				RefreshPlugins (55ms)
 				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (57ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
+				ProcessInitializeOnLoadAttributes (54ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004057 seconds.
+Registered in 0.002387 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 62.31 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 61.13 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.182 seconds
+- Completed reload, in  1.147 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1183ms)
-		BeginReloadAssembly (109ms)
+	ReloadAssembly (1147ms)
+		BeginReloadAssembly (112ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (14ms)
-		EndReloadAssembly (1034ms)
-			LoadAssemblies (81ms)
+		EndReloadAssembly (992ms)
+			LoadAssemblies (86ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (217ms)
+			SetupTypeCache (195ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (638ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (621ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (62ms)
-				BeforeProcessingInitializeOnLoad (65ms)
-				ProcessInitializeOnLoadAttributes (502ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
+				RefreshPlugins (61ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (480ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -111,15 +111,15 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2871 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 221.7 MB.
-System memory in use after: 221.9 MB.
+System memory in use before: 221.9 MB.
+System memory in use after: 222.1 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3317.
-Total: 2.545100 ms (FindLiveObjects: 0.203600 ms CreateObjectMapping: 0.064700 ms MarkObjects: 2.171200 ms  DeleteObjects: 0.103700 ms)
+Total: 2.516100 ms (FindLiveObjects: 0.221600 ms CreateObjectMapping: 0.084200 ms MarkObjects: 2.104400 ms  DeleteObjects: 0.104300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,170 +134,729 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Art/Monster_HEROIC FANTASY CREATURES FULL PACK VOL 1/Must Have Fantasy Villains Pack/Troll/Textures/T_Troll_Legacy.tga
-  artifactKey: Guid(1714766fcb4ecb247977172d2b75c2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Monster_HEROIC FANTASY CREATURES FULL PACK VOL 1/Must Have Fantasy Villains Pack/Troll/Textures/T_Troll_Legacy.tga using Guid(1714766fcb4ecb247977172d2b75c2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad68a84afc7c23329bbc48c0a29a9a42') in 0.074547 seconds 
-  Import took 0.078456 seconds .
+  path: Assets/Avatars/Models/Stheno
+  artifactKey: Guid(7efd38089f7d2cb408a00a22a9b8207d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno using Guid(7efd38089f7d2cb408a00a22a9b8207d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3668f09aa055839ed6606a104fb316c3') in 0.004309 seconds 
+  Import took 0.008015 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000287 seconds.
-  path: Assets/Art/Monster_HEROIC FANTASY CREATURES FULL PACK VOL 1/Must Have Fantasy Villains Pack/Troll/Textures/T_Troll_Normal.jpg
-  artifactKey: Guid(1ca0e155213145e498863c0cf097cabf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Monster_HEROIC FANTASY CREATURES FULL PACK VOL 1/Must Have Fantasy Villains Pack/Troll/Textures/T_Troll_Normal.jpg using Guid(1ca0e155213145e498863c0cf097cabf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '547e0cdb4a745e84e0c1fc841f5807ef') in 0.036495 seconds 
-  Import took 0.040208 seconds .
+  path: Assets/Avatars/Models/Stheno/textures
+  artifactKey: Guid(9975fb9e7bbf6cf4a92a0e35b893cf92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/textures using Guid(9975fb9e7bbf6cf4a92a0e35b893cf92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86687fdde9f9f1ce694d7ef540230976') in 0.001223 seconds 
+  Import took 0.004816 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000377 seconds.
-  path: Assets/Art/Monster_HEROIC FANTASY CREATURES FULL PACK VOL 1/Must Have Fantasy Villains Pack/Troll/Textures/T_Troll_Legacy.tga
-  artifactKey: Guid(1714766fcb4ecb247977172d2b75c2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Monster_HEROIC FANTASY CREATURES FULL PACK VOL 1/Must Have Fantasy Villains Pack/Troll/Textures/T_Troll_Legacy.tga using Guid(1714766fcb4ecb247977172d2b75c2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad68a84afc7c23329bbc48c0a29a9a42') in 0.008347 seconds 
-  Import took 0.011898 seconds .
+  Time since last request: 1.249742 seconds.
+  path: Assets/Avatars/Models/Stheno/Stheno_obj.obj
+  artifactKey: Guid(74fdc5c22d360bc4ba01e0f290438afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/Stheno_obj.obj using Guid(74fdc5c22d360bc4ba01e0f290438afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa8c1e0888e507a9a222eeac4f335915') in 0.325782 seconds 
+  Import took 0.331018 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/Art/Monster_HEROIC FANTASY CREATURES FULL PACK VOL 1/Must Have Fantasy Villains Pack/Troll/Textures/T_Troll_MetallicSmoothness.tga
-  artifactKey: Guid(4ef326dd9dd270d4aae535281462adb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Monster_HEROIC FANTASY CREATURES FULL PACK VOL 1/Must Have Fantasy Villains Pack/Troll/Textures/T_Troll_MetallicSmoothness.tga using Guid(4ef326dd9dd270d4aae535281462adb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34398f0a1f3ecb1cc4c70b84c57a671a') in 0.011235 seconds 
-  Import took 0.014738 seconds .
+  Time since last request: 39.744947 seconds.
+  path: Assets/Avatars/Models/Stheno/Stheno_obj.obj
+  artifactKey: Guid(74fdc5c22d360bc4ba01e0f290438afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/Stheno_obj.obj using Guid(74fdc5c22d360bc4ba01e0f290438afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0933b5bd5fcbebe7771c2b6ee1131373') in 0.137461 seconds 
+  Import took 0.145007 seconds .
 
-========================================================================
-Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 159.9 MB.
-System memory in use after: 160.1 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3322.
-Total: 2.663300 ms (FindLiveObjects: 0.214400 ms CreateObjectMapping: 0.071600 ms MarkObjects: 2.355100 ms  DeleteObjects: 0.020900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 363.118489 seconds.
-  path: Assets/ScriptableObjects/MonsterScriObj/AttackMonster.asset
-  artifactKey: Guid(5d1cca48134ead04d99cd46916d9acd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjects/MonsterScriObj/AttackMonster.asset using Guid(5d1cca48134ead04d99cd46916d9acd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4d643225eaff632be85dce72394cd9c') in 0.041171 seconds 
-  Import took 0.045587 seconds .
+  Time since last request: 27.090925 seconds.
+  path: Assets/Avatars/Models/Stheno/Stheno.fbx
+  artifactKey: Guid(46f834159c0d6374e83279229c7d304a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/Stheno.fbx using Guid(46f834159c0d6374e83279229c7d304a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8176b66e30dd5469642c1cfc8c2e31d') in 0.276646 seconds 
+  Import took 0.285429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.953736 seconds.
+  path: Assets/Avatars/Models/Stheno/Stheno.fbx
+  artifactKey: Guid(46f834159c0d6374e83279229c7d304a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/Stheno.fbx using Guid(46f834159c0d6374e83279229c7d304a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2628695d6cab1529ff5ca39aa44f5ed1') in 0.289604 seconds 
+  Import took 0.296363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.524743 seconds.
+  path: Assets/Avatars/Models/Stheno/standing turn left 90.fbx
+  artifactKey: Guid(d7d61ca4f4263e74fa18c7aac919452f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing turn left 90.fbx using Guid(d7d61ca4f4263e74fa18c7aac919452f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600e201c0121e189d4dc230e28e86f53') in 0.006611 seconds 
+  Import took 0.011170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.057300 seconds.
+  path: Assets/Avatars/Models/Stheno/RealMet
+  artifactKey: Guid(d02c5eab5831c7044bea15e814ce63c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/RealMet using Guid(d02c5eab5831c7044bea15e814ce63c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f1a1542e0a18df70fdf9db532fb1c7b') in 0.001239 seconds 
+  Import took 0.005875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.103538 seconds.
+  path: Assets/Avatars/Models/Stheno/Stheno.fbx
+  artifactKey: Guid(46f834159c0d6374e83279229c7d304a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/Stheno.fbx using Guid(46f834159c0d6374e83279229c7d304a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc55278154dc4072905af006d6162e6d') in 0.203569 seconds 
+  Import took 0.222861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.024854 seconds.
+  path: Assets/Avatars/Models/Stheno/Stheno_obj.mtl
+  artifactKey: Guid(2149e394dc7ba34419597ef01237d98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/Stheno_obj.mtl using Guid(2149e394dc7ba34419597ef01237d98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2da8a9f58aabfd54bf089e18260324da') in 0.007836 seconds 
+  Import took 0.023202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.838544 seconds.
+  path: Assets/Avatars/Models/Stheno/crouch idle.fbx
+  artifactKey: Guid(4361a51e8e7ab7649a4965ddfc6ef552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/crouch idle.fbx using Guid(4361a51e8e7ab7649a4965ddfc6ef552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c728506d769912c4554369c89a685d9e') in 0.006372 seconds 
+  Import took 0.021015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.836051 seconds.
+  path: Assets/Avatars/Models/Stheno/standing walk right.fbx
+  artifactKey: Guid(ce5366b7374be4c4aae8267c92c11cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing walk right.fbx using Guid(ce5366b7374be4c4aae8267c92c11cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c1de43e50b2ee791049bac9e5c6da61') in 0.006817 seconds 
+  Import took 0.022297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.711438 seconds.
+  path: Assets/Avatars/Models/Stheno/standing melee attack kick ver. 2.fbx
+  artifactKey: Guid(f6f0856f02b12ca4680534416a0dfbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing melee attack kick ver. 2.fbx using Guid(f6f0856f02b12ca4680534416a0dfbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf0f71f64a4c6bfcbbf21d1dbe6a786') in 0.005822 seconds 
+  Import took 0.010456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.623659 seconds.
+  path: Assets/Avatars/Models/Stheno/standing melee attack kick ver. 2.fbx
+  artifactKey: Guid(f6f0856f02b12ca4680534416a0dfbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing melee attack kick ver. 2.fbx using Guid(f6f0856f02b12ca4680534416a0dfbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8931e7f15af615679559554faec44d6') in 0.005618 seconds 
+  Import took 0.009784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056024 seconds.
+  path: Assets/Avatars/Models/Stheno/standing melee attack kick ver. 2.fbx
+  artifactKey: Guid(f6f0856f02b12ca4680534416a0dfbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing melee attack kick ver. 2.fbx using Guid(f6f0856f02b12ca4680534416a0dfbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8931e7f15af615679559554faec44d6') in 0.006295 seconds 
+  Import took 0.010470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.446837 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed equip over shoulder.fbx
+  artifactKey: Guid(03d014da23d4b184b875a66ebfcb30b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed equip over shoulder.fbx using Guid(03d014da23d4b184b875a66ebfcb30b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deb12519a4931fbcf296d554ee39d98e') in 0.007435 seconds 
+  Import took 0.022218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.414464 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed jump running.fbx
+  artifactKey: Guid(0bbd96bcdb964ae4aa74f74cae140610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed jump running.fbx using Guid(0bbd96bcdb964ae4aa74f74cae140610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7607f696570d0394919bce0e33edcee2') in 0.006757 seconds 
+  Import took 0.021493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.398621 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed jump running.fbx
+  artifactKey: Guid(0bbd96bcdb964ae4aa74f74cae140610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed jump running.fbx using Guid(0bbd96bcdb964ae4aa74f74cae140610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289c7abc648887fa94e36e00ee1a51dc') in 0.005261 seconds 
+  Import took 0.009946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017372 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed jump running.fbx
+  artifactKey: Guid(0bbd96bcdb964ae4aa74f74cae140610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed jump running.fbx using Guid(0bbd96bcdb964ae4aa74f74cae140610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289c7abc648887fa94e36e00ee1a51dc') in 0.005478 seconds 
+  Import took 0.009464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.182712 seconds.
+  path: Assets/Avatars/Models/Stheno/crouch to standing idle.fbx
+  artifactKey: Guid(a36370931f0db5341a978449bd06c2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/crouch to standing idle.fbx using Guid(a36370931f0db5341a978449bd06c2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e27c639ca07f40377b28a6c16ff554') in 0.005909 seconds 
+  Import took 0.020768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.760477 seconds.
+  path: Assets/Avatars/Models/Stheno/crouch idle.fbx
+  artifactKey: Guid(4361a51e8e7ab7649a4965ddfc6ef552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/crouch idle.fbx using Guid(4361a51e8e7ab7649a4965ddfc6ef552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c5e7a5034f25bdbd80586d71b64edbd') in 0.005548 seconds 
+  Import took 0.020902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 235.305085 seconds.
+  path: Assets/Animator/Monster1.controller
+  artifactKey: Guid(f2b3d76b279c48a49a5537f4781e4202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animator/Monster1.controller using Guid(f2b3d76b279c48a49a5537f4781e4202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2026ccffda830ceb049441e1b26f3f8') in 0.053260 seconds 
+  Import took 0.059083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.079527 seconds.
+  path: Assets/Animator/Medusa 1.controller
+  artifactKey: Guid(579a7d50bc3f507409d1dc6deb1a7df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animator/Medusa 1.controller using Guid(579a7d50bc3f507409d1dc6deb1a7df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53b0800a68da3fb94323f4f332e4d20f') in 0.012372 seconds 
+  Import took 0.016860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.312554 seconds.
+  path: Assets/Animator/Sthenp.controller
+  artifactKey: Guid(579a7d50bc3f507409d1dc6deb1a7df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animator/Sthenp.controller using Guid(579a7d50bc3f507409d1dc6deb1a7df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f7758123339f8cb1c089ece3050232e') in 0.012050 seconds 
+  Import took 0.017163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.009116 seconds.
+  path: Assets/Animator/Stheno.controller
+  artifactKey: Guid(579a7d50bc3f507409d1dc6deb1a7df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animator/Stheno.controller using Guid(579a7d50bc3f507409d1dc6deb1a7df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '462cd9684ea196e7190fedf33dcdbcde') in 0.012892 seconds 
+  Import took 0.018371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 86.199099 seconds.
+  path: Assets/Avatars/Models/Stheno/standing jump.fbx
+  artifactKey: Guid(7f02863c37451324898725ae0216340b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing jump.fbx using Guid(7f02863c37451324898725ae0216340b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23496630b452637525bb952c7620ec57') in 0.006994 seconds 
+  Import took 0.011475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.589892 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield idle (4).fbx
+  artifactKey: Guid(e33424ee6eedce940910832ec2f2d4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield idle (4).fbx using Guid(e33424ee6eedce940910832ec2f2d4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cac24f7b60de03011f584dc57ad4023c') in 0.020396 seconds 
+  Import took 0.024916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.651309 seconds.
+  path: Assets/Avatars/Models/Stheno/standing jump.fbx
+  artifactKey: Guid(7f02863c37451324898725ae0216340b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing jump.fbx using Guid(7f02863c37451324898725ae0216340b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80a4b5d211360d7f5174a3b75d98164d') in 0.006158 seconds 
+  Import took 0.010808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.542979 seconds.
+  path: Assets/Avatars/Models/Stheno/standing block idle.fbx
+  artifactKey: Guid(4f480a39198be3b47a9bfefad457f9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing block idle.fbx using Guid(4f480a39198be3b47a9bfefad457f9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00b9459d42cc15ef3a1cd95cf10061d') in 0.007580 seconds 
+  Import took 0.011586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.745795 seconds.
+  path: Assets/Avatars/Models/Stheno/standing block react large.fbx
+  artifactKey: Guid(c286839f12f5ce2449aa0d7b475f9aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing block react large.fbx using Guid(c286839f12f5ce2449aa0d7b475f9aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13719821ba0b7551c6bfadc86641594d') in 0.005493 seconds 
+  Import took 0.009545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.388448 seconds.
+  path: Assets/Avatars/Models/Stheno/standing disarm over shoulder.fbx
+  artifactKey: Guid(0a79357f95ae96a4687f01954f9779e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing disarm over shoulder.fbx using Guid(0a79357f95ae96a4687f01954f9779e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '113c3cc994c255ac1cb8c3a969264262') in 0.016357 seconds 
+  Import took 0.020185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.260004 seconds.
+  path: Assets/Avatars/Models/Stheno/standing idle looking ver. 1.fbx
+  artifactKey: Guid(dd7d66be30cb5b841b3f87db8e3caa89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing idle looking ver. 1.fbx using Guid(dd7d66be30cb5b841b3f87db8e3caa89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7caf2c1bd5ee28fa19bdc7935395a03f') in 0.006298 seconds 
+  Import took 0.010962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.537102 seconds.
+  path: Assets/Avatars/Models/Stheno/standing idle looking ver. 2.fbx
+  artifactKey: Guid(6169b2e4ab76bd944b0b69cab4a2113e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing idle looking ver. 2.fbx using Guid(6169b2e4ab76bd944b0b69cab4a2113e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28b3720282b6c642112d6bc1900ee7a6') in 0.006343 seconds 
+  Import took 0.012043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.751305 seconds.
+  path: Assets/Avatars/Models/Stheno/standing melee attack 360 high.fbx
+  artifactKey: Guid(daa5455c267b51e4dae51b707009bfc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing melee attack 360 high.fbx using Guid(daa5455c267b51e4dae51b707009bfc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c41697816337a1db0057998729b8e611') in 0.005954 seconds 
+  Import took 0.010615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.727721 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed idle looking ver. 2.fbx
+  artifactKey: Guid(654bb57cd9a42c34caa1712085136276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed idle looking ver. 2.fbx using Guid(654bb57cd9a42c34caa1712085136276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fecf0bedb98539f09f8e2a166600a1a8') in 0.048344 seconds 
+  Import took 0.054125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.329068 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed idle looking ver. 1.fbx
+  artifactKey: Guid(b86bab13b6c759f49be78e452772393b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed idle looking ver. 1.fbx using Guid(b86bab13b6c759f49be78e452772393b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a9b6a89e4ae66e866906697f4cd7927') in 0.016701 seconds 
+  Import took 0.020766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.386630 seconds.
+  path: Assets/Avatars/Models/Stheno/standing idle.fbx
+  artifactKey: Guid(79c1d14c2e81cf34fa6596ee169b0cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing idle.fbx using Guid(79c1d14c2e81cf34fa6596ee169b0cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e07e4b59a2ef68ec32ce05f8c4e61c21') in 0.006129 seconds 
+  Import took 0.010171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.576867 seconds.
+  path: Assets/Avatars/Models/Stheno/standing idle.fbx
+  artifactKey: Guid(79c1d14c2e81cf34fa6596ee169b0cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing idle.fbx using Guid(79c1d14c2e81cf34fa6596ee169b0cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d22a36462efef785cc40bc5741fbd6b') in 0.005537 seconds 
+  Import took 0.010328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.071398 seconds.
+  path: Assets/Avatars/Models/Stheno/standing jump.fbx
+  artifactKey: Guid(7f02863c37451324898725ae0216340b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing jump.fbx using Guid(7f02863c37451324898725ae0216340b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8116534773f7b79369b552fb87f946') in 0.004967 seconds 
+  Import took 0.009910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.582091 seconds.
+  path: Assets/Avatars/Models/Stheno/standing walk back.fbx
+  artifactKey: Guid(8e6693c1ef9efcf409da445aa1653814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing walk back.fbx using Guid(8e6693c1ef9efcf409da445aa1653814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500381368041cd7f1f74ed84f77f46d8') in 0.005925 seconds 
+  Import took 0.009777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.506524 seconds.
+  path: Assets/Avatars/Models/Stheno/standing walk forward.fbx
+  artifactKey: Guid(5d0c3c95f40255447897e60ca165a9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing walk forward.fbx using Guid(5d0c3c95f40255447897e60ca165a9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0ea36fa2816bcd889fe5ea2ad390bf4') in 0.006617 seconds 
+  Import took 0.011809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.839820 seconds.
+  path: Assets/Avatars/Models/Stheno/standing walk forward.fbx
+  artifactKey: Guid(5d0c3c95f40255447897e60ca165a9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing walk forward.fbx using Guid(5d0c3c95f40255447897e60ca165a9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '045a53cb60c645068876c5f609e7ee15') in 0.005271 seconds 
+  Import took 0.009775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.308988 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield walk.fbx
+  artifactKey: Guid(8e444653e6dcdf14589708e204903b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield walk.fbx using Guid(8e444653e6dcdf14589708e204903b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c981b1fe809af80b3f24f246b21849d8') in 0.006958 seconds 
+  Import took 0.011535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.941909 seconds.
+  path: Assets/Avatars/Models/Stheno/standing walk forward.fbx
+  artifactKey: Guid(5d0c3c95f40255447897e60ca165a9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing walk forward.fbx using Guid(5d0c3c95f40255447897e60ca165a9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5508680213c364407c46fbad76ee0240') in 0.005669 seconds 
+  Import took 0.009940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.136569 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield run.fbx
+  artifactKey: Guid(a58871a6ebb47c44d8adea5bf80ba2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield run.fbx using Guid(a58871a6ebb47c44d8adea5bf80ba2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e10a1dff2da0fcbf97158ba869f684d4') in 0.049872 seconds 
+  Import took 0.054096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.716410 seconds.
+  path: Assets/Avatars/Models/Stheno/standing run back.fbx
+  artifactKey: Guid(f9110895fb8cb984e9e0d436dd04a43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing run back.fbx using Guid(f9110895fb8cb984e9e0d436dd04a43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af1ed9c7b05c3e6f4b088e034708d74') in 0.005847 seconds 
+  Import took 0.010127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.348878 seconds.
+  path: Assets/Avatars/Models/Stheno/standing run forward.fbx
+  artifactKey: Guid(8d1befcc7b4dfd549b5fcb0cdd47aaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing run forward.fbx using Guid(8d1befcc7b4dfd549b5fcb0cdd47aaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c530c352f1ec9ef56a6a473446a2ff') in 0.006184 seconds 
+  Import took 0.010735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.376368 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed run forward.fbx
+  artifactKey: Guid(16f846d9f72187a4197045db107d41e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed run forward.fbx using Guid(16f846d9f72187a4197045db107d41e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecc0c44fce3431b0d2dc12faab83ae35') in 0.005512 seconds 
+  Import took 0.009661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.254555 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno.fbx
+  artifactKey: Guid(54e520b9405947947ba985a70c9bfdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno.fbx using Guid(54e520b9405947947ba985a70c9bfdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fa8477ba9a065b6fdb84980383ef10a') in 0.196085 seconds 
+  Import took 0.202904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.741766 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed walk forward.fbx
+  artifactKey: Guid(4f718072cc6596c428d4a9136fbd25c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed walk forward.fbx using Guid(4f718072cc6596c428d4a9136fbd25c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eab64440121c081fda90ed0baff39f3d') in 0.006781 seconds 
+  Import took 0.011671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.881095 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed walk back.fbx
+  artifactKey: Guid(2cbcd78be85433d40bf71bc494cae7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed walk back.fbx using Guid(2cbcd78be85433d40bf71bc494cae7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a70367cb09577315bab617e37e25cf') in 0.049753 seconds 
+  Import took 0.055036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.999870 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed run back.fbx
+  artifactKey: Guid(429386bd83c33514fb43519d57bd2fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed run back.fbx using Guid(429386bd83c33514fb43519d57bd2fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc13d33db1a5a9814ecd50ded072424d') in 0.005468 seconds 
+  Import took 0.009745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.442072 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed jump.fbx
+  artifactKey: Guid(16e62b6b375a27a42b9c15336e88b9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed jump.fbx using Guid(16e62b6b375a27a42b9c15336e88b9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451fc801ed38331e96d0435a8e56ab72') in 0.006768 seconds 
+  Import took 0.011778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.538813 seconds.
+  path: Assets/Avatars/Models/Stheno/standing run forward.fbx
+  artifactKey: Guid(8d1befcc7b4dfd549b5fcb0cdd47aaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing run forward.fbx using Guid(8d1befcc7b4dfd549b5fcb0cdd47aaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6b07f0508f2321a4f2d4e1d66efa5e') in 0.005563 seconds 
+  Import took 0.009881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.764734 seconds.
+  path: Assets/Avatars/Models/Stheno/standing run forward.fbx
+  artifactKey: Guid(8d1befcc7b4dfd549b5fcb0cdd47aaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing run forward.fbx using Guid(8d1befcc7b4dfd549b5fcb0cdd47aaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81aecd64b91a0df55c762b1489e29ce5') in 0.008674 seconds 
+  Import took 0.014484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 385.322801 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Falling To Roll.fbx
+  artifactKey: Guid(c9420bb3909507b41ae136a62efca21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Falling To Roll.fbx using Guid(c9420bb3909507b41ae136a62efca21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746ce792e36d500303f3008cdbab4bf2') in 0.015305 seconds 
+  Import took 0.023866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.722604 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Falling To Roll.fbx
+  artifactKey: Guid(c9420bb3909507b41ae136a62efca21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Falling To Roll.fbx using Guid(c9420bb3909507b41ae136a62efca21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a597cc7bdd0d1fa59275de8ac5973f4') in 0.005786 seconds 
+  Import took 0.009899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.624610 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Falling To Roll.fbx
+  artifactKey: Guid(c9420bb3909507b41ae136a62efca21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Falling To Roll.fbx using Guid(c9420bb3909507b41ae136a62efca21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8786fdb6d335f3772f7e28e474a1d20e') in 0.005344 seconds 
+  Import took 0.009849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.619637 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Falling To Roll.fbx
+  artifactKey: Guid(c9420bb3909507b41ae136a62efca21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Falling To Roll.fbx using Guid(c9420bb3909507b41ae136a62efca21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3df853460efa4f09ac83b2041b625f61') in 0.005377 seconds 
+  Import took 0.010207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.147732 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Falling To Roll.fbx
+  artifactKey: Guid(c9420bb3909507b41ae136a62efca21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Falling To Roll.fbx using Guid(c9420bb3909507b41ae136a62efca21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3373844624db05d9796147d0c55d67a') in 0.007173 seconds 
+  Import took 0.011838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.480473 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno.fbx
+  artifactKey: Guid(54e520b9405947947ba985a70c9bfdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno.fbx using Guid(54e520b9405947947ba985a70c9bfdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460dd99e72188f0f930e1272e956dfb6') in 0.170606 seconds 
+  Import took 0.176494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 82.737675 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Stand To Roll.fbx
+  artifactKey: Guid(5edc2162a4fb0484595ca47537d704a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Stand To Roll.fbx using Guid(5edc2162a4fb0484595ca47537d704a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec463785a9d7b2ea21239dcf28471b80') in 0.013053 seconds 
+  Import took 0.018561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.794947 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Stand To Roll.fbx
+  artifactKey: Guid(5edc2162a4fb0484595ca47537d704a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Stand To Roll.fbx using Guid(5edc2162a4fb0484595ca47537d704a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '808b6edea97c20e77ddfe58639372276') in 0.006484 seconds 
+  Import took 0.011776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.659129 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Stand To Roll.fbx
+  artifactKey: Guid(5edc2162a4fb0484595ca47537d704a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Stand To Roll.fbx using Guid(5edc2162a4fb0484595ca47537d704a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b2f792f86fbc59a710828476aab4c5') in 0.006158 seconds 
+  Import took 0.010706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.803938 seconds.
+  path: Assets/Avatars/Models/Stheno/standing melee attack kick ver. 1.fbx
+  artifactKey: Guid(6dd29761406404d42be9265f25340b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing melee attack kick ver. 1.fbx using Guid(6dd29761406404d42be9265f25340b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6943cda27d83f7aa1e561e71de0431b2') in 0.006797 seconds 
+  Import took 0.012005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.360083 seconds.
+  path: Assets/Avatars/Models/Stheno/standing melee attack horizontal.fbx
+  artifactKey: Guid(2bccb3e0d0eee7041a8b1f2fbd5c6167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing melee attack horizontal.fbx using Guid(2bccb3e0d0eee7041a8b1f2fbd5c6167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83d65c0e194c862c29c718195689cc42') in 0.006646 seconds 
+  Import took 0.011811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.259386 seconds.
+  path: Assets/Avatars/Models/Stheno/standing melee attack downward.fbx
+  artifactKey: Guid(d4b4727f238cb4740947b50b44016f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing melee attack downward.fbx using Guid(d4b4727f238cb4740947b50b44016f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0de1f9b2b2ff9c6c75183c7c14b32eb') in 0.009176 seconds 
+  Import took 0.014215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.494560 seconds.
+  path: Assets/Avatars/Models/Stheno/standing melee run jump attack.fbx
+  artifactKey: Guid(4981fad3be83bbe41bb1c91e34c2472b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing melee run jump attack.fbx using Guid(4981fad3be83bbe41bb1c91e34c2472b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a53f9243860b5aa838036f2e7c02e0') in 0.006472 seconds 
+  Import took 0.011107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.610477 seconds.
+  path: Assets/Avatars/Models/Stheno/standing react large from left.fbx
+  artifactKey: Guid(4378020d0c0a5354ca1c1d47e55f34e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing react large from left.fbx using Guid(4378020d0c0a5354ca1c1d47e55f34e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '510e43b84ceae4d8ce14b62b145eaf9a') in 0.017685 seconds 
+  Import took 0.022284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.674729 seconds.
+  path: Assets/Avatars/Models/Stheno/standing react large from right.fbx
+  artifactKey: Guid(14fbfc2755666124b9e32b3230f98687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing react large from right.fbx using Guid(14fbfc2755666124b9e32b3230f98687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eacb338661029a015190f5be2850ac0b') in 0.006927 seconds 
+  Import took 0.011386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.312105 seconds.
+  path: Assets/Avatars/Models/Stheno/standing react large gut.fbx
+  artifactKey: Guid(4ae3a6220ea94d546b22e0e906b678ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing react large gut.fbx using Guid(4ae3a6220ea94d546b22e0e906b678ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '893184517237e072cef49bbbe41f5d82') in 0.006020 seconds 
+  Import took 0.010561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.107233 seconds.
+  path: Assets/Avatars/Models/Stheno/standing taunt battlecry.fbx
+  artifactKey: Guid(1cee477d702d00149aa2a9e1081981e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing taunt battlecry.fbx using Guid(1cee477d702d00149aa2a9e1081981e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7426a63766bd463fc81f52906a845932') in 0.006385 seconds 
+  Import took 0.010932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.446841 seconds.
+  path: Assets/Avatars/Models/Stheno/standing taunt chest thump.fbx
+  artifactKey: Guid(7cf9cd0339f054a4b87159a161fc26fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing taunt chest thump.fbx using Guid(7cf9cd0339f054a4b87159a161fc26fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd85eea05f5d97feb4946f713bfb226e') in 0.021634 seconds 
+  Import took 0.028143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.525499 seconds.
+  path: Assets/Avatars/Models/Stheno/standing turn left 90.fbx
+  artifactKey: Guid(d7d61ca4f4263e74fa18c7aac919452f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing turn left 90.fbx using Guid(d7d61ca4f4263e74fa18c7aac919452f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d74cdede208be57a8261b930a5a8ee7') in 0.005693 seconds 
+  Import took 0.010083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 147.725191 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Great Sword Impact.fbx
+  artifactKey: Guid(9e96c788d00e01847b672b45c9a86a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Great Sword Impact.fbx using Guid(9e96c788d00e01847b672b45c9a86a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d52696e90d071ec3787d76febc5c658') in 0.006491 seconds 
+  Import took 0.011224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.443089 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Stand To Roll.fbx
+  artifactKey: Guid(5edc2162a4fb0484595ca47537d704a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Stand To Roll.fbx using Guid(5edc2162a4fb0484595ca47537d704a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5cea6c0fcc11ef2599eaf988467b7c1') in 0.005736 seconds 
+  Import took 0.010045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.308792 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Great Sword Impact.fbx
+  artifactKey: Guid(9e96c788d00e01847b672b45c9a86a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Great Sword Impact.fbx using Guid(9e96c788d00e01847b672b45c9a86a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585e426498e6c44106eee5aa7334f1b6') in 0.005797 seconds 
+  Import took 0.009744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.228151 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Great Sword Impact.fbx
+  artifactKey: Guid(9e96c788d00e01847b672b45c9a86a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Great Sword Impact.fbx using Guid(9e96c788d00e01847b672b45c9a86a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80890f2125c5981274deb1ee328b6622') in 0.005448 seconds 
+  Import took 0.010066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.586768 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Great Sword Impact.fbx
+  artifactKey: Guid(9e96c788d00e01847b672b45c9a86a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Great Sword Impact.fbx using Guid(9e96c788d00e01847b672b45c9a86a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba80b80b383f55889fff979475c4b504') in 0.005132 seconds 
+  Import took 0.009927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.142532 seconds.
+  path: Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx
+  artifactKey: Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Medusa/Medusa_Move/sword and shield jump (2).fbx using Guid(0a541557dd7241542821f137bf6fbb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012f859e367e7e4e80db114adf87563e') in 0.006161 seconds 
+  Import took 0.010528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.994576 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed turn left 90.fbx
+  artifactKey: Guid(ee2f523f772c2b94b9cc49360657b6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed turn left 90.fbx using Guid(ee2f523f772c2b94b9cc49360657b6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6811daca3cec44b7cd67e875e106e6d') in 0.005555 seconds 
+  Import took 0.009827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.339465 seconds.
+  path: Assets/Avatars/Models/Stheno/unarmed turn right 90.fbx
+  artifactKey: Guid(ee9051c5f0911ff45a11a8eec449a895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/unarmed turn right 90.fbx using Guid(ee9051c5f0911ff45a11a8eec449a895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee3cb799e12589f468006d40570dc4e') in 0.049489 seconds 
+  Import took 0.054300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.919905 seconds.
+  path: Assets/Avatars/Models/Stheno/standing melee combo attack ver. 3.fbx
+  artifactKey: Guid(a67bbd3e415b42c4b99ee09d1bdf5a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing melee combo attack ver. 3.fbx using Guid(a67bbd3e415b42c4b99ee09d1bdf5a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19523504cb3d6e2362072fd0f02dff4d') in 0.006666 seconds 
+  Import took 0.010822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.866885 seconds.
+  path: Assets/Avatars/Models/Stheno/standing melee attack 360 low.fbx
+  artifactKey: Guid(aea1e25e66f97184a9a9e7209590b8c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing melee attack 360 low.fbx using Guid(aea1e25e66f97184a9a9e7209590b8c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3de93259b10401ce37f426440884bcf7') in 0.006018 seconds 
+  Import took 0.010332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.915217 seconds.
+  path: Assets/Avatars/Models/Stheno/standing run back.fbx
+  artifactKey: Guid(f9110895fb8cb984e9e0d436dd04a43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/standing run back.fbx using Guid(f9110895fb8cb984e9e0d436dd04a43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '439829f94a13f7a9ba87ac48c7385adf') in 0.005506 seconds 
+  Import took 0.009445 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003271 seconds.
+Registered in 0.009091 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.978 seconds
+- Completed reload, in  2.511 seconds
 Domain Reload Profiling:
-	ReloadAssembly (978ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (2512ms)
+		BeginReloadAssembly (259ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
+			DisableScriptedObjects (13ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (849ms)
-			LoadAssemblies (72ms)
+			CreateAndSetChildDomain (76ms)
+		EndReloadAssembly (2169ms)
+			LoadAssemblies (222ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (195ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (497ms)
+			SetupTypeCache (475ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (1229ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (422ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2717 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 213.3 MB.
-System memory in use after: 213.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3325.
-Total: 2.555400 ms (FindLiveObjects: 0.195100 ms CreateObjectMapping: 0.055000 ms MarkObjects: 2.282800 ms  DeleteObjects: 0.021400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004841 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.488 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1489ms)
-		BeginReloadAssembly (139ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (1278ms)
-			LoadAssemblies (141ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (308ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (682ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (95ms)
-				ProcessInitializeOnLoadAttributes (574ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				BeforeProcessingInitializeOnLoad (156ms)
+				ProcessInitializeOnLoadAttributes (1055ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2717 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 213.3 MB.
-System memory in use after: 213.6 MB.
+System memory in use before: 230.7 MB.
+System memory in use after: 231.0 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3328.
-Total: 3.272100 ms (FindLiveObjects: 0.197600 ms CreateObjectMapping: 0.070300 ms MarkObjects: 2.900400 ms  DeleteObjects: 0.102400 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3402.
+Total: 2.514300 ms (FindLiveObjects: 0.206400 ms CreateObjectMapping: 0.075500 ms MarkObjects: 2.210400 ms  DeleteObjects: 0.020300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -311,133 +870,67 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 190.082405 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno@Stand To Roll.fbx
+  artifactKey: Guid(5edc2162a4fb0484595ca47537d704a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno@Stand To Roll.fbx using Guid(5edc2162a4fb0484595ca47537d704a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eac8d1cc622534984bfb758151fa6ed7') in 0.080775 seconds 
+  Import took 0.085095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 208.782687 seconds.
+  path: Assets/Avatars/Models/Stheno/zip_Stheno.fbx
+  artifactKey: Guid(54e520b9405947947ba985a70c9bfdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Avatars/Models/Stheno/zip_Stheno.fbx using Guid(54e520b9405947947ba985a70c9bfdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e242d9ecfeb8b3f06e7cfe3e809c4a12') in 0.319351 seconds 
+  Import took 0.326438 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005698 seconds.
+Registered in 0.002721 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.008 seconds
+- Completed reload, in  1.030 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2008ms)
-		BeginReloadAssembly (167ms)
+	ReloadAssembly (1030ms)
+		BeginReloadAssembly (99ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1762ms)
-			LoadAssemblies (160ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (898ms)
+			LoadAssemblies (79ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (360ms)
+			SetupTypeCache (181ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (1078ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (533ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (129ms)
-				ProcessInitializeOnLoadAttributes (936ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (457ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2717 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 213.4 MB.
-System memory in use after: 213.6 MB.
+System memory in use before: 231.0 MB.
+System memory in use after: 231.2 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3331.
-Total: 2.625800 ms (FindLiveObjects: 0.175700 ms CreateObjectMapping: 0.070600 ms MarkObjects: 2.355400 ms  DeleteObjects: 0.022700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2062.397531 seconds.
-  path: Assets/Art/Aimming_RDL/Textures/3.png
-  artifactKey: Guid(cc1183da8e8c3584da776f4f53cf43f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Aimming_RDL/Textures/3.png using Guid(cc1183da8e8c3584da776f4f53cf43f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e4919227ccc6eba913c2f18738f873') in 0.235099 seconds 
-  Import took 0.239341 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001259 seconds.
-  path: Assets/Art/Aimming_RDL/Textures/3.png
-  artifactKey: Guid(cc1183da8e8c3584da776f4f53cf43f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Aimming_RDL/Textures/3.png using Guid(cc1183da8e8c3584da776f4f53cf43f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e4919227ccc6eba913c2f18738f873') in 0.008100 seconds 
-  Import took 0.011938 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 247.134737 seconds.
-  path: Assets/Art/Scene_models/materials/M_FX_glow_dungeon.mat
-  artifactKey: Guid(1024e84002168c44aaed81be58fbfd08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Scene_models/materials/M_FX_glow_dungeon.mat using Guid(1024e84002168c44aaed81be58fbfd08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7094c28e16953852707bd53a9521c4b5') in 0.146940 seconds 
-  Import took 0.152635 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002510 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.159 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1159ms)
-		BeginReloadAssembly (125ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (983ms)
-			LoadAssemblies (98ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (211ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (590ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (502ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2717 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 215.9 MB.
-System memory in use after: 216.1 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3411.
-Total: 2.665100 ms (FindLiveObjects: 0.168400 ms CreateObjectMapping: 0.056600 ms MarkObjects: 2.412700 ms  DeleteObjects: 0.026100 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3441.
+Total: 2.547800 ms (FindLiveObjects: 0.175500 ms CreateObjectMapping: 0.064000 ms MarkObjects: 2.285300 ms  DeleteObjects: 0.021900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
