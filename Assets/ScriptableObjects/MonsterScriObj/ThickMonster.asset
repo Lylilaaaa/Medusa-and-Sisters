@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: ThickMonster
   m_EditorClassIdentifier: 
   monName: HIghHealthMonster
-  damage: 5
   maxHealth: 150
   curHealth: 150
+  damage: 5
   movingSpeed: 0.8
   lockDistance: 50
+  attackRate: 0
+  attackDistance: 0
+  leastDistance: 2
   monsterPrefab: {fileID: 2135707826142254328, guid: b43d6a8cdf04c9045aabf13a511fdafe, type: 3}
   isChasing: 0
   isDead: 0

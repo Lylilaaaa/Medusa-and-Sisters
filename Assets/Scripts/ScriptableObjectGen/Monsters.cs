@@ -8,15 +8,21 @@ namespace ScriptableObjectGen
         public string monName;
         
         //data
-        public int damage;
         public float maxHealth;
         public float curHealth;
         
+        //ability
+        public int damage;
         public float movingSpeed;
         public float lockDistance;
+        public float attackInterval;
+        public float attackDistance;
+        public float leastDistance;
         
         //settings
         public GameObject monsterPrefab;
+
+        //state
         public bool isChasing;
         public bool isDead;
     }

@@ -1,6 +1,7 @@
 using Camera;
 using Manager;
 using UnityEngine;
+using ScriptableObjectGen;
 
 namespace Player
 {
@@ -14,13 +15,18 @@ namespace Player
         private Rigidbody rigi;
         public GameObject model;
         private CapsuleCollider col;
-        
+
         public IUserInput pi;
         private Vector3 planerVec; //important!!
         private bool planerLook ;
         private Vector3 thrustVec;
         private float lerpTarget;
         private Vector3 deltaPos;
+        private bool isGrounded;
+
+        public float stepCheckRange;
+        public float stepCheckHeight;
+        public float maxStepHeight;
 
         [Header(" ===== Ability Setting ===== ")]
         public bool canRun;
@@ -44,9 +50,7 @@ namespace Player
         [Header(" ===== Friction Setting ===== ")]
         public PhysicMaterial frictionOne;
         public PhysicMaterial frictionZero;
-
-        [Header("===== Weapon Collider ======")]
-        public WeaponController[] weapon_Colliders;
+        
 
         private void Awake()
         {
@@ -70,6 +74,11 @@ namespace Player
 
         private void Update()
         {
+            // detect is on step
+            if (IsStep())
+            {
+                thrustVec = model.transform.up * 0.5f;
+            }
 
             if (canRun)
             {
@@ -193,11 +202,13 @@ namespace Player
 
         public void IsGround()
         {
+            isGrounded = true;
             anim.SetBool("isGround",true);
             
         }
         public void IsNotGround()
         {
+            isGrounded = false;
             anim.SetBool("isGround",false);
         }
 
@@ -297,7 +308,6 @@ namespace Player
             FxController.instance.QuitFx(3);
         }
         
-        
         public void  OnAttackIdleEnter()
         {
             pi._InputEnable = true;
@@ -315,6 +325,18 @@ namespace Player
             deltaPos += (Vector3)_deltaPos;
         }
 
+        public void OnGetImpactUpdate()
+        {
+            pi._InputEnable = false;
+            canAttack = false;
+        }
+
+        public void OnGetImpactExit()
+        {
+            pi._InputEnable = true;
+            canAttack = true;
+        }
+
         public void getHurt(float damage)
         {
             //TODO
@@ -327,59 +349,85 @@ namespace Player
         }
         
         #region Ting's change
-        // animation events
-        /// <summary>
-        /// 整个技能开始
-        /// </summary>
-        private void StartAttack() {
-            //Animator.ResetTrigger("AttackOver");
-            canAttack = false;
-        }
+        // // animation events
+        // /// <summary>
+        // /// 整个技能开始
+        // /// </summary>
+        // private void StartAttack() {
+        //     //Animator.ResetTrigger("AttackOver");
+        //     canAttack = false;
+        // }
+        //
+        // /// <summary>
+        // /// 技能结束
+        // /// </summary>
+        // private void EndAttack()
+        // {
+        //     //为了防止switch后上一段的endAttack依旧被触发，需要记录开始时的动画和现在的动画
+        //     //如果相同则触发endAttack，如果不同就忽略endAttack
+        //
+        //     //走到endattack意味着没有连续攻击，返回走路状态
+        //     //canAttack = true;
+        //     
+        //     //animator.SetTrigger("AttackOver");
+        //     //playerState = PlayerState.normal;
+        // }
 
-        /// <summary>
-        /// 技能结束
-        /// </summary>
-        private void EndAttack()
-        {
-            //为了防止switch后上一段的endAttack依旧被触发，需要记录开始时的动画和现在的动画
-            //如果相同则触发endAttack，如果不同就忽略endAttack
+        // /// <summary>
+        // /// 有效攻击帧开始
+        // /// </summary>
+        // private void StartHit(int weaponNum)
+        // {
+        //     //音效
+        //     //AudioSource.PlayOneShot(Resources.Load<AudioClip>("Audio/爪"));
+        //     //激活武器
+        //     weapon_Colliders[weaponNum].gameObject.SetActive(true);
+        // }
+        //
+        // /// <summary>
+        // /// 攻击帧结束
+        // /// </summary>
+        // private void StopHit(int weaponNum)
+        // {
+        //     weapon_Colliders[weaponNum].gameObject.SetActive(false);
+        // }
 
-            //走到endattack意味着没有连续攻击，返回走路状态
-            //canAttack = true;
-            
-            //animator.SetTrigger("AttackOver");
-            //playerState = PlayerState.normal;
-        }
-
-        /// <summary>
-        /// 有效攻击帧开始
-        /// </summary>
-        private void StartHit(int weaponNum)
-        {
-            //音效
-            //AudioSource.PlayOneShot(Resources.Load<AudioClip>("Audio/爪"));
-            //激活武器
-            weapon_Colliders[weaponNum].gameObject.SetActive(true);
-        }
-
-        /// <summary>
-        /// 攻击帧结束
-        /// </summary>
-        private void StopHit(int weaponNum)
-        {
-            weapon_Colliders[weaponNum].gameObject.SetActive(false);
-        }
-
-        /// <summary>
-        /// 后摇开始
-        /// </summary>
-        private void CanSwitch()
-        {
-            canAttack = true;
-        }
+        // /// <summary>
+        // /// 后摇开始
+        // /// </summary>
+        // private void CanSwitch()
+        // {
+        //     canAttack = true;
+        // }
+        //
+        //
+        //
+        #endregion
         
-        
-        
+        #region test
+        private bool IsStep()
+        {
+            Ray ray = new Ray(transform.position + model.transform.forward.normalized * stepCheckRange + Vector3.up * stepCheckHeight, Vector3.down);
+            RaycastHit hit;
+            //point = Vector3.zero;
+
+            if (!isGrounded)
+                return false;
+
+            if (Physics.Raycast(ray, out hit, stepCheckHeight * 3, LayerMask.GetMask("Ground")))
+            {
+                float height = hit.point.y - rigi.position.y;
+                if (height < 0.06f)
+                    return false;
+
+                if (height <= maxStepHeight)
+                {
+                    //point = hit.point;
+                    return true;
+                }
+            }
+            return false;
+        }
         #endregion
         
     }

@@ -1,0 +1,849 @@
+fileFormatVersion: 2
+guid: 12c733e6a5eff3448acfcd147ad2a0fd
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: ball_l
+  - first:
+      1: 100002
+    second: ball_r
+  - first:
+      1: 100004
+    second: calf_l
+  - first:
+      1: 100006
+    second: calf_r
+  - first:
+      1: 100008
+    second: calf_twist_01_l
+  - first:
+      1: 100010
+    second: calf_twist_01_r
+  - first:
+      1: 100012
+    second: clavicle_l
+  - first:
+      1: 100014
+    second: clavicle_r
+  - first:
+      1: 100016
+    second: eye_l
+  - first:
+      1: 100018
+    second: eye_r
+  - first:
+      1: 100020
+    second: foot_l
+  - first:
+      1: 100022
+    second: foot_r
+  - first:
+      1: 100024
+    second: hand_l
+  - first:
+      1: 100026
+    second: hand_r
+  - first:
+      1: 100028
+    second: head
+  - first:
+      1: 100030
+    second: hips_twist_01
+  - first:
+      1: 100032
+    second: hood_l_1
+  - first:
+      1: 100034
+    second: hood_l_2
+  - first:
+      1: 100036
+    second: hood_l_3
+  - first:
+      1: 100038
+    second: hood_r_1
+  - first:
+      1: 100040
+    second: hood_r_2
+  - first:
+      1: 100042
+    second: hood_r_3
+  - first:
+      1: 100044
+    second: ik_foot_l
+  - first:
+      1: 100046
+    second: ik_foot_r
+  - first:
+      1: 100048
+    second: ik_foot_root
+  - first:
+      1: 100050
+    second: ik_hand_gun
+  - first:
+      1: 100052
+    second: ik_hand_l
+  - first:
+      1: 100054
+    second: ik_hand_r
+  - first:
+      1: 100056
+    second: ik_hand_root
+  - first:
+      1: 100058
+    second: index_01_l
+  - first:
+      1: 100060
+    second: index_01_r
+  - first:
+      1: 100062
+    second: index_02_l
+  - first:
+      1: 100064
+    second: index_02_r
+  - first:
+      1: 100066
+    second: index_03_l
+  - first:
+      1: 100068
+    second: index_03_r
+  - first:
+      1: 100070
+    second: jaw
+  - first:
+      1: 100072
+    second: //RootNode
+  - first:
+      1: 100074
+    second: lowerarm_l
+  - first:
+      1: 100076
+    second: lowerarm_r
+  - first:
+      1: 100078
+    second: lowerarm_twist_01_l
+  - first:
+      1: 100080
+    second: lowerarm_twist_01_r
+  - first:
+      1: 100082
+    second: middle_01_l
+  - first:
+      1: 100084
+    second: middle_01_r
+  - first:
+      1: 100086
+    second: middle_02_l
+  - first:
+      1: 100088
+    second: middle_02_r
+  - first:
+      1: 100090
+    second: middle_03_l
+  - first:
+      1: 100092
+    second: middle_03_r
+  - first:
+      1: 100094
+    second: neck_01
+  - first:
+      1: 100096
+    second: pelvis
+  - first:
+      1: 100098
+    second: pinky_01_l
+  - first:
+      1: 100100
+    second: pinky_01_r
+  - first:
+      1: 100102
+    second: pinky_02_l
+  - first:
+      1: 100104
+    second: pinky_02_r
+  - first:
+      1: 100106
+    second: pinky_03_l
+  - first:
+      1: 100108
+    second: pinky_03_r
+  - first:
+      1: 100110
+    second: ring_01_l
+  - first:
+      1: 100112
+    second: ring_01_r
+  - first:
+      1: 100114
+    second: ring_02_l
+  - first:
+      1: 100116
+    second: ring_02_r
+  - first:
+      1: 100118
+    second: ring_03_l
+  - first:
+      1: 100120
+    second: ring_03_r
+  - first:
+      1: 100122
+    second: root
+  - first:
+      1: 100124
+    second: ShieldSlot
+  - first:
+      1: 100126
+    second: shirt_back_1
+  - first:
+      1: 100128
+    second: shirt_back_2
+  - first:
+      1: 100130
+    second: shirt_back_3
+  - first:
+      1: 100132
+    second: shirt_back_4
+  - first:
+      1: 100134
+    second: shirt_front_1
+  - first:
+      1: 100136
+    second: shirt_front_14
+  - first:
+      1: 100138
+    second: shirt_front_2
+  - first:
+      1: 100140
+    second: shirt_front_3
+  - first:
+      1: 100142
+    second: spine_01
+  - first:
+      1: 100144
+    second: spine_02
+  - first:
+      1: 100146
+    second: spine_03
+  - first:
+      1: 100148
+    second: thigh_l
+  - first:
+      1: 100150
+    second: thigh_r
+  - first:
+      1: 100152
+    second: thigh_twist_01_l
+  - first:
+      1: 100154
+    second: thigh_twist_01_r
+  - first:
+      1: 100156
+    second: thumb_01_l
+  - first:
+      1: 100158
+    second: thumb_01_r
+  - first:
+      1: 100160
+    second: thumb_02_l
+  - first:
+      1: 100162
+    second: thumb_02_r
+  - first:
+      1: 100164
+    second: thumb_03_l
+  - first:
+      1: 100166
+    second: thumb_03_r
+  - first:
+      1: 100168
+    second: upperarm_l
+  - first:
+      1: 100170
+    second: upperarm_r
+  - first:
+      1: 100172
+    second: upperarm_twist_01_l
+  - first:
+      1: 100174
+    second: upperarm_twist_01_r
+  - first:
+      1: 100176
+    second: WeaponSlot
+  - first:
+      4: 400000
+    second: ball_l
+  - first:
+      4: 400002
+    second: ball_r
+  - first:
+      4: 400004
+    second: calf_l
+  - first:
+      4: 400006
+    second: calf_r
+  - first:
+      4: 400008
+    second: calf_twist_01_l
+  - first:
+      4: 400010
+    second: calf_twist_01_r
+  - first:
+      4: 400012
+    second: clavicle_l
+  - first:
+      4: 400014
+    second: clavicle_r
+  - first:
+      4: 400016
+    second: eye_l
+  - first:
+      4: 400018
+    second: eye_r
+  - first:
+      4: 400020
+    second: foot_l
+  - first:
+      4: 400022
+    second: foot_r
+  - first:
+      4: 400024
+    second: hand_l
+  - first:
+      4: 400026
+    second: hand_r
+  - first:
+      4: 400028
+    second: head
+  - first:
+      4: 400030
+    second: hips_twist_01
+  - first:
+      4: 400032
+    second: hood_l_1
+  - first:
+      4: 400034
+    second: hood_l_2
+  - first:
+      4: 400036
+    second: hood_l_3
+  - first:
+      4: 400038
+    second: hood_r_1
+  - first:
+      4: 400040
+    second: hood_r_2
+  - first:
+      4: 400042
+    second: hood_r_3
+  - first:
+      4: 400044
+    second: ik_foot_l
+  - first:
+      4: 400046
+    second: ik_foot_r
+  - first:
+      4: 400048
+    second: ik_foot_root
+  - first:
+      4: 400050
+    second: ik_hand_gun
+  - first:
+      4: 400052
+    second: ik_hand_l
+  - first:
+      4: 400054
+    second: ik_hand_r
+  - first:
+      4: 400056
+    second: ik_hand_root
+  - first:
+      4: 400058
+    second: index_01_l
+  - first:
+      4: 400060
+    second: index_01_r
+  - first:
+      4: 400062
+    second: index_02_l
+  - first:
+      4: 400064
+    second: index_02_r
+  - first:
+      4: 400066
+    second: index_03_l
+  - first:
+      4: 400068
+    second: index_03_r
+  - first:
+      4: 400070
+    second: jaw
+  - first:
+      4: 400072
+    second: //RootNode
+  - first:
+      4: 400074
+    second: lowerarm_l
+  - first:
+      4: 400076
+    second: lowerarm_r
+  - first:
+      4: 400078
+    second: lowerarm_twist_01_l
+  - first:
+      4: 400080
+    second: lowerarm_twist_01_r
+  - first:
+      4: 400082
+    second: middle_01_l
+  - first:
+      4: 400084
+    second: middle_01_r
+  - first:
+      4: 400086
+    second: middle_02_l
+  - first:
+      4: 400088
+    second: middle_02_r
+  - first:
+      4: 400090
+    second: middle_03_l
+  - first:
+      4: 400092
+    second: middle_03_r
+  - first:
+      4: 400094
+    second: neck_01
+  - first:
+      4: 400096
+    second: pelvis
+  - first:
+      4: 400098
+    second: pinky_01_l
+  - first:
+      4: 400100
+    second: pinky_01_r
+  - first:
+      4: 400102
+    second: pinky_02_l
+  - first:
+      4: 400104
+    second: pinky_02_r
+  - first:
+      4: 400106
+    second: pinky_03_l
+  - first:
+      4: 400108
+    second: pinky_03_r
+  - first:
+      4: 400110
+    second: ring_01_l
+  - first:
+      4: 400112
+    second: ring_01_r
+  - first:
+      4: 400114
+    second: ring_02_l
+  - first:
+      4: 400116
+    second: ring_02_r
+  - first:
+      4: 400118
+    second: ring_03_l
+  - first:
+      4: 400120
+    second: ring_03_r
+  - first:
+      4: 400122
+    second: root
+  - first:
+      4: 400124
+    second: ShieldSlot
+  - first:
+      4: 400126
+    second: shirt_back_1
+  - first:
+      4: 400128
+    second: shirt_back_2
+  - first:
+      4: 400130
+    second: shirt_back_3
+  - first:
+      4: 400132
+    second: shirt_back_4
+  - first:
+      4: 400134
+    second: shirt_front_1
+  - first:
+      4: 400136
+    second: shirt_front_14
+  - first:
+      4: 400138
+    second: shirt_front_2
+  - first:
+      4: 400140
+    second: shirt_front_3
+  - first:
+      4: 400142
+    second: spine_01
+  - first:
+      4: 400144
+    second: spine_02
+  - first:
+      4: 400146
+    second: spine_03
+  - first:
+      4: 400148
+    second: thigh_l
+  - first:
+      4: 400150
+    second: thigh_r
+  - first:
+      4: 400152
+    second: thigh_twist_01_l
+  - first:
+      4: 400154
+    second: thigh_twist_01_r
+  - first:
+      4: 400156
+    second: thumb_01_l
+  - first:
+      4: 400158
+    second: thumb_01_r
+  - first:
+      4: 400160
+    second: thumb_02_l
+  - first:
+      4: 400162
+    second: thumb_02_r
+  - first:
+      4: 400164
+    second: thumb_03_l
+  - first:
+      4: 400166
+    second: thumb_03_r
+  - first:
+      4: 400168
+    second: upperarm_l
+  - first:
+      4: 400170
+    second: upperarm_r
+  - first:
+      4: 400172
+    second: upperarm_twist_01_l
+  - first:
+      4: 400174
+    second: upperarm_twist_01_r
+  - first:
+      4: 400176
+    second: WeaponSlot
+  - first:
+      74: 7400000
+    second: idleCombat
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idleCombat
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/ik_foot_root
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_l
+        weight: 1
+      - path: root/ik_foot_root/ik_foot_r
+        weight: 1
+      - path: root/ik_hand_root
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_l
+        weight: 1
+      - path: root/ik_hand_root/ik_hand_gun/ik_hand_r
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/hips_twist_01
+        weight: 1
+      - path: root/pelvis/hips_twist_01/shirt_back_1
+        weight: 1
+      - path: root/pelvis/hips_twist_01/shirt_back_1/shirt_back_2
+        weight: 1
+      - path: root/pelvis/hips_twist_01/shirt_back_1/shirt_back_2/shirt_back_3
+        weight: 1
+      - path: root/pelvis/hips_twist_01/shirt_back_1/shirt_back_2/shirt_back_3/shirt_back_4
+        weight: 1
+      - path: root/pelvis/hips_twist_01/shirt_front_1
+        weight: 1
+      - path: root/pelvis/hips_twist_01/shirt_front_1/shirt_front_2
+        weight: 1
+      - path: root/pelvis/hips_twist_01/shirt_front_1/shirt_front_2/shirt_front_3
+        weight: 1
+      - path: root/pelvis/hips_twist_01/shirt_front_1/shirt_front_2/shirt_front_3/shirt_front_14
+        weight: 1
+      - path: root/pelvis/spine_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ShieldSlot
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/lowerarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/upperarm_twist_01_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/WeaponSlot
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/lowerarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/upperarm_twist_01_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head/eye_l
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head/eye_r
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head/hood_l_1
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head/hood_l_1/hood_l_2
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head/hood_l_1/hood_l_2/hood_l_3
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head/hood_r_1
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head/hood_r_1/hood_r_2
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head/hood_r_1/hood_r_2/hood_r_3
+        weight: 1
+      - path: root/pelvis/spine_01/spine_02/spine_03/neck_01/head/jaw
+        weight: 1
+      - path: root/pelvis/thigh_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/calf_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: root/pelvis/thigh_l/thigh_twist_01_l
+        weight: 1
+      - path: root/pelvis/thigh_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/calf_twist_01_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: root/pelvis/thigh_r/thigh_twist_01_r
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: a8022f1d6559b2d44ba54835b2502be0, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

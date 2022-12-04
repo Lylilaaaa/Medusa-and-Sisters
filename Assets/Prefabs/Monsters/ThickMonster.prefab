@@ -77,12 +77,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MonsterType: {fileID: 11400000, guid: 4158f482046f6b34a9137ec756c0eca2, type: 2}
-  isActive: 0
-  chargeLimit: 0
-  attackValue: 0
-  LockDistance: 0
-  ChargeDistance: 0
-  moveSpeed: 0
 --- !u!1001 &1305945869813366237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,6 +143,10 @@ PrefabInstance:
     - target: {fileID: 8667498100844515217, guid: 85d3918282ef084498628470f1881516, type: 3}
       propertyPath: m_Name
       value: FatOgre_Legacy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667498100844515217, guid: 85d3918282ef084498628470f1881516, type: 3}
+      propertyPath: m_TagString
+      value: monsterModel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85d3918282ef084498628470f1881516, type: 3}

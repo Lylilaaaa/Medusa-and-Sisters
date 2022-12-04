@@ -1,3 +1,4 @@
+using Monster;
 using UnityEngine;
 using ScriptableObjectGen;
 using Player;
@@ -7,23 +8,18 @@ public class EnemyController : MonoBehaviour
     //Animation
     [Header(" ===== Default Setting ===== ")]
     public Monsters MonsterType;
-
-    //whether this enemy is chasing player
-    public bool isActive;
+    public float stepCheckRange;
+    public float stepCheckHeight;
+    public float maxStepHeight;
+    public bool _isStep;
+    public GameObject groundSensor;
     
-    //whether this enemy is dead
-    private bool isDead;
-    
-    //basic states
-    private float health;
-    private float maxhealth;
-    private float chargeCount;
-    
-    public float chargeLimit;
-    public float attackValue;
-    public float LockDistance;
-    public float ChargeDistance;
-    public float moveSpeed;
+    private float attackTimer;
+    private Animator anim;
+    private GameObject model;
+    public Rigidbody rig;
+    public bool _isGrounded;
+    public float angleSpeed;
 
     private void Awake()
     {
@@ -33,69 +29,91 @@ public class EnemyController : MonoBehaviour
     private void Init()
     {
         // set the init health
-        maxhealth = health;
-        chargeCount = 0;
+        MonsterType.curHealth = MonsterType.maxHealth;
+        attackTimer = 0;
+        model = transform.GetChild(0).gameObject;
+        anim = model.GetComponent<Animator>();
     }
 
     private void Update()
     {
+        _isGrounded = groundSensor.GetComponent<EnemyGroundDetect>().isGrounded;
         DetectPlayer();
         DetectDead();
-        if (isActive)
+        DetectAttack();
+        if (MonsterType.isChasing)
         {
             EnemyAction();
         }
+        print("MonsterType.curHealth: "+MonsterType.curHealth);
     }
 
 
     private void EnemyAction()
     {
+        anim.SetBool("move",true);
         //move toward player 
         Vector3 des = new Vector3(ActorController.instance.gameObject.transform.position.x, this.transform.position.y, ActorController.instance.gameObject.transform.position.z);
-        transform.position = Vector3.MoveTowards(transform.position, des, moveSpeed * Time.deltaTime);
+        Vector3 tempForward = ActorController.instance.gameObject.transform.position - model.transform.position;
+        tempForward.y = 0;
+        transform.position = Vector3.MoveTowards(transform.position, des, MonsterType.movingSpeed * Time.deltaTime);
         
-        //detect whether the player stand still
-        if ((ActorController.instance.transform.position - transform.position).magnitude <= ChargeDistance)
-        {
-            chargeCount += Time.deltaTime;
-            if (chargeCount >= chargeLimit)
-            {
-                chargeCount = 0;
-
-                //active attack animation
-                //animator.SetTrigger("enemyAttack");
-                
-                //player get hurt
-                ActorController.instance.getHurt(attackValue);
-                
-            }
-        }
+        //rotate facing
+        model.transform.forward = tempForward;
     }
 
     private void DetectPlayer()
     {
         //if player get close, this enemy will start to action
-        if ((ActorController.instance.transform.position - transform.position).magnitude <= LockDistance)
+        if ((ActorController.instance.transform.position - transform.position).magnitude <= MonsterType.lockDistance && MonsterType.leastDistance <= (ActorController.instance.transform.position - transform.position).magnitude)
         {
-            Debug.Log("ininininininini");
-            isActive = true;
+            //lock
+            MonsterType.isChasing = true;
             
+        }
+        else if((ActorController.instance.transform.position - transform.position).magnitude > MonsterType.lockDistance)
+        {
+            //Debug.Log((ActorController.instance.transform.position - transform.position).magnitude);
+            MonsterType.isChasing = false;
+            anim.SetBool("move",false);
+            attackTimer = 0;
         }
         else
         {
-            Debug.Log((ActorController.instance.transform.position - transform.position).magnitude);
-            isActive = false;
+            MonsterType.isChasing = false;
+            anim.SetBool("move",false);
         }
     }
-    
+
+    private void DetectAttack()
+    {
+        //detect whether the player stand still
+        if ((ActorController.instance.transform.position - transform.position).magnitude <= MonsterType.attackDistance)
+        {
+            attackTimer += Time.deltaTime;
+            if (attackTimer >= MonsterType.attackInterval)
+            {
+                attackTimer = 0;
+
+                //active attack animation
+                //animator.SetTrigger("enemyAttack");
+                anim.SetTrigger("attack");
+                
+                //player get hurt
+                ActorController.instance.getHurt(MonsterType.damage);
+            }
+        }
+    }
+
     private void DetectDead()
     {
-        if (health <= 0)
+        if (MonsterType.curHealth <= 0)
         {
             // dead animation
             
             // remove from object pool
             EnemySpawnManager.instance.RemoveFromPool(this.gameObject.name);
+            anim.SetTrigger("dead");
             
             //destroy this game Object
             //TODO
@@ -103,10 +121,39 @@ public class EnemyController : MonoBehaviour
         }
     }
     
-
     public void getHurt(float damage)
     {
-        health -= damage;
+        MonsterType.curHealth -= damage;
+        anim.SetTrigger("getHit");
     }
     
+    private bool IsStep()
+    {
+        Ray ray = new Ray(transform.position + model.transform.forward.normalized * stepCheckRange + Vector3.up * stepCheckHeight, Vector3.down);
+        RaycastHit hit;
+        //point = Vector3.zero;
+
+        if (!_isGrounded)
+            return false;
+
+        if (Physics.Raycast(ray, out hit, stepCheckHeight * 3, LayerMask.GetMask("Ground")))
+        {
+            float height = hit.point.y - rig.position.y;
+            if (height < 0.06f)
+                return false;
+
+            if (height <= maxStepHeight)
+            {
+                //point = hit.point;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void OnDeadExit()
+    {
+        Destroy(gameObject);
+    }
+
 }

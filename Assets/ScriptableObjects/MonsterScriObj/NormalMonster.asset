@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: NormalMonster
   m_EditorClassIdentifier: 
   monName: NormalMonster
-  damage: 5
   maxHealth: 50
-  curHealth: 50
-  movingSpeed: 1
-  lockDistance: 50
+  curHealth: -2
+  damage: 5
+  movingSpeed: 2
+  lockDistance: 20
+  attackInterval: 5
+  attackDistance: 2.5
+  leastDistance: 2
   monsterPrefab: {fileID: 5689011253983838656, guid: ca921193ca556674d9a77285c0938bff, type: 3}
   isChasing: 0
   isDead: 0

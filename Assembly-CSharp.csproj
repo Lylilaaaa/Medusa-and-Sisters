@@ -61,9 +61,11 @@
      <Compile Include="Assets\Scripts\Collected\RunningAbility.cs" />
      <Compile Include="Assets\Scripts\Player\MyTimer.cs" />
      <Compile Include="Assets\Scripts\Player\OnGroundSensor.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObjectGen\Monsters.cs" />
      <Compile Include="Assets\Scripts\Player\IUserInput.cs" />
      <Compile Include="Assets\Scripts\Monster\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Weapon\WeaponController.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObjectGen\SubLevels.cs" />
      <Compile Include="Assets\Scripts\Environment\TrapController.cs" />
      <Compile Include="Assets\Scripts\Environment\EnvironmentManager.cs" />
      <Compile Include="Assets\Scripts\Player\MyButton.cs" />
@@ -72,6 +74,7 @@
      <Compile Include="Assets\Scripts\Player\FSMOnExit.cs" />
      <Compile Include="Assets\Scripts\Player\FSMOnUpdate.cs" />
      <Compile Include="Assets\Scripts\Player\InputTest\TestJoy.cs" />
+     <Compile Include="Assets\Scripts\Monster\EnemyGroundDetect.cs" />
      <Compile Include="Assets\Scripts\UI\LevelButtonController.cs" />
      <Compile Include="Assets\Scripts\UI\GameStartButtonController.cs" />
      <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
@@ -79,8 +82,7 @@
      <Compile Include="Assets\Scripts\Manager\FxController.cs" />
      <Compile Include="Assets\Scripts\Player\JoystickInput.cs" />
      <Compile Include="Assets\Scripts\Player\FSMOnEnter.cs" />
-     <Compile Include="Assets\Scripts\ScriptableObjectGen\Monsters.cs" />
-     <Compile Include="Assets\Scripts\ScriptableObjectGen\SubLevels.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObjectGen\Avatars.cs" />
      <None Include="Assets\Art\Fx_Red_clue\Slash_effects\Documentaion\How to use.txt" />
      <None Include="Assets\Art\Fx_VFX_Klaus\Shaders\Fx_Hit&amp;Slash_add.shader" />
      <None Include="Assets\Art\Fx_VFX_Klaus\Shaders\VFX_lab.shader" />

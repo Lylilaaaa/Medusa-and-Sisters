@@ -42,7 +42,7 @@ public class EnemySpawnManager : MonoBehaviour
             spawnLocation.Add(spt);
         }
         timeCounter = 0f;
-        DefaultSpawning();
+        //DefaultSpawning();
     }
 
     private void FixedUpdate()

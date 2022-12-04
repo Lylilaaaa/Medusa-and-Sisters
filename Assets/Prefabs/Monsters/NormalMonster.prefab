@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5689011253983838668}
   m_Layer: 9
   m_Name: NormalMonster
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,6 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8429129065719055874}
+  - {fileID: 658804877620631640}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -58,12 +59,12 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5689011253983838656}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.40642357
-  m_Height: 1.6101613
+  m_Radius: 0.9573878
+  m_Height: 1.9147756
   m_Direction: 1
-  m_Center: {x: -0.00046145916, y: -0.20856452, z: 0.20227242}
+  m_Center: {x: -0.004604101, y: -0.20856452, z: 0.11113548}
 --- !u!114 &5689011253983838668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,12 +78,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MonsterType: {fileID: 11400000, guid: 4af3ba8c64797ef4e82c1e62eb61eb60, type: 2}
-  isActive: 0
-  chargeLimit: 5
-  attackValue: 10
-  LockDistance: 100
-  ChargeDistance: 100
-  moveSpeed: 1
+  stepCheckRange: 1
+  stepCheckHeight: 1
+  maxStepHeight: 5
+  _isStep: 0
+  groundSensor: {fileID: 9127476448429172328}
+  rig: {fileID: 0}
+  _isGrounded: 0
+  angleSpeed: 5
+--- !u!1 &9127476448429172328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 658804877620631640}
+  - component: {fileID: 5351008073162837034}
+  m_Layer: 9
+  m_Name: groundSensor
+  m_TagString: monsterSensor
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &658804877620631640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127476448429172328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.006, z: 0.136}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5689011253983838669}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5351008073162837034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127476448429172328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be024acb049c4a4091011a213beda2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGrounded: 0
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1001 &5689011255626560104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,6 +187,10 @@ PrefabInstance:
     - target: {fileID: 4181915105477044234, guid: 5e945802992ea0143bb1d708ab28e08c, type: 3}
       propertyPath: m_Name
       value: Kobold_Legacy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4181915105477044234, guid: 5e945802992ea0143bb1d708ab28e08c, type: 3}
+      propertyPath: m_TagString
+      value: monsterModel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e945802992ea0143bb1d708ab28e08c, type: 3}

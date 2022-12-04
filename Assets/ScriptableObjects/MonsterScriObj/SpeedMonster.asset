@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: SpeedMonster
   m_EditorClassIdentifier: 
   monName: HighSpeedMonster
-  damage: 5
   maxHealth: 100
   curHealth: 100
+  damage: 5
   movingSpeed: 2
   lockDistance: 50
+  attackRate: 0
+  attackDistance: 0
+  leastDistance: 2
   monsterPrefab: {fileID: 1413345316039607183, guid: c27654c6a21d9bd4bac5c1f9a65eb3e6, type: 3}
   isChasing: 0
   isDead: 0

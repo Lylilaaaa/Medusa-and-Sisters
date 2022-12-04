@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Manager;
+using Camera;
+
 
 public class WeaponController : MonoBehaviour
 {
     public Collider collider;
-    private AudioSource audioSource;
+    //private AudioSource audioSource;
     private Animator animator;
     private List<GameObject> targets = new List<GameObject>();
+
+    public float NextDamage;
 
 
     private void OnDisable()
@@ -19,19 +24,9 @@ public class WeaponController : MonoBehaviour
     /// 此处传入攻击力，音效等资源
     /// </summary>
     /// <param name="audioSource"></param>
-    public void init(AudioSource audioSource, Animator animator) {
-        this.audioSource = audioSource;
+    public void init( Animator animator) {
+        //this.audioSource = audioSource;
         this.animator = animator;
-    }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
     }
 
 
@@ -42,16 +37,25 @@ public class WeaponController : MonoBehaviour
         targets.Add(other.gameObject);
         if (other.tag == "enemy") {
             //打击效果
-            GameObject.Instantiate(Resources.Load("刀光"), other.bounds.ClosestPoint(transform.position), Quaternion.identity, null);
+            FxController.instance.SpawnFx(4);
             //打击音效
-            audioSource.PlayOneShot(Resources.Load<AudioClip>("Audio/命中"));
+            //audioSource.PlayOneShot(Resources.Load<AudioClip>("Audio/命中"));
+            
             //屏幕震动
-            //Camera_control.instance.Shake();
+            StartCoroutine(CameraController.instance.Shake(0.1f,0.6f));
+            
             //卡帧
             StartCoroutine(PauseFrame());
             //造成伤害
-            Debug.Log("hit");
+            other.gameObject.GetComponent<EnemyController>().getHurt(NextDamage);
+            NextDamage = 0;
+            //Debug.Log("hit");
         }
+    }
+
+    public void SettingNextDamage(float _nextDamage)
+    {
+        NextDamage = _nextDamage;
     }
 
     private IEnumerator PauseFrame() {
@@ -59,9 +63,11 @@ public class WeaponController : MonoBehaviour
         animator.speed = 0;
 
         //持续
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
 
         //恢复动画速度
         animator.speed = 1;
     }
+    
+    
 }

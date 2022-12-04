@@ -12,10 +12,13 @@ namespace Camera
 {
     public class CameraController : MonoBehaviour
     {
+        public static CameraController instance;
         private IUserInput pi;
         public float horizontalSpeed = 100f;
         public float verticalSpeed = 80.0f;
+        public float attackShake;
         public Image lockDot;
+        public bool hitting;
         
 
         private GameObject playerHandler; //横着转动沿着y轴 //人物最母级
@@ -29,7 +32,9 @@ namespace Camera
 
         private void Start()
         {
+            instance = this;
             lockDot.enabled = false;
+            hitting = false;
             cameraHandler = transform.parent.gameObject;
             playerHandler = cameraHandler.transform.parent.gameObject;
             tempEulerX = 20;
@@ -44,25 +49,29 @@ namespace Camera
 
         private void FixedUpdate()
         {
-            if (!lockState)
+            if (!hitting)
             {
-                //分别旋转x轴与y轴
-                playerHandler.transform.Rotate(Vector3.up, pi.Jright * horizontalSpeed * Time.fixedDeltaTime);
-                tempEulerX -= pi.Jup * verticalSpeed * Time.fixedDeltaTime;
-                tempEulerX = Mathf.Clamp(tempEulerX, -40, 30);
-                cameraHandler.transform.localEulerAngles = new Vector3(tempEulerX, 0, 0);
+                if (!lockState)
+                {
+                    //分别旋转x轴与y轴
+                    playerHandler.transform.Rotate(Vector3.up, pi.Jright * horizontalSpeed * Time.fixedDeltaTime);
+                    tempEulerX -= pi.Jup * verticalSpeed * Time.fixedDeltaTime;
+                    tempEulerX = Mathf.Clamp(tempEulerX, -40, 30);
+                    cameraHandler.transform.localEulerAngles = new Vector3(tempEulerX, 0, 0);
+                }
+
+                //控制模型不转动
+                Vector3 tempModelEuler = model.transform.eulerAngles;
+                model.transform.eulerAngles = tempModelEuler;
             }
 
-            //控制模型不转动
-            Vector3 tempModelEuler = model.transform.eulerAngles;
-            model.transform.eulerAngles = tempModelEuler;
-            
 
-            //摄像机追踪来达到lerp的效果
-            _camera.transform.position = Vector3.Lerp(_camera.transform.position, transform.position, 0.15f);
-            _camera.transform.eulerAngles = transform.eulerAngles;
-            //防止眩晕抖动
-            _camera.transform.LookAt(cameraHandler.transform);
+                //摄像机追踪来达到lerp的效果
+                _camera.transform.position = Vector3.Lerp(_camera.transform.position, transform.position, 0.15f);
+                _camera.transform.eulerAngles = transform.eulerAngles;
+                //防止眩晕抖动
+                _camera.transform.LookAt(cameraHandler.transform);
+            
         }
 
         public void LockOnEnemy()
@@ -112,25 +121,26 @@ namespace Camera
             }
         }
 
-        private IEnumerator Shake(float duration, float magnitude)
+        public IEnumerator Shake(float duration, float magnitude)
         {
-
+            //Debug.Log("shake");
+            hitting = true;
             Vector3 originalPosition = transform.position;
             float currTime = 0f;
             while (currTime < duration)
             {
+                //Debug.Log("current: " + currTime);
+                float x = UnityEngine.Random.Range(-attackShake, attackShake) * magnitude;
 
-                float x = UnityEngine.Random.Range(-0.5f, 0.5f) * magnitude;
-                float y = UnityEngine.Random.Range(-0.5f, 0.5f) * magnitude;
-
-                transform.localPosition = originalPosition + new Vector3(x, y, 0);
+                transform.position = Vector3.Lerp(transform.position, originalPosition + x* transform.right,
+                    Time.deltaTime * 8f); 
 
                 currTime += Time.deltaTime;
                 yield return null;
             }
 
-            transform.localPosition = originalPosition;
+            hitting = false;
+            transform.position = originalPosition;
         }
-
     }
 }
