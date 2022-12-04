@@ -1,3 +1,4 @@
+using System.Collections;
 using Monster;
 using UnityEngine;
 using ScriptableObjectGen;
@@ -13,11 +14,12 @@ public class EnemyController : MonoBehaviour
     public float maxStepHeight;
     public bool _isStep;
     public GameObject groundSensor;
+    public GameObject TriggerAttack;
     
     private float attackTimer;
     private Animator anim;
     private GameObject model;
-    public Rigidbody rig;
+    private Rigidbody rig;
     public bool _isGrounded;
     public float angleSpeed;
 
@@ -94,13 +96,13 @@ public class EnemyController : MonoBehaviour
             if (attackTimer >= MonsterType.attackInterval)
             {
                 attackTimer = 0;
-
-                //active attack animation
-                //animator.SetTrigger("enemyAttack");
-                anim.SetTrigger("attack");
                 
                 //player get hurt
-                ActorController.instance.getHurt(MonsterType.damage);
+                ActorController.instance.NextDamage =  MonsterType.damage;
+                TriggerAttack.SetActive(true);
+                
+                //active attack animation
+                anim.SetTrigger("attack");
             }
         }
     }
@@ -151,9 +153,26 @@ public class EnemyController : MonoBehaviour
         return false;
     }
 
+    public IEnumerator PauseFrame() {
+        //卡顿(降低动画速度)
+        anim.speed = 0;
+
+        //持续
+        yield return new WaitForSeconds(0.2f);
+
+        //恢复动画速度
+        anim.speed = 1;
+    }
+    public void MonsOnAttackExit()
+    {
+        print("attackOver");
+        TriggerAttack.SetActive(false);
+    }
     public void OnDeadExit()
     {
         Destroy(gameObject);
     }
+
+
 
 }

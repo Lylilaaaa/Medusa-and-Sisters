@@ -1,5 +1,8 @@
+using System;
+using System.Collections;
 using Camera;
 using Manager;
+using Monster;
 using UnityEngine;
 using ScriptableObjectGen;
 
@@ -23,6 +26,7 @@ namespace Player
         private float lerpTarget;
         private Vector3 deltaPos;
         private bool isGrounded;
+        private float getHurtTimer;
 
         public float stepCheckRange;
         public float stepCheckHeight;
@@ -50,6 +54,9 @@ namespace Player
         [Header(" ===== Friction Setting ===== ")]
         public PhysicMaterial frictionOne;
         public PhysicMaterial frictionZero;
+
+        [Header(" ===== Receive Setting ===== ")]
+        public float NextDamage;
         
 
         private void Awake()
@@ -70,6 +77,7 @@ namespace Player
             anim = model.GetComponent<Animator>();
             rigi = GetComponent<Rigidbody>();
             col = GetComponent<CapsuleCollider>();
+            getHurtTimer = 0f;
         }
 
         private void Update()
@@ -165,7 +173,19 @@ namespace Player
                 {
                     planerVec = pi.Dmag * model.transform.forward * movingSpeed;
                 }
-            } 
+            }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            //if really get hurt
+            if (other.gameObject.tag == "attackTrigger" && getHurtTimer > 2f)
+            {
+                getHurt(NextDamage);
+                getHurtTimer = 0f;
+                StartCoroutine(CameraController.instance.Shake(0.1f,0.6f));
+                StartCoroutine(other.GetComponent<EnemyWeaponController>().MonsterParent.GetComponent<EnemyController>().PauseFrame());
+            }
         }
         
         //查询当前状态
@@ -179,6 +199,7 @@ namespace Player
 
         private void FixedUpdate()
         {
+            getHurtTimer += Time.fixedDeltaTime;
             rigi.position += deltaPos;
             //rigi.position += planerVec * Time.fixedDeltaTime; //consider gravity, costly
             rigi.velocity = new Vector3(planerVec.x, rigi.velocity.y, planerVec.z)+thrustVec; //y轴不能旋转

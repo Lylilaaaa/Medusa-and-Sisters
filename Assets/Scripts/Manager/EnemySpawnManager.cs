@@ -32,7 +32,6 @@ public class EnemySpawnManager : MonoBehaviour
         instance = this;
         MonsterPool = new List<GameObject>();
         spawnLocation = new List<Transform>();
-
     }
 
     private void Start()
