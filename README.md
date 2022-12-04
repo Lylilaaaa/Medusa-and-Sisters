@@ -32,16 +32,20 @@ jab能够闪避 → canRun → （学会连招）canComboA1 → canComboA2 → �
 
 =============== 开发日志 ==================
 
+12.5:配置四种怪物，给怪物攻击加卡肉效果，跳台阶卡顿的解决方法，怪物死亡特效，修复吸血鬼和肉怪物攻击，空气墙，路线
+![11.21a](Diary/png12.5a.png)
+![11.21a](Diary/png12.5b.png)
+![11.21a](Diary/png12.5c.png)
+![11.21a](Diary/png12.5d.png)
+![11.21a](Diary/png12.5e.png)
+
  12.4：怪物模型、怪物与关卡的ScriptableObj、单个敌人控制、敌人随机生成脚本们
  ![11.21a](Diary/png12.4a.png)
- 
  击中刀光、怪物攻击逻辑与动画整合、战斗流程，震动镜头、“卡肉”
- 
   ![11.21a](Diary/png12.4b.png)
   ![11.21a](Diary/png12.4c.png)
   ![11.21a](Diary/png12.4d.png)
   ![11.21a](Diary/png12.4e.png)
- 
  姐姐的建模在建了
   ![11.21a](Diary/jpg12.4.jpg)
   踩雷git同步，下次一定用plasticSCM！
