@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Manager;
-using Camera;
+using Cameras_;
 
 
 public class WeaponController : MonoBehaviour
