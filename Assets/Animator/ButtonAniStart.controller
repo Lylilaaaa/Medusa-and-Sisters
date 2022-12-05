@@ -407,9 +407,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.75
+  m_ExitTime: 0.75000006
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -582,10 +582,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 2875574455608715319}
-    m_Position: {x: 360, y: -60, z: 0}
+    m_Position: {x: 360, y: -80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -192038392232913726}
-    m_Position: {x: 370, y: 40, z: 0}
+    m_Position: {x: 350, y: 30, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7348904953792081327}
     m_Position: {x: 370, y: 110, z: 0}
@@ -707,7 +707,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 11.8
+        value: -15.9
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -716,7 +716,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 20.8
+        value: -6.9
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -725,7 +725,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2
-        value: 11.8
+        value: -15.9
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -781,7 +781,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 11.8
+        value: -15.9
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -790,7 +790,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 20.8
+        value: -6.9
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -799,7 +799,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2
-        value: 11.8
+        value: -15.9
         inSlope: 0
         outSlope: 0
         tangentMode: 136
