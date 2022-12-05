@@ -1,10 +1,10 @@
-using System;
-using System.Collections;
 using Cameras_;
 using Manager;
 using Monster;
 using UnityEngine;
+using UnityEngine.UI;
 using ScriptableObjectGen;
+using Slider = UnityEngine.UIElements.Slider;
 
 namespace Player
 {
@@ -17,7 +17,9 @@ namespace Player
         private Animator anim;
         private Rigidbody rigi;
         public GameObject model;
+        public Avatars AvatarScrObj;
         private CapsuleCollider col;
+        
 
         public IUserInput pi;
         private Vector3 planerVec; //important!!
@@ -60,6 +62,7 @@ namespace Player
 
         private void Awake()
         {
+            AvatarScrObj.curHealth = AvatarScrObj.maxHealth;
             //update instance
             instance = this;
             
@@ -364,8 +367,9 @@ namespace Player
             //Debug.Log("haha caibi");
             Debug.Log("sister get damage:" + damage);
             anim.SetTrigger("impact");
+            AvatarScrObj.curHealth -= damage;
             //trigger animation
-            
+
             //update health
         }
         

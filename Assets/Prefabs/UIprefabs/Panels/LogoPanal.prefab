@@ -121,6 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9139824330809070987}
   - component: {fileID: 9139824330809070980}
+  - component: {fileID: 1157640537}
   m_Layer: 5
   m_Name: LogoPanal
   m_TagString: Untagged
@@ -157,6 +158,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9139824330809070986}
   m_CullTransparentMesh: 1
+--- !u!114 &1157640537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9139824330809070986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b76f2fa78da84ce7b9ee377cf8d7d8b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LOGOPanel: {fileID: 9139824330809070986}
+  StartPanel: {fileID: 0}
+  GamehasStart: 0
 --- !u!1 &9139824331400918681
 GameObject:
   m_ObjectHideFlags: 0
