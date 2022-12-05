@@ -35,7 +35,6 @@ jab能够闪避 → canRun → （学会连招）canComboA1 → canComboA2 → �
 12.6:新的姐姐Euryale！完成开始界面和UI逻辑、人物血条
 
 ![11.21a](Diary/jpg12.6a.jpg)
-![11.21a](Diary/png12.6b.png)
 ![11.21a](Diary/png12.6c.png)
 ![11.21a](Diary/png12.6d.png)
 ![11.21a](Diary/png12.6e.png)
