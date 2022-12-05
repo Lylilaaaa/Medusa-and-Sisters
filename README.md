@@ -32,6 +32,14 @@ jab能够闪避 → canRun → （学会连招）canComboA1 → canComboA2 → �
 
 =============== 开发日志 ==================
 
+12.6:新的姐姐Euryale！完成开始界面和UI逻辑、人物血条
+
+![11.21a](Diary/jpg12.6a.jpg)
+![11.21a](Diary/png12.6b.png)
+![11.21a](Diary/png12.6c.png)
+![11.21a](Diary/png12.6d.png)
+![11.21a](Diary/png12.6e.png)
+
 12.5a:配置四种怪物，给怪物攻击加卡肉效果，跳台阶卡顿的解决方法，怪物死亡特效，修复吸血鬼和肉怪物攻击，空气墙，路线
 ![11.21a](Diary/png12.5a.png)
 ![11.21a](Diary/png12.5b.png)
