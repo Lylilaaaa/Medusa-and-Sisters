@@ -38,6 +38,8 @@ jab能够闪避 → canRun → （学会连招）canComboA1 → canComboA2 → �
 ![11.21a](Diary/png12.5c.png)
 ![11.21a](Diary/png12.5d.png)
 ![11.21a](Diary/png12.5e.png)
+新的姐姐Stheno模型置入
+![11.21a](Diary/png12.5f.png)
 
  12.4：怪物模型、怪物与关卡的ScriptableObj、单个敌人控制、敌人随机生成脚本们
  ![11.21a](Diary/png12.4a.png)
