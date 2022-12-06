@@ -66,7 +66,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 28db0a71cf510d64ab628e93f1f95c1b, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -78,7 +78,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6682\u505C"
+  m_Text: 'Pause
+
+'
 --- !u!1 &6576923218587965966
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23584908, g: 0.101110585, b: 0, a: 0.5882353}
+  m_Color: {r: 0.32941177, g: 0.02745098, b: 0.039215688, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -244,7 +246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6576923219561047285
 RectTransform:
   m_ObjectHideFlags: 0
@@ -369,6 +371,45 @@ PrefabInstance:
       propertyPath: m_Transition
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2267911502553670145, guid: 231194b7f0b5352409ece57a6260416e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267911502553670145, guid: 231194b7f0b5352409ece57a6260416e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267911502553670145, guid: 231194b7f0b5352409ece57a6260416e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: showSettingPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267911502553670145, guid: 231194b7f0b5352409ece57a6260416e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: showPausePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267911502553670145, guid: 231194b7f0b5352409ece57a6260416e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267911502553670145, guid: 231194b7f0b5352409ece57a6260416e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267911502553670145, guid: 231194b7f0b5352409ece57a6260416e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268035374814661755, guid: 231194b7f0b5352409ece57a6260416e, type: 3}
+      propertyPath: m_Text
+      value: 'Settings
+
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268035374814661755, guid: 231194b7f0b5352409ece57a6260416e, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 6d96c4da23ff8484f98057332ed6c6b4, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 231194b7f0b5352409ece57a6260416e, type: 3}
 --- !u!224 &1125558033623491977 stripped
@@ -533,12 +574,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6219761147538581794, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_Text
-      value: "\u7EE7\u7EED\u6E38\u620F"
+      value: 'Countinue
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6219761147538581794, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: c3f0eab317f4ab94091b81535540238d, type: 3}
+      objectReference: {fileID: 12800000, guid: 6d96c4da23ff8484f98057332ed6c6b4, type: 3}
     - target: {fileID: 6219914503358854332, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_Color.a
       value: 0.78431374
@@ -588,12 +631,28 @@ PrefabInstance:
       value: 0.49056602
       objectReference: {fileID: 0}
     - target: {fileID: 6219915947855234904, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219915947855234904, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6219915947855234904, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: showPausePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219915947855234904, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ResetTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219915947855234904, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219915947855234904, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6324130008911967984, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_Name
@@ -666,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6114111164128422518, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -17
+      value: -26
       objectReference: {fileID: 0}
     - target: {fileID: 6114522439399494894, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_Pivot.x
@@ -766,12 +825,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6219761147538581794, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_Text
-      value: "\u8BBE\u7F6E\n"
+      value: 'Menu
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6219761147538581794, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: c3f0eab317f4ab94091b81535540238d, type: 3}
+      objectReference: {fileID: 12800000, guid: 6d96c4da23ff8484f98057332ed6c6b4, type: 3}
+    - target: {fileID: 6219761147538581794, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219761147538581794, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 6219914503358854332, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_Color.a
       value: 0.78431374
@@ -819,6 +888,26 @@ PrefabInstance:
     - target: {fileID: 6219915947855234904, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
       value: 0.07060635
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219915947855234904, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219915947855234904, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: showPausePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219915947855234904, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: BackToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219915947855234904, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219915947855234904, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6324130008911967984, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_Name

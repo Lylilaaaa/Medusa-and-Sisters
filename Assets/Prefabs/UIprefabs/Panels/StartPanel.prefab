@@ -118,7 +118,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 28db0a71cf510d64ab628e93f1f95c1b, type: 3}
+    m_Font: {fileID: 12800000, guid: c3f0eab317f4ab94091b81535540238d, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -130,7 +130,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F00\u59CB\n"
+  m_Text: 'Main
+
+'
 --- !u!114 &7124470111495224157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,6 +330,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6219761147538581794, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
+      propertyPath: m_Text
+      value: 'Settings
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 6219914503358854332, guid: b99703f120413fe41bfc54ca2b2bb7bc, type: 3}
       propertyPath: m_Color.a
       value: 0.5882353
@@ -479,6 +487,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.5882353
       objectReference: {fileID: 0}
+    - target: {fileID: 5733787815981674544, guid: c9b8a7ba553d01c4bb7a0eebbd15b3d9, type: 3}
+      propertyPath: m_Text
+      value: Start
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9b8a7ba553d01c4bb7a0eebbd15b3d9, type: 3}
 --- !u!224 &266620344282972646 stripped
@@ -590,7 +602,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114443521114333032, guid: 4abbb9b2178b0d74a945436a1669b6e7, type: 3}
       propertyPath: m_Text
-      value: "\u6A21\u5F0F\u9009\u62E9\n"
+      value: 'Modes
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 114443521114333032, guid: 4abbb9b2178b0d74a945436a1669b6e7, type: 3}
       propertyPath: m_Color.b
@@ -824,7 +838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114443521114333032, guid: 4abbb9b2178b0d74a945436a1669b6e7, type: 3}
       propertyPath: m_Text
-      value: "\u9000\u51FA\u6E38\u620F"
+      value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 114443521114333032, guid: 4abbb9b2178b0d74a945436a1669b6e7, type: 3}
       propertyPath: m_Color.b
@@ -967,6 +981,21 @@ PrefabInstance:
     - target: {fileID: 114286057846976786, guid: 4abbb9b2178b0d74a945436a1669b6e7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114443521114333032, guid: 4abbb9b2178b0d74a945436a1669b6e7, type: 3}
+      propertyPath: m_Text
+      value: 'Countinue
+
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114443521114333032, guid: 4abbb9b2178b0d74a945436a1669b6e7, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114443521114333032, guid: 4abbb9b2178b0d74a945436a1669b6e7, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 224256163020186276, guid: 4abbb9b2178b0d74a945436a1669b6e7, type: 3}
       propertyPath: m_Pivot.x
