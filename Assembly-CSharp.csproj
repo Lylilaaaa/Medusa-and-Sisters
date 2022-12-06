@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\Player\KeyboardInput.cs" />
      <Compile Include="Assets\Scripts\UI_\ClickAnyWhere_LOGO.cs" />
      <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
+     <Compile Include="Assets\Scripts\Shadows\ShadowController.cs" />
      <Compile Include="Assets\Scripts\UI_\UILookAtCam.cs" />
      <Compile Include="Assets\Scripts\Cameras_\CameraController.cs" />
      <Compile Include="Assets\Scripts\Manager\EnemySpawnManager.cs" />
@@ -91,11 +92,10 @@
      <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
      <Compile Include="Assets\Scripts\Player\FSMClearSignals.cs" />
      <Compile Include="Assets\Scripts\Manager\FxController.cs" />
+     <Compile Include="Assets\Scripts\Shadows\ShadowTrigger.cs" />
      <Compile Include="Assets\Scripts\Manager\DataManager.cs" />
      <Compile Include="Assets\Scripts\Player\JoystickInput.cs" />
      <Compile Include="Assets\Scripts\Player\FSMOnEnter.cs" />
-     <Compile Include="Assets\Scripts\Shadows\ShadowTrigger.cs" />
-     <Compile Include="Assets\Scripts\Shadows\ShadowController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Art\Fx_Red_clue\Slash_effects\Documentaion\How to use.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

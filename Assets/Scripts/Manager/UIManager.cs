@@ -1,3 +1,4 @@
+using System;
 using Manager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -41,5 +42,14 @@ public class UIManager : MonoBehaviour
     {
         Time.timeScale = 1;
         GameManager.instance.GameState = GameState.Go;
+    }
+    
+    ///////REMEBER TO DELETE!!!////
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }

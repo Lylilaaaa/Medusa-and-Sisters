@@ -80514,7 +80514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3609704300365263293, guid: 777a5f9cd7e08da4d842b23ca02e873d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3714968863334082007, guid: 777a5f9cd7e08da4d842b23ca02e873d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -81539,13 +81539,23 @@ PrefabInstance:
       propertyPath: StartPanel
       value: 
       objectReference: {fileID: 95995168}
+    - target: {fileID: 9139824329563280931, guid: b4ded11df1e4963419360cccade1f3b6, type: 3}
+      propertyPath: m_Text
+      value: 'Press ANY keys to Continue
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139824329563280935, guid: b4ded11df1e4963419360cccade1f3b6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9139824330809070986, guid: b4ded11df1e4963419360cccade1f3b6, type: 3}
       propertyPath: m_Name
       value: LogoPanal
       objectReference: {fileID: 0}
     - target: {fileID: 9139824330809070986, guid: b4ded11df1e4963419360cccade1f3b6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9139824330809070987, guid: b4ded11df1e4963419360cccade1f3b6, type: 3}
       propertyPath: m_Pivot.x
