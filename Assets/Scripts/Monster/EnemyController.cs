@@ -3,6 +3,7 @@ using Monster;
 using UnityEngine;
 using ScriptableObjectGen;
 using Player;
+using Manager;
 
 public class EnemyController : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class EnemyController : MonoBehaviour
     public float maxStepHeight;
     public bool _isStep;
     public GameObject groundSensor;
-    public GameObject TriggerAttack;
+    
     
     private float attackTimer;
     private Animator anim;
@@ -22,6 +23,7 @@ public class EnemyController : MonoBehaviour
     private Rigidbody rig;
     public bool _isGrounded;
     public float angleSpeed;
+    
 
     private void Awake()
     {
@@ -47,7 +49,7 @@ public class EnemyController : MonoBehaviour
         {
             EnemyAction();
         }
-        print("MonsterType.curHealth: "+MonsterType.curHealth);
+        //print("MonsterType.curHealth: "+MonsterType.curHealth);
     }
 
 
@@ -99,7 +101,7 @@ public class EnemyController : MonoBehaviour
                 
                 //player get hurt
                 ActorController.instance.NextDamage =  MonsterType.damage;
-                TriggerAttack.SetActive(true);
+                
                 
                 //active attack animation
                 anim.SetTrigger("attack");
@@ -165,7 +167,9 @@ public class EnemyController : MonoBehaviour
     }
     public void MonsOnAttackExit()
     {
-        TriggerAttack.SetActive(false);
+        
+        FxController.instance.QuitFx(6);
+        //
     }
     public void OnDeadExit()
     {

@@ -6,6 +6,7 @@ namespace ScriptableObjectGen
     public class Monsters : ScriptableObject
     {
         public string monName;
+        public int EliteID;
         
         //data
         public float maxHealth;

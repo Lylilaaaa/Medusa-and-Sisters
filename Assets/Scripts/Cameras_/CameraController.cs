@@ -59,15 +59,13 @@ namespace Cameras_
                     tempEulerX -= pi.Jup * verticalSpeed * Time.fixedDeltaTime;
                     tempEulerX = Mathf.Clamp(tempEulerX, -40, 30);
                     cameraHandler.transform.localEulerAngles = new Vector3(tempEulerX, 0, 0);
-                    
                 }
 
                 //控制模型不转动
                 Vector3 tempModelEuler = model.transform.eulerAngles;
                 model.transform.eulerAngles = tempModelEuler;
             }
-
-
+            
                 //摄像机追踪来达到lerp的效果
                 _camera.transform.position = Vector3.Lerp(_camera.transform.position, transform.position, 0.15f);
                 _camera.transform.eulerAngles = transform.eulerAngles;

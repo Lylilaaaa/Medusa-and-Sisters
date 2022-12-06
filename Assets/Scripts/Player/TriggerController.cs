@@ -62,9 +62,12 @@ namespace Player
         {
             //音效
             //AudioSource.PlayOneShot(Resources.Load<AudioClip>("Audio/爪"));
-
+            
             weapon_Collider.gameObject.SetActive(true);
             weapon_Collider.SettingNextDamage(curAvatars.combo1Damage[2]);
+            
+            //record terminate skill 
+            weapon_Collider.RecordFourthAttack();
             
         }
         

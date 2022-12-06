@@ -26,6 +26,8 @@ namespace Player
         public bool Unlocked;
         public bool Onlocking;
 
+        public bool esc;
+
         //3. double trigger
 
         [Header("===== Others =====")]

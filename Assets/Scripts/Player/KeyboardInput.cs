@@ -22,6 +22,7 @@ namespace Player
         public string KeyJDown = "down";
         public string KeyJRight = "right";
         public string KeyJLeft = "left";
+        
 
         [Header("===== Mouse Settings =====")]
         public bool mouseEnable = true;
@@ -52,7 +53,15 @@ namespace Player
             BottonMouseJump.Tick(Input.GetKey(mouseJump));
             BottonMouseRoll.Tick(Input.GetKey(mouseRoll));
             BottonMouseAttack.Tick(Input.GetKey(mouseAttack));
-            
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                esc = true;
+            }
+            else
+            {
+                esc = false;
+            }
             
             if (mouseEnable)
             {

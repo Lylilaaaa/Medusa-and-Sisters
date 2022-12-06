@@ -1,100 +1,278 @@
 fileFormatVersion: 2
 guid: 43b9fea932ce7e9409b39b9af96e34df
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: TROLL_
-    100004: TROLL_ Head
-    100006: TROLL_ L Calf
-    100008: TROLL_ L Clavicle
-    100010: TROLL_ L Finger0
-    100012: TROLL_ L Finger01
-    100014: TROLL_ L Finger02
-    100016: TROLL_ L Finger1
-    100018: TROLL_ L Finger11
-    100020: TROLL_ L Finger12
-    100022: TROLL_ L Finger2
-    100024: TROLL_ L Finger21
-    100026: TROLL_ L Finger22
-    100028: TROLL_ L Foot
-    100030: TROLL_ L Forearm
-    100032: TROLL_ L Hand
-    100034: TROLL_ L Thigh
-    100036: TROLL_ L Toe0
-    100038: TROLL_ L UpperArm
-    100040: TROLL_ Neck
-    100042: TROLL_ Pelvis
-    100044: TROLL_ Queue de cheval 1
-    100046: TROLL_ R Calf
-    100048: TROLL_ R Clavicle
-    100050: TROLL_ R Finger0
-    100052: TROLL_ R Finger01
-    100054: TROLL_ R Finger02
-    100056: TROLL_ R Finger1
-    100058: TROLL_ R Finger11
-    100060: TROLL_ R Finger12
-    100062: TROLL_ R Finger2
-    100064: TROLL_ R Finger21
-    100066: TROLL_ R Finger22
-    100068: TROLL_ R Foot
-    100070: TROLL_ R Forearm
-    100072: TROLL_ R Hand
-    100074: TROLL_ R Thigh
-    100076: TROLL_ R Toe0
-    100078: TROLL_ R UpperArm
-    100080: TROLL_ Spine
-    100082: TROLL_ Spine1
-    100084: root
-    400000: //RootNode
-    400002: TROLL_
-    400004: TROLL_ Head
-    400006: TROLL_ L Calf
-    400008: TROLL_ L Clavicle
-    400010: TROLL_ L Finger0
-    400012: TROLL_ L Finger01
-    400014: TROLL_ L Finger02
-    400016: TROLL_ L Finger1
-    400018: TROLL_ L Finger11
-    400020: TROLL_ L Finger12
-    400022: TROLL_ L Finger2
-    400024: TROLL_ L Finger21
-    400026: TROLL_ L Finger22
-    400028: TROLL_ L Foot
-    400030: TROLL_ L Forearm
-    400032: TROLL_ L Hand
-    400034: TROLL_ L Thigh
-    400036: TROLL_ L Toe0
-    400038: TROLL_ L UpperArm
-    400040: TROLL_ Neck
-    400042: TROLL_ Pelvis
-    400044: TROLL_ Queue de cheval 1
-    400046: TROLL_ R Calf
-    400048: TROLL_ R Clavicle
-    400050: TROLL_ R Finger0
-    400052: TROLL_ R Finger01
-    400054: TROLL_ R Finger02
-    400056: TROLL_ R Finger1
-    400058: TROLL_ R Finger11
-    400060: TROLL_ R Finger12
-    400062: TROLL_ R Finger2
-    400064: TROLL_ R Finger21
-    400066: TROLL_ R Finger22
-    400068: TROLL_ R Foot
-    400070: TROLL_ R Forearm
-    400072: TROLL_ R Hand
-    400074: TROLL_ R Thigh
-    400076: TROLL_ R Toe0
-    400078: TROLL_ R UpperArm
-    400080: TROLL_ Spine
-    400082: TROLL_ Spine1
-    400084: root
-    7400000: attack1
-    9500000: //RootNode
-    11100000: //RootNode
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: TROLL_
+  - first:
+      1: 100004
+    second: TROLL_ Head
+  - first:
+      1: 100006
+    second: TROLL_ L Calf
+  - first:
+      1: 100008
+    second: TROLL_ L Clavicle
+  - first:
+      1: 100010
+    second: TROLL_ L Finger0
+  - first:
+      1: 100012
+    second: TROLL_ L Finger01
+  - first:
+      1: 100014
+    second: TROLL_ L Finger02
+  - first:
+      1: 100016
+    second: TROLL_ L Finger1
+  - first:
+      1: 100018
+    second: TROLL_ L Finger11
+  - first:
+      1: 100020
+    second: TROLL_ L Finger12
+  - first:
+      1: 100022
+    second: TROLL_ L Finger2
+  - first:
+      1: 100024
+    second: TROLL_ L Finger21
+  - first:
+      1: 100026
+    second: TROLL_ L Finger22
+  - first:
+      1: 100028
+    second: TROLL_ L Foot
+  - first:
+      1: 100030
+    second: TROLL_ L Forearm
+  - first:
+      1: 100032
+    second: TROLL_ L Hand
+  - first:
+      1: 100034
+    second: TROLL_ L Thigh
+  - first:
+      1: 100036
+    second: TROLL_ L Toe0
+  - first:
+      1: 100038
+    second: TROLL_ L UpperArm
+  - first:
+      1: 100040
+    second: TROLL_ Neck
+  - first:
+      1: 100042
+    second: TROLL_ Pelvis
+  - first:
+      1: 100044
+    second: TROLL_ Queue de cheval 1
+  - first:
+      1: 100046
+    second: TROLL_ R Calf
+  - first:
+      1: 100048
+    second: TROLL_ R Clavicle
+  - first:
+      1: 100050
+    second: TROLL_ R Finger0
+  - first:
+      1: 100052
+    second: TROLL_ R Finger01
+  - first:
+      1: 100054
+    second: TROLL_ R Finger02
+  - first:
+      1: 100056
+    second: TROLL_ R Finger1
+  - first:
+      1: 100058
+    second: TROLL_ R Finger11
+  - first:
+      1: 100060
+    second: TROLL_ R Finger12
+  - first:
+      1: 100062
+    second: TROLL_ R Finger2
+  - first:
+      1: 100064
+    second: TROLL_ R Finger21
+  - first:
+      1: 100066
+    second: TROLL_ R Finger22
+  - first:
+      1: 100068
+    second: TROLL_ R Foot
+  - first:
+      1: 100070
+    second: TROLL_ R Forearm
+  - first:
+      1: 100072
+    second: TROLL_ R Hand
+  - first:
+      1: 100074
+    second: TROLL_ R Thigh
+  - first:
+      1: 100076
+    second: TROLL_ R Toe0
+  - first:
+      1: 100078
+    second: TROLL_ R UpperArm
+  - first:
+      1: 100080
+    second: TROLL_ Spine
+  - first:
+      1: 100082
+    second: TROLL_ Spine1
+  - first:
+      1: 100084
+    second: root
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: TROLL_
+  - first:
+      4: 400004
+    second: TROLL_ Head
+  - first:
+      4: 400006
+    second: TROLL_ L Calf
+  - first:
+      4: 400008
+    second: TROLL_ L Clavicle
+  - first:
+      4: 400010
+    second: TROLL_ L Finger0
+  - first:
+      4: 400012
+    second: TROLL_ L Finger01
+  - first:
+      4: 400014
+    second: TROLL_ L Finger02
+  - first:
+      4: 400016
+    second: TROLL_ L Finger1
+  - first:
+      4: 400018
+    second: TROLL_ L Finger11
+  - first:
+      4: 400020
+    second: TROLL_ L Finger12
+  - first:
+      4: 400022
+    second: TROLL_ L Finger2
+  - first:
+      4: 400024
+    second: TROLL_ L Finger21
+  - first:
+      4: 400026
+    second: TROLL_ L Finger22
+  - first:
+      4: 400028
+    second: TROLL_ L Foot
+  - first:
+      4: 400030
+    second: TROLL_ L Forearm
+  - first:
+      4: 400032
+    second: TROLL_ L Hand
+  - first:
+      4: 400034
+    second: TROLL_ L Thigh
+  - first:
+      4: 400036
+    second: TROLL_ L Toe0
+  - first:
+      4: 400038
+    second: TROLL_ L UpperArm
+  - first:
+      4: 400040
+    second: TROLL_ Neck
+  - first:
+      4: 400042
+    second: TROLL_ Pelvis
+  - first:
+      4: 400044
+    second: TROLL_ Queue de cheval 1
+  - first:
+      4: 400046
+    second: TROLL_ R Calf
+  - first:
+      4: 400048
+    second: TROLL_ R Clavicle
+  - first:
+      4: 400050
+    second: TROLL_ R Finger0
+  - first:
+      4: 400052
+    second: TROLL_ R Finger01
+  - first:
+      4: 400054
+    second: TROLL_ R Finger02
+  - first:
+      4: 400056
+    second: TROLL_ R Finger1
+  - first:
+      4: 400058
+    second: TROLL_ R Finger11
+  - first:
+      4: 400060
+    second: TROLL_ R Finger12
+  - first:
+      4: 400062
+    second: TROLL_ R Finger2
+  - first:
+      4: 400064
+    second: TROLL_ R Finger21
+  - first:
+      4: 400066
+    second: TROLL_ R Finger22
+  - first:
+      4: 400068
+    second: TROLL_ R Foot
+  - first:
+      4: 400070
+    second: TROLL_ R Forearm
+  - first:
+      4: 400072
+    second: TROLL_ R Hand
+  - first:
+      4: 400074
+    second: TROLL_ R Thigh
+  - first:
+      4: 400076
+    second: TROLL_ R Toe0
+  - first:
+      4: 400078
+    second: TROLL_ R UpperArm
+  - first:
+      4: 400080
+    second: TROLL_ Spine
+  - first:
+      4: 400082
+    second: TROLL_ Spine1
+  - first:
+      4: 400084
+    second: root
+  - first:
+      74: 7400000
+    second: attack1
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -123,6 +301,7 @@ ModelImporter:
     - serializedVersion: 16
       name: attack1
       takeName: Take 001
+      internalID: 0
       firstFrame: 0
       lastFrame: 35
       wrapMode: 0
@@ -143,7 +322,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.3389251
+        functionName: HitStart
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.69590366
+        functionName: HitEnd
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -275,25 +468,32 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -302,10 +502,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 1
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -315,14 +515,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: root
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e3ea20e65f56f9b4b904c349ca08d7f2,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e3ea20e65f56f9b4b904c349ca08d7f2, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -15,6 +15,7 @@ namespace Monster
         private bool press;
         private float number;
         private Material[] dissolveMaterials;
+        public GameObject TriggerAttack;
 
         void Start()
         {
@@ -52,6 +53,16 @@ namespace Monster
                     dissolveMaterials[i].SetFloat("Dissolve", number);
                 }
             }
+        }
+        
+        public void HitStart()
+        {
+            TriggerAttack.SetActive(true);
+        }
+
+        public void HitEnd()
+        {
+            TriggerAttack.SetActive(false);
         }
 
         IEnumerator PlayerDeath()

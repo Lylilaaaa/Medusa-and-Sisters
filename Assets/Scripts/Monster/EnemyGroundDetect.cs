@@ -13,8 +13,8 @@ namespace Monster
         public GameObject Avatarmodel;
         private void Update()
         {
-            isGrounded = Physics.Raycast(transform.position, -transform.up, 0.5f, ground);
-            isStep = Physics.Raycast(transform.position + Vector3.up * upwardDis, Avatarmodel.transform.forward, forwardDis, ground);
+            //isGrounded = Physics.Raycast(transform.position, -transform.up, 0.5f, ground);
+            //isStep = Physics.Raycast(transform.position + Vector3.up * upwardDis, Avatarmodel.transform.forward, forwardDis, ground);
         }
     }
 }

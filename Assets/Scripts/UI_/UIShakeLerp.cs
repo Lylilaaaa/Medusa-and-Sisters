@@ -16,6 +16,7 @@ namespace UI_
 
         private void Start()
         {
+            print("second loaded!");
             thisTransform = GetComponent<RectTransform>();
             originTransPos = thisTransform.localPosition;
         }

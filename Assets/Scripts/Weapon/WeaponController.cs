@@ -1,19 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Manager;
 using Cameras_;
 
 
 public class WeaponController : MonoBehaviour
 {
-    public Collider collider;
+    public Text DamageShown;
     //private AudioSource audioSource;
     private Animator animator;
     private List<GameObject> targets = new List<GameObject>();
 
     public float NextDamage;
+    public bool canSendTerminateSkill;
 
+
+    
 
     private void OnDisable()
     {
@@ -27,6 +31,7 @@ public class WeaponController : MonoBehaviour
     public void init( Animator animator) {
         //this.audioSource = audioSource;
         this.animator = animator;
+        canSendTerminateSkill = false;
     }
 
 
@@ -36,8 +41,17 @@ public class WeaponController : MonoBehaviour
         if (targets.Contains(other.gameObject)) return;
         targets.Add(other.gameObject);
         if (other.tag == "enemy") {
+            //如果可以记录终结技，则记录
+            if (canSendTerminateSkill)
+            {
+                Debug.Log("successsfully add terminate skill");
+                DataManager.instance.AddList(other.GetComponent<EnemyController>().MonsterType.EliteID, 1);
+            }
+
+
             //打击效果
             FxController.instance.SpawnFx(4);
+            
             //打击音效
             //audioSource.PlayOneShot(Resources.Load<AudioClip>("Audio/命中"));
             
@@ -48,9 +62,19 @@ public class WeaponController : MonoBehaviour
             StartCoroutine(PauseFrame());
             //造成伤害
             other.gameObject.GetComponent<EnemyController>().getHurt(NextDamage);
+            
+            //伤害显示
+            DamageShown.text = "-"+ NextDamage.ToString() + "!";
+            FxController.instance.SpawnFx(5);
+            
             NextDamage = 0;
             //Debug.Log("hit");
+            
+
         }
+        
+        Debug.Log("disable cansendskill");
+        canSendTerminateSkill = false;
     }
 
     public void SettingNextDamage(float _nextDamage)
@@ -68,6 +92,12 @@ public class WeaponController : MonoBehaviour
         //恢复动画速度
         animator.speed = 1;
     }
-    
-    
+
+    public void RecordFourthAttack()
+    {
+        //ready to record
+        canSendTerminateSkill = true;
+    }
+
+
 }

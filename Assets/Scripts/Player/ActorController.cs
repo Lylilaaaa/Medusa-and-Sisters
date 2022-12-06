@@ -4,7 +4,6 @@ using Monster;
 using UnityEngine;
 using UnityEngine.UI;
 using ScriptableObjectGen;
-using Slider = UnityEngine.UIElements.Slider;
 
 namespace Player
 {
@@ -19,7 +18,8 @@ namespace Player
         public GameObject model;
         public Avatars AvatarScrObj;
         private CapsuleCollider col;
-        
+        public Text GetHurtUI;
+
 
         public IUserInput pi;
         private Vector3 planerVec; //important!!
@@ -84,7 +84,13 @@ namespace Player
 
         private void Update()
         {
+
             // detect is on step
+            if (pi.esc)
+            {
+                GameManager.instance.GameState = GameState.Pause;
+            }
+            
 
             if (OnGroundSensor.instance.isStep == true)
             {
@@ -185,6 +191,8 @@ namespace Player
             if (other.gameObject.tag == "attackTrigger" && getHurtTimer > 2f)
             {
                 getHurt(NextDamage);
+                GetHurtUI.text = "-"+NextDamage.ToString() + "!";
+                FxController.instance.SpawnFx(6);
                 getHurtTimer = 0f;
                 StartCoroutine(CameraController.instance.Shake(0.1f,0.6f));
                 StartCoroutine(other.GetComponent<EnemyWeaponController>().MonsterParent.GetComponent<EnemyController>().PauseFrame());
@@ -305,6 +313,7 @@ namespace Player
         public void OnAttack1hAExit()
         {
             FxController.instance.QuitFx(0);
+            FxController.instance.QuitFx(5);
         }
         
         public void OnAttack1hBEnter()
@@ -314,6 +323,7 @@ namespace Player
         public void OnAttack1hBExit()
         {
             FxController.instance.QuitFx(1);
+            FxController.instance.QuitFx(5);
         }
         public void OnAttack1hCEnter()
         {
@@ -322,6 +332,7 @@ namespace Player
         public void OnAttack1hCExit()
         {
             FxController.instance.QuitFx(2);
+            FxController.instance.QuitFx(5);
         }
         public void OnAttack1hDEnter()
         {
@@ -330,6 +341,7 @@ namespace Player
         public void OnAttack1hDExit()
         {
             FxController.instance.QuitFx(3);
+            FxController.instance.QuitFx(5);
         }
         
         public void  OnAttackIdleEnter()

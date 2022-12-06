@@ -2080,7 +2080,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.003522873, y: 0}
+  m_AnchoredPosition: {x: 0.0035095215, y: 0}
   m_SizeDelta: {x: 0.007045269, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6331345611739442828
@@ -3159,11 +3159,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114286057846976786, guid: 4abbb9b2178b0d74a945436a1669b6e7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseSettingPanelPanel
+      value: OpenStartPanel
       objectReference: {fileID: 0}
     - target: {fileID: 114286057846976786, guid: 4abbb9b2178b0d74a945436a1669b6e7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OpenStartPanel
+      value: CloseSettingPanelPanel
       objectReference: {fileID: 0}
     - target: {fileID: 114286057846976786, guid: 4abbb9b2178b0d74a945436a1669b6e7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

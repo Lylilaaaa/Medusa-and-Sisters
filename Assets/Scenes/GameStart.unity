@@ -46182,17 +46182,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 27345962894834613, guid: 71382addb5f08ba41ae9c04deadd488c, type: 3}
   m_PrefabInstance: {fileID: 1217445399}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1217859265 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5941632691731505492, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-  m_PrefabInstance: {fileID: 6044651155062894247}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1219092939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80545,18 +80534,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1716103605}
     m_Modifications:
     - target: {fileID: 5941633994007433904, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Interactable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994007433904, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994007433904, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994007433904, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 849981599}
@@ -80564,46 +80541,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 849981599}
-    - target: {fileID: 5941633994007433904, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994007433904, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseLevelSelectPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994007433904, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LoadFirstScene_
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994007433904, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994007433904, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ButtonController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994007433904, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: ButtonController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994007433904, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: GameStartButtonController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994007433904, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994043576222, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Interactable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994043576222, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5941633994043576222, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -80612,26 +80549,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 849981599}
-    - target: {fileID: 5941633994043576222, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OpenInputSettingPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994043576222, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: ButtonController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994043576222, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994241072396, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994241072396, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 1217859265}
     - target: {fileID: 5941633994241072396, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -80640,54 +80557,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 849981599}
-    - target: {fileID: 5941633994241072396, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseLevelSelectPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994241072396, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LoadFourthScene_
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994241072396, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ButtonController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994241072396, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: ButtonController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 1217859265}
-    - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_PressedColor.b
-      value: 0.10765709
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_PressedColor.g
-      value: 0.052213084
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_PressedColor.r
-      value: 0.5188679
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.049810074
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.06350013
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.6886792
-      objectReference: {fileID: 0}
     - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -80696,54 +80565,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 849981599}
-    - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseLevelSelectPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LoadFifthScene_
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ButtonController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994310901829, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: ButtonController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 1217859265}
-    - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_PressedColor.b
-      value: 0.10765709
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_PressedColor.g
-      value: 0.052213084
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_PressedColor.r
-      value: 0.5188679
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.049810074
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.06350013
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.6886792
-      objectReference: {fileID: 0}
     - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -80752,54 +80573,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 849981599}
-    - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseLevelSelectPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LoadThirdScene_
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ButtonController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994616309319, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: ButtonController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 1217859265}
-    - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_PressedColor.b
-      value: 0.10765709
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_PressedColor.g
-      value: 0.052213084
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_PressedColor.r
-      value: 0.5188679
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.049810074
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.06350013
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.6886792
-      objectReference: {fileID: 0}
     - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -80808,22 +80581,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 849981599}
-    - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseLevelSelectPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LoadSeCondScene_
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ButtonController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5941633994684570356, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: ButtonController, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 6044651154652021772, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -80912,14 +80669,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelSelectPanel
       objectReference: {fileID: 0}
-    - target: {fileID: 6044651154652021773, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6044651155429870175, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: ba6b519d17ccad44097b46a93854903d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce175949cb2fe004c9b1d08beba129d3, type: 3}
 --- !u!1001 &6331345610798853229
@@ -80929,22 +80678,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1716103605}
     m_Modifications:
-    - target: {fileID: 1012918999537463754, guid: c7c9770940990d940a40a6164937080d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5260371586642398017, guid: c7c9770940990d940a40a6164937080d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6331345609992592784, guid: c7c9770940990d940a40a6164937080d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6331345610764783227, guid: c7c9770940990d940a40a6164937080d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6331345611739442829, guid: c7c9770940990d940a40a6164937080d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -81033,18 +80766,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SettingPanel
       objectReference: {fileID: 0}
-    - target: {fileID: 6331345611739442866, guid: c7c9770940990d940a40a6164937080d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6507577240331320674, guid: c7c9770940990d940a40a6164937080d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6668849187791303161, guid: c7c9770940990d940a40a6164937080d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6668849187791303161, guid: c7c9770940990d940a40a6164937080d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -81053,22 +80774,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 849981599}
-    - target: {fileID: 6668849187791303161, guid: c7c9770940990d940a40a6164937080d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenStartPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 6668849187791303161, guid: c7c9770940990d940a40a6164937080d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: CloseSettingPanelPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 6668849187791303161, guid: c7c9770940990d940a40a6164937080d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7838721248108428891, guid: c7c9770940990d940a40a6164937080d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7c9770940990d940a40a6164937080d, type: 3}
 --- !u!1001 &7124470110863952700

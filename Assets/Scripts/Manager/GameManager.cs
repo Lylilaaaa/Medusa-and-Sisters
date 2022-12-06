@@ -1,11 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine; 
 
 public enum GameState
 {
     Start,
+    Go,
     Over,
     Pause
 }
@@ -28,6 +29,10 @@ public class GameManager : MonoBehaviour
                     GameStart();
                     //GameState = GameState.Selecting_map;
                     break;
+                
+                case GameState.Go:
+                    GameGo();
+                    break;
 
                 case GameState.Pause:
                     PauseTriggered();
@@ -35,9 +40,9 @@ public class GameManager : MonoBehaviour
 
                 case GameState.Over:
 
-                    Debug.Log("ÓÎÏ·½áÊø");
+                    Debug.Log("è¯•è¯•");
 
-                    //ÏÂÒ»¾Ö
+                    //ï¿½ï¿½Ò»ï¿½ï¿½
                     GameOver();
                     break;
             }
@@ -48,13 +53,19 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
         GameState = GameState.Start;
+        //GameManager.instance.gameState = GameState.Pause;
+    }
+
+    private void GameGo()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void GameOver()
     {
         //
         Time.timeScale = 0;
-
+        
         //show up the gameover panel
         UIManager.instance.showGameOverPanel(true);
     }
@@ -63,6 +74,8 @@ public class GameManager : MonoBehaviour
     {
         //time freeze, will be recover at the UI button part
         Time.timeScale = 0;
+        
+        Cursor.lockState = CursorLockMode.None;
 
         //show up the pause panel
         UIManager.instance.showPausePanel(true);
@@ -70,15 +83,15 @@ public class GameManager : MonoBehaviour
 
     private void GameStart()
     {
-        //¼ÓÔØ³¡¾°ºó£¬¿ªÊ¼³õÊ¼»¯
+        //ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ó£¬¿ï¿½Ê¼ï¿½ï¿½Ê¼ï¿½ï¿½
 
-        // ³õÊ¼»¯ÈËÎïÎ»ÖÃ Óë ¸÷ÏîÊôÐÔ (ÄÜÁ¦ÊÇ·ñ¿ç¹Ø¿¨¼Ì³Ð)
-
-
-        // ³õÊ¼»¯¹ÖÎïÎ»ÖÃ
+        // ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ø¿ï¿½ï¿½Ì³ï¿½)
 
 
-        //£¨³õÊ¼»¯±¦ÏäµôÂäÎï£©
+        // ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+
+
+        //ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï£©
     }
 
 
