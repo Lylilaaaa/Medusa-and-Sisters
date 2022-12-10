@@ -32,6 +32,9 @@ jab能够闪避 → canRun → （学会连招）canComboA1 → canComboA2 → �
 
 =============== 开发日志 ==================
 
+12.7:pre ppt、Stheno动作模组、协同效果
+![11.21a](Diary/png12.7a.png)
+
 12.6:新的姐姐Euryale！完成开始界面和UI逻辑、人物血条
 
 ![11.21a](Diary/jpg12.6a.jpg)
