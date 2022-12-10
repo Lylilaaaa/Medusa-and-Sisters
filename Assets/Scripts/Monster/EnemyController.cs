@@ -15,15 +15,15 @@ public class EnemyController : MonoBehaviour
     public float maxStepHeight;
     public bool _isStep;
     public GameObject groundSensor;
-    
-    
+
+    [Header(" ===== Current Data ===== ")]
+    public float currentHealth;
     private float attackTimer;
     private Animator anim;
     private GameObject model;
     private Rigidbody rig;
     public bool _isGrounded;
-    public float angleSpeed;
-    
+
 
     private void Awake()
     {
@@ -33,7 +33,7 @@ public class EnemyController : MonoBehaviour
     private void Init()
     {
         // set the init health
-        MonsterType.curHealth = MonsterType.maxHealth;
+        currentHealth = MonsterType.maxHealth;
         attackTimer = 0;
         model = transform.GetChild(0).gameObject;
         anim = model.GetComponent<Animator>();
@@ -111,7 +111,7 @@ public class EnemyController : MonoBehaviour
 
     private void DetectDead()
     {
-        if (MonsterType.curHealth <= 0)
+        if (currentHealth <= 0)
         {
             // dead animation
             
@@ -127,7 +127,7 @@ public class EnemyController : MonoBehaviour
     
     public void getHurt(float damage)
     {
-        MonsterType.curHealth -= damage;
+        currentHealth -= damage;
         anim.SetTrigger("getHit");
     }
     
@@ -175,7 +175,5 @@ public class EnemyController : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-
-
+    
 }

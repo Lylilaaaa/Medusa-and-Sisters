@@ -10,7 +10,7 @@ namespace ScriptableObjectGen
         
         //data
         public float maxHealth;
-        public float curHealth;
+        //public float curHealth;
         
         //ability
         public int damage;
