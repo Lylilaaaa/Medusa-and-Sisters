@@ -19,8 +19,8 @@ public class EnemyController : MonoBehaviour
     [Header(" ===== Current Data ===== ")]
     public float currentHealth;
     private float attackTimer;
-    private Animator anim;
-    private GameObject model;
+    protected Animator anim;
+    protected GameObject model;
     private Rigidbody rig;
     public bool _isGrounded;
 
@@ -30,7 +30,7 @@ public class EnemyController : MonoBehaviour
         Init();
     }
 
-    private void Init()
+    protected void Init()
     {
         // set the init health
         currentHealth = MonsterType.maxHealth;
