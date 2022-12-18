@@ -2,7 +2,7 @@
 reminder: the rotation of the plane should be bigger than 80 degree! //or the avatar will roll and fall!! 已修复，改变senser的offset高度就可以，去掉falling动画是代价:(
 
 故事简介：三姐妹同心协力干掉魔王O(∩_∩)O
-
+（12.17用unity的PlasticSCM同步去了，github真菜）
 
 ===== 操作按键 =====
 
